@@ -30,31 +30,25 @@ The package does **not** claim:
 - experimental feasibility of a SiN/AlN implementation;
 - enhanced metrological sensitivity.
 
+## Contents (curated public subset)
+
+> This deposit carries the production and verification data and scripts behind the manuscript numbers. Superseded pilots, smoke tests, resume fragments, cluster wrappers and internal audit notes are not deposited; the full history lives in the authors’ workspace.
+
 ## Contents
 
 - `01_track_A_topo_main.tex` — canonical main article;
 - `02_track_A_topo_SI.tex` — canonical Supplemental Material;
 - `03_track_A_topo_cover_letter.tex` — claims-aligned cover letter;
 - `references.bib` — bibliography (63 entries; all cited across main+SI, verified 2026-10-11 against the rendered `.bbl` files: 63/63 cited, 0 uncited; DOI-validated, legacy metadata mismatches fixed 2026-10-02; `Plodzien2026` added 2026-10-09);
-- `scripts/generate_persistence_figure.py` — deterministic reconstruction of the archived traces;
-- `scripts/run_trackA_n6_independent.py` — deterministic N=6 propagation used for the independent check;
 - `scripts/recompute_floquet_invariant.py` — audit of the available Floquet invariant and archived label mapping;
 - `scripts/scan_floquet_phase_audit.py` — deterministic J1/J2 scan with resolution and quasienergy-gap diagnostics;
 - `scripts/plot_floquet_phase_audit.py` — audit figure for the source-model scan;
 - `scripts/validate_candidate_sectors.py` — resolution-ladder audit for provisional W=1/W=0 points;
-- `scripts/run_matched_dynamics.py` — paired historical static-chain diagnostic with edge/uniform-loss controls;
-- `scripts/run_mapped_floquet_dynamics.py` — paired dynamics for the explicit Floquet-to-open-chain mapping hypothesis;
-- `scripts/audit_mapped_floquet_pilot.py` — fail-closed audit of the mapped pilot;
-- `scripts/scan_open_chain_edge_modes.py` — finite-size edge-localization diagnostic;
 - `scripts/validate_chiral_floquet_model.py` — independent chiral Floquet invariant and bulk-edge audit;
 - `scripts/plot_chiral_floquet_audit.py` — chiral phase/edge audit figure;
 - `scripts/run_chiral_floquet_dynamics.py` — dissipative dynamics for the validated chiral model;
 - `scripts/run_chiral_edge_mode_pilot.py` — pre-specified edge-mode mechanism pilot;
-- `scripts/analyze_edge_mode_pilot.py` — paired edge-mode/loss-current audit;
 - `scripts/analyze_edge_mode_convergence.py` — Fock-cutoff convergence audit;
-- `scripts/audit_chiral_floquet_pilot.py` — fail-closed dynamics-gate audit;
-- `scripts/trackA_n6_2608.sbatch` — SLURM wrapper for the full N=6 run (job-name `trackA_n6_rebuild`);
-- `scripts/trackA_edge_mode_pilot.sbatch` — four-condition edge-mode pilot array;
 - `scripts/trackA_edge_mode_convergence.sbatch` — passive/Kerr `N_max=2,3,4` convergence array;
 - `scripts/trackA_edge_mode_covariant.sbatch` — corrected micromotion-covariant pilot array;
 - `scripts/run_covariant_unitary_benchmark.py` — deterministic unitary covariance and edge–bulk control;
@@ -76,22 +70,17 @@ The package does **not** claim:
 - `scripts/analyze_r9_longtime.py` — plateau sign persistence, stationary time and envelope-decay gap proxy;
 - `scripts/verify_r3r8r9_tex.py` — fail-closed check that the R3/R8/R9 SI table numbers match their JSON sources;
 - `scripts/trackA_r3_size5.sbatch`, `scripts/trackA_r8_witness.sbatch`, `scripts/trackA_r9_longtime.sbatch` — R3/R8/R9 SLURM wrappers;
-- `data/trackA_persistence_summary.json` — machine-readable summary;
 - `data/trackA_invariant_audit.json` — invariant audit;
 - `data/trackA_heom_validation.json` — N=3 HEOM/Master Equation cross-check;
-- `data/trackA_n6_independent.json` — completed deterministic N=6 finite-time check;
 - `data/floquet_phase_audit.json` — completed source-model J1/J2 scan;
 - `data/model_manifest.json` — explicit separation of invariant and dynamics model conventions;
 - `data/candidate_sector_validation.json` — completed candidate resolution ladder;
 - `data/production_run_plan.json` — paired dynamics design and staging policy;
-- `data/mapped_pilot_analysis.json` — completed mapped-pilot gate audit;
-- `data/open_chain_edge_audit.json` — finite-size edge-localization audit;
 - `data/chiral_floquet_phase_audit.json` — independent chiral Floquet bulk/edge audit;
-- `data/chiral_pilot_analysis.json` — completed chiral dynamics pilot audit;
 - `data/edge_mode_unitary_benchmark.json` — machine-readable deterministic benchmark;
 - `data/passive_single_particle_benchmark.json` — machine-readable passive benchmark;
-- `data/edge_mode_pilot_analysis.json` and `data/edge_mode_convergence_analysis.json` — machine-readable audits;
-- `data/chiral_production/chiral_floquet_{2,3,4}cells_NMC{100,300,500}.json` and `chiral_floquet_5cells_NMC300.json` — production dynamics records (2–5 cells, disorder 0–1.5, 5-cell = audit run R3);
+- `data/edge_mode_convergence_analysis.json` — machine-readable audit;
+- `data/chiral_production/chiral_floquet_{2,3}cells_NMC500.json`, `chiral_floquet_4cells_NMC2000.json`, `chiral_floquet_5cells_NMC300.json` and `data/chiral_production_nmax3/` — production dynamics records (current production only; superseded sizes retained in the authors workspace);
 - `data/r3_size5_prediction.json` — out-of-sample size-5 prediction, frozen before the R3 submission (L3 gate);
 - `data/r3_size5_analysis.json` — R3 scoring against the frozen prediction;
 - `data/r8_witness/r8_witness_{2,3,4}cells.json` and `data/r8_witness_summary.json` — audit run R8 witness rerun and certification summary;
@@ -101,7 +90,6 @@ The package does **not** claim:
 - `data/cross_solver_benchmark_3cells.json` — 3-cell `mesolve`/`mcsolve` cross-validation;
 - `data/convergence_checks.json` — Wigner-grid and trajectory-count sensitivity checks;
 - `data/spectral_localizer_audit.json` — spectral-localizer topological certification;
-- `figures/trackA_persistence_rebuilt.png` — data-driven archived-trace figure (preview only; PDF removed as unused);
 - `figures/chiral_floquet_phase_audit.pdf` and `.png` — independent chiral audit figure;
 - `figures/floquet_phase_audit.png` — resolution/gap audit figure (preview only; PDF removed as unused);
 - `figures/trackA_n6_rebuild_summary.png` — independent N=6 check figure (preview only; PDF removed as unused);
@@ -156,20 +144,15 @@ compiling from a directory that contains only the `.tex`/`.bib` files is
 the one configuration that reproduces the `array` incompatibility.
 
 
-## Reproduction of the current figure
+## Verification of the deposited numbers
 
-From this directory:
+From this directory (QuTiP + NumPy environment):
 
 ```bash
-python3 -m py_compile scripts/generate_persistence_figure.py
-python3 scripts/generate_persistence_figure.py
-python3 scripts/generate_n6_summary_figure.py
+python3 scripts/verify_r3r8r9_tex.py
 ```
 
-The reconstruction script reads the legacy arrays in `../../code/_cache/` from the
-parent `Q1_Papers` repository. Those arrays are provenance-only and are not the source
-of the primary chiral-sector result. The script does not run a new QuTiP propagation
-and does not fit an exponential protection law.
+Fail-closed check that the SI tables tab:size5/tab:witness/tab:longtime match their JSON sources (must print FAILS: 0). Full dynamics producers (`run_*.py`) need an HPC/cluster environment and are documented for provenance; the deposited JSONs are their outputs.
 
 ## Independent rerun status
 
@@ -227,7 +210,7 @@ mode-resolved cat preparations, and passive/Kerr controls.
 
 The pilot was executed as SLURM job `15343` and the cutoff panel as job `15344`.
 Both arrays completed with empty error logs and structurally complete outputs.The four pilot files contain 160 records each; the six convergence files contain six
-records each. The paired audits are `data/edge_mode_pilot_analysis.json` and `data/edge_mode_convergence_analysis.json`.
+records each. The paired audits were `data/edge_mode_pilot_analysis.json` (historical pilot, not deposited) and `data/edge_mode_convergence_analysis.json` (deposited).
 
 The structural gate passed, but the passive-reference residuals were 0.03883,
 0.02821 and 0.03557 for `N_max=2,3,4`, respectively. They were not monotone and no
