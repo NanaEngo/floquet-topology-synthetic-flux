@@ -84,20 +84,11 @@ The package does **not** claim:
 - `data/model_manifest.json` — explicit separation of invariant and dynamics model conventions;
 - `data/candidate_sector_validation.json` — completed candidate resolution ladder;
 - `data/production_run_plan.json` — paired dynamics design and staging policy;
-- `data/model_mapping_hypothesis.md` — explicit Floquet-to-open-chain mapping and limitations;
 - `data/mapped_pilot_analysis.json` — completed mapped-pilot gate audit;
 - `data/open_chain_edge_audit.json` — finite-size edge-localization audit;
 - `data/chiral_floquet_phase_audit.json` — independent chiral Floquet bulk/edge audit;
-- `data/chiral_model_manifest.md` — chiral model and dynamics-gate status;
 - `data/chiral_pilot_analysis.json` — completed chiral dynamics pilot audit;
-- `data/EDGE_MODE_MECHANISM_PROTOCOL.md` — frozen mechanism-pilot design and continuation gates;
-- `data/EDGE_MODE_SURVIVAL_BOUND.md` — conditional passive-limit survival bound and validation target;
-- `data/EDGE_MODE_PARAMETER_AUDIT_20260814.md` — normalized-parameter, physical-calibration and optimality audit;
-- `data/EDGE_MODE_PILOT_RESULTS_20260814.md` — audited fixed-frame pilot results and scientific gate verdict;
-- `data/EDGE_MODE_COVARIANT_PILOT_RESULTS_20260814.md` — corrected micromotion-covariant pilot results;
-- `data/EDGE_MODE_UNITARY_BENCHMARK_20260814.md` — deterministic unitary covariance benchmark and claim boundary;
 - `data/edge_mode_unitary_benchmark.json` — machine-readable deterministic benchmark;
-- `data/PASSIVE_SINGLE_PARTICLE_BENCHMARK_20260814.md` — structured-loss passive benchmark and claim boundary;
 - `data/passive_single_particle_benchmark.json` — machine-readable passive benchmark;
 - `data/edge_mode_pilot_analysis.json` and `data/edge_mode_convergence_analysis.json` — machine-readable audits;
 - `data/chiral_production/chiral_floquet_{2,3,4}cells_NMC{100,300,500}.json` and `chiral_floquet_5cells_NMC300.json` — production dynamics records (2–5 cells, disorder 0–1.5, 5-cell = audit run R3);
@@ -127,7 +118,6 @@ The package does **not** claim:
   `Track_A_data_analysis_report.md` §§12–13 and `CLAIM_EVIDENCE_MATRIX.md`.
   The review prompt template is
   `../PRX_PRXQuantum_adversarial_review_prompt.md`.
-- `data/LITERATURE_CONTEXT_AUDIT_20260814.md` — verified literature context and citation boundaries;
 
 The revised manuscript is
 now written as a bounded negative-result study rather than a computational report;
@@ -233,16 +223,11 @@ The production result showed that local site-0 Wigner negativity is not size-rob
 The next authorized computation is therefore the pre-specified edge-mode pilot, not
 another large Monte Carlo run. It uses the same chiral Floquet backbone, the
 collective operator `b_edge`, paired loss profiles, common edge-site and
-mode-resolved cat preparations, and passive/Kerr controls. The passive benchmark is
-recorded in `data/EDGE_MODE_SURVIVAL_BOUND.md`; the design and continuation gates
-are frozen in `data/EDGE_MODE_MECHANISM_PROTOCOL.md`.
+mode-resolved cat preparations, and passive/Kerr controls.
 
 The pilot was executed as SLURM job `15343` and the cutoff panel as job `15344`.
 Both arrays completed with empty error logs and structurally complete outputs.The four pilot files contain 160 records each; the six convergence files contain six
-records each. The paired audits are `data/edge_mode_pilot_analysis.json` and
-
-`data/edge_mode_convergence_analysis.json`, with the interpreted checkpoint in
-`data/EDGE_MODE_PILOT_RESULTS_20260814.md`.
+records each. The paired audits are `data/edge_mode_pilot_analysis.json` and `data/edge_mode_convergence_analysis.json`.
 
 The structural gate passed, but the passive-reference residuals were 0.03883,
 0.02821 and 0.03557 for `N_max=2,3,4`, respectively. They were not monotone and no
@@ -258,8 +243,7 @@ The fixed-frame ambiguity was corrected before another production: the standard
 number operator was implemented and the edge vector was transported through the
 coherent Floquet micromotion. A local smoke test passed before submission. Array job
 `15353` then completed all four conditions with empty stderr logs and 160 records per
-condition. The audit is `data/edge_mode_covariant_analysis.json` and the scientific
-interpretation is `data/EDGE_MODE_COVARIANT_PILOT_RESULTS_20260814.md`.
+condition. The audit is `data/edge_mode_covariant_analysis.json`.
 
 At zero disorder and edge-low loss, the common-site passive contrast was only
 0.000388 (95% interval [0.000358, 0.000418]); the topological edge-mode preparation
