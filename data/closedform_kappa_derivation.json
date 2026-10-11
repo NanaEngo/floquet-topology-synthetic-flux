@@ -1,0 +1,118 @@
+{
+  "status": "COMPLETED_CLOSEDFORM_KAPPA_DERIVATION",
+  "definitions": {
+    "lambda1": "(1/T) int_0^T dt sum_{j!=0} gamma_j |<j|U(t)|0>|^2 (single-particle two-step evolution)",
+    "lambda2_coh": "(1/T) int_0^T dt sum_{(i,j)!=(0,0)} (gamma_i+gamma_j)|<i,j|U_2(t)|0,0>|^2, bosonic i<=j convention, Kerr k=0.5 on the edge site",
+    "lambda2_coh_lin": "same as lambda2_coh with the Kerr term omitted",
+    "kappa": "gamma_eb / lambda2_coh, per-size prefactor (NOT size-universal)",
+    "gamma_eb": "Gamma_meas - Gamma_eff from data/participation_bound_verification.json"
+  },
+  "model": {
+    "n_cells": [
+      2,
+      3,
+      4
+    ],
+    "sector_topological": {
+      "intra_A": 0.1,
+      "inter_B": 1.2,
+      "nu_0": -1,
+      "nu_pi": 0
+    },
+    "sector_trivial": {
+      "intra_A": 1.2,
+      "inter_B": 0.1,
+      "nu_0": 0,
+      "nu_pi": 0
+    },
+    "kerr": 0.5,
+    "profile": "edge_low_loss",
+    "gamma_edge": 0.0001,
+    "gamma_bulk": 0.2,
+    "disorder": 0.0,
+    "period": 6.283185307179586,
+    "n_grid": 4001
+  },
+  "sizes": {
+    "2": {
+      "lambda1": 0.012794446292677605,
+      "lambda2_coh": 0.012019815824145512,
+      "lambda2_coh_lin": 0.025606623710207665,
+      "gamma_eff": 0.19463253661424798,
+      "gamma_meas": 0.3365250710772519,
+      "gamma_eb": 0.1418925344630039,
+      "kappa": 11.804884246060487,
+      "trivial": {
+        "lambda2_coh": 0.15830554270315547,
+        "gamma_eff": 0.07901155444712908,
+        "gamma_meas": 0.5315715611428523,
+        "gamma_eb": 0.4525600066957232,
+        "kappa_eff": 2.858775498115913
+      }
+    },
+    "3": {
+      "lambda1": 0.05229547232273169,
+      "lambda2_coh": 0.09501451042977185,
+      "lambda2_coh_lin": 0.10460867577032179,
+      "gamma_eff": 0.19511975925707958,
+      "gamma_meas": 0.5912756715979283,
+      "gamma_eb": 0.3961559123408487,
+      "kappa": 4.169425391437024,
+      "trivial": {
+        "lambda2_coh": 0.16132133482884717,
+        "gamma_eff": 0.09912702232041182,
+        "gamma_meas": 0.533208965268132,
+        "gamma_eb": 0.4340819429477202,
+        "kappa_eff": 2.690790671973156
+      }
+    },
+    "4": {
+      "lambda1": 0.05229547232273169,
+      "lambda2_coh": 0.09501451042977185,
+      "lambda2_coh_lin": 0.10460867577032179,
+      "gamma_eff": 0.19512105088703158,
+      "gamma_meas": 0.5912822248328777,
+      "gamma_eb": 0.39616117394584616,
+      "kappa": 4.1694807682944495,
+      "trivial": {
+        "lambda2_coh": 0.16132133482884717,
+        "gamma_eff": 0.1329364825677522,
+        "gamma_meas": 0.5330810430898831,
+        "gamma_eb": 0.40014456052213093,
+        "kappa_eff": 2.4804193502778893
+      }
+    }
+  },
+  "previously_quoted": {
+    "source": "SI tab:closedform-kappa (literals, no derivation archive)",
+    "table": {
+      "lambda1": {
+        "2": 0.0129,
+        "3": 0.0524,
+        "4": 0.0524
+      },
+      "lambda2_coh": {
+        "2": 0.012,
+        "3": 0.095,
+        "4": 0.095
+      },
+      "lambda2_coh_lin": {
+        "2": 0.0256,
+        "3": 0.1046,
+        "4": 0.1046
+      },
+      "kappa": {
+        "2": 11.8,
+        "3": 4.2,
+        "4": 4.2
+      }
+    },
+    "lambda1_note": "Converged recomputation gives 0.0128/0.0523/0.0523; the previously quoted 0.0129/0.0524/0.0524 differs by ~1e-4 (4th-decimal grid drift of the unarchived original computation). SI prose (0.013, 0.052) is unaffected. The SI table now carries the derived values.",
+    "sector_paragraph_note": "The SI 'Sector dependence of the prefactor' paragraph quoted the withdrawn universal-kappa era values kappa~2.9, Lambda_2=0.05/0.24, kappa_eff=1.88/1.78/1.72 (equal to gamma_eb/Lambda_2 with the unreproducible old dwell integrals, e.g. 0.452560/0.2407=1.886 at two cells). Those constants are replaced by the derived values in this file: kappa_eff(triv)=2.86/2.69/2.48, Lambda_2(triv)=0.158/0.161/0.161; measured rates quoted in the paragraph (0.337/0.532/0.591/0.533) already matched production and are unchanged."
+  },
+  "self_checks": "all passed (Lambda_2 and Lambda_2_lin to 5e-5, Lambda_1 to 2e-4, kappa to 0.1, Lambda_1 < gamma_eb, 3/4-cell degeneracy, measured topological/trivial decay rates reproduce the SI-quoted 0.337/0.591 and 0.532/0.533)",
+  "software": {
+    "python": "3.11.15",
+    "numpy": "1.26.4"
+  }
+}

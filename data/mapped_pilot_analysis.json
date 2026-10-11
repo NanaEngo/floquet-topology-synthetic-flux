@@ -1,0 +1,246 @@
+{
+  "status": "MAPPED_PILOT_AUDITED_FAIL_CLOSED",
+  "inputs": [
+    "/home/nanaengo/Floquet_COM_Synthetic_Magnetism_Analysis/Q1_Papers/manuscripts/track_A_topo_2608/data/mapped_pilot/mapped_floquet_2cells.json",
+    "/home/nanaengo/Floquet_COM_Synthetic_Magnetism_Analysis/Q1_Papers/manuscripts/track_A_topo_2608/data/mapped_pilot/mapped_floquet_3cells.json"
+  ],
+  "summaries": [
+    {
+      "n_cells": 2,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "n_independent_realizations": 10,
+      "W1_minus_W0_edge_negativity_mean": -0.18861463133535541,
+      "W1_minus_W0_edge_negativity_std": 0.010803470133962387
+    },
+    {
+      "n_cells": 2,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.5,
+      "n_independent_realizations": 10,
+      "W1_minus_W0_edge_negativity_mean": -0.18788811758482155,
+      "W1_minus_W0_edge_negativity_std": 0.0039333159187251495
+    },
+    {
+      "n_cells": 2,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 1.0,
+      "n_independent_realizations": 10,
+      "W1_minus_W0_edge_negativity_mean": -0.18303534388162898,
+      "W1_minus_W0_edge_negativity_std": 0.01712323211291281
+    },
+    {
+      "n_cells": 2,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 1.5,
+      "n_independent_realizations": 10,
+      "W1_minus_W0_edge_negativity_mean": -0.17456419824322886,
+      "W1_minus_W0_edge_negativity_std": 0.025432529024507464
+    },
+    {
+      "n_cells": 2,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "n_independent_realizations": 10,
+      "W1_minus_W0_edge_negativity_mean": 0.0,
+      "W1_minus_W0_edge_negativity_std": 0.0
+    },
+    {
+      "n_cells": 2,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.5,
+      "n_independent_realizations": 10,
+      "W1_minus_W0_edge_negativity_mean": -0.0030065383464619746,
+      "W1_minus_W0_edge_negativity_std": 0.010199883581888003
+    },
+    {
+      "n_cells": 2,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 1.0,
+      "n_independent_realizations": 10,
+      "W1_minus_W0_edge_negativity_mean": -0.019349818983229024,
+      "W1_minus_W0_edge_negativity_std": 0.04592153069234058
+    },
+    {
+      "n_cells": 2,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 1.5,
+      "n_independent_realizations": 10,
+      "W1_minus_W0_edge_negativity_mean": -0.04802199806508699,
+      "W1_minus_W0_edge_negativity_std": 0.07141242416176005
+    },
+    {
+      "n_cells": 3,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "n_independent_realizations": 10,
+      "W1_minus_W0_edge_negativity_mean": -0.19440123511042934,
+      "W1_minus_W0_edge_negativity_std": 2.925694557147251e-17
+    },
+    {
+      "n_cells": 3,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.5,
+      "n_independent_realizations": 10,
+      "W1_minus_W0_edge_negativity_mean": -0.1943891703973591,
+      "W1_minus_W0_edge_negativity_std": 0.0004019820207992786
+    },
+    {
+      "n_cells": 3,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 1.0,
+      "n_independent_realizations": 10,
+      "W1_minus_W0_edge_negativity_mean": -0.1944514951336271,
+      "W1_minus_W0_edge_negativity_std": 0.0006707975562160067
+    },
+    {
+      "n_cells": 3,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 1.5,
+      "n_independent_realizations": 10,
+      "W1_minus_W0_edge_negativity_mean": -0.1839417536111165,
+      "W1_minus_W0_edge_negativity_std": 0.020934478554816897
+    },
+    {
+      "n_cells": 3,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "n_independent_realizations": 10,
+      "W1_minus_W0_edge_negativity_mean": 0.0,
+      "W1_minus_W0_edge_negativity_std": 0.0
+    },
+    {
+      "n_cells": 3,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.5,
+      "n_independent_realizations": 10,
+      "W1_minus_W0_edge_negativity_mean": -0.00355026463370636,
+      "W1_minus_W0_edge_negativity_std": 0.010030578273050183
+    },
+    {
+      "n_cells": 3,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 1.0,
+      "n_independent_realizations": 10,
+      "W1_minus_W0_edge_negativity_mean": -0.02607547350908495,
+      "W1_minus_W0_edge_negativity_std": 0.05035979585444741
+    },
+    {
+      "n_cells": 3,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 1.5,
+      "n_independent_realizations": 10,
+      "W1_minus_W0_edge_negativity_mean": -0.06111681582158226,
+      "W1_minus_W0_edge_negativity_std": 0.0918654424683561
+    }
+  ],
+  "single_particle_edge_diagnostics": {
+    "2": {
+      "candidate_W1": {
+        "n_modes": 4,
+        "max_edge_weight": 1.0000000000000004,
+        "mean_edge_weight": 1.0000000000000002,
+        "n_modes_edge_weight_gt_0_5": 4,
+        "quasienergy_phases": [
+          -2.245816837476687,
+          -0.9891797760407703,
+          0.9891797760407707,
+          2.2458168374766867
+        ],
+        "interpretation": "Finite-chain edge weights are diagnostics only; they do not establish bulk-boundary correspondence."
+      },
+      "candidate_W0": {
+        "n_modes": 4,
+        "max_edge_weight": 1.0000000000000004,
+        "mean_edge_weight": 1.0,
+        "n_modes_edge_weight_gt_0_5": 4,
+        "quasienergy_phases": [
+          -1.8732014565566988,
+          -1.2448829258387404,
+          1.2448829258387404,
+          1.873201456556699
+        ],
+        "interpretation": "Finite-chain edge weights are diagnostics only; they do not establish bulk-boundary correspondence."
+      }
+    },
+    "3": {
+      "candidate_W1": {
+        "n_modes": 6,
+        "max_edge_weight": 0.9867901746010841,
+        "mean_edge_weight": 0.6666666666666666,
+        "n_modes_edge_weight_gt_0_5": 4,
+        "quasienergy_phases": [
+          -2.4943306467151487,
+          -1.4807528548185493,
+          -0.5572185348982964,
+          0.5572185348982969,
+          1.4807528548185491,
+          2.494330646715148
+        ],
+        "interpretation": "Finite-chain edge weights are diagnostics only; they do not establish bulk-boundary correspondence."
+      },
+      "candidate_W0": {
+        "n_modes": 6,
+        "max_edge_weight": 0.9949633632764687,
+        "mean_edge_weight": 0.6666666666666671,
+        "n_modes_edge_weight_gt_0_5": 4,
+        "quasienergy_phases": [
+          -2.0026084878651664,
+          -1.5471962260261298,
+          -1.1153840649558604,
+          1.11538406495586,
+          1.5471962260261298,
+          2.002608487865167
+        ],
+        "interpretation": "Finite-chain edge weights are diagnostics only; they do not establish bulk-boundary correspondence."
+      }
+    },
+    "4": {
+      "candidate_W1": {
+        "n_modes": 8,
+        "max_edge_weight": 0.7206081704714743,
+        "mean_edge_weight": 0.5000000000000001,
+        "n_modes_edge_weight_gt_0_5": 4,
+        "quasienergy_phases": [
+          -2.645867277753183,
+          -1.7347758582534134,
+          -1.1865208026170544,
+          -0.8409751606809082,
+          0.8409751606809079,
+          1.1865208026170548,
+          1.734775858253412,
+          2.6458672777531826
+        ],
+        "interpretation": "Finite-chain edge weights are diagnostics only; they do not establish bulk-boundary correspondence."
+      },
+      "candidate_W0": {
+        "n_modes": 8,
+        "max_edge_weight": 0.7332553372205546,
+        "mean_edge_weight": 0.5000000000000002,
+        "n_modes_edge_weight_gt_0_5": 4,
+        "quasienergy_phases": [
+          -2.068351185027756,
+          -1.7384537200235908,
+          -1.3519493480030313,
+          -1.0535282822892391,
+          1.0535282822892384,
+          1.3519493480030311,
+          1.7384537200235906,
+          2.0683511850277565
+        ],
+        "interpretation": "Finite-chain edge weights are diagnostics only; they do not establish bulk-boundary correspondence."
+      }
+    }
+  },
+  "finite_size": {
+    "paired_records": 160,
+    "max_abs_4mode_6mode_difference": 0.04340213026942397,
+    "mean_abs_4mode_6mode_difference": 0.0033611354123982843
+  },
+  "gate": {
+    "mapped_W1_outperforms_W0_in_all_edge_loss_conditions": false,
+    "production_authorized": false,
+    "reason": "The mapped pilot does not show the prespecified W1-positive finite-time contrast; the open-chain mapping and observable mechanism require revision before scaling n_mc."
+  },
+  "interpretation": "Pilot-only source-model evidence; no manuscript integration and no topological claim authorized."
+}

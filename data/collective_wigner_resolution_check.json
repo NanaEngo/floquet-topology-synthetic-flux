@@ -1,0 +1,56 @@
+{
+  "status": "COMPLETED_COLLECTIVE_WIGNER_RESOLUTION_CHECK",
+  "note": "collective edge-mode negativity vs grid resolution and Fock truncation; representative topological/edge_low_loss/d=0/sample0",
+  "results": {
+    "n_max_2": {
+      "n_max": 2,
+      "sector": "chiral_topological",
+      "profile": "edge_low_loss",
+      "disorder": 0.0,
+      "draw_seed": 20260814,
+      "grid31": {
+        "local_negativity": 0.026652521497219885,
+        "local_wigner_min": -0.03599090698393714,
+        "collective_negativity": 0.0,
+        "collective_wigner_min": 2.265932848334562e-13
+      },
+      "grid61": {
+        "local_negativity": 0.02719308206458463,
+        "local_wigner_min": -0.03810979504614509,
+        "collective_negativity": 0.0,
+        "collective_wigner_min": 2.265932848334562e-13
+      },
+      "grid91": {
+        "local_negativity": 0.027277877602968455,
+        "local_wigner_min": -0.038737781783248174,
+        "collective_negativity": 0.0,
+        "collective_wigner_min": 2.265932848334562e-13
+      }
+    },
+    "n_max_3": {
+      "n_max": 3,
+      "sector": "chiral_topological",
+      "profile": "edge_low_loss",
+      "disorder": 0.0,
+      "draw_seed": 20260814,
+      "grid31": {
+        "local_negativity": 0.01838018843996033,
+        "local_wigner_min": -0.024246867190746303,
+        "collective_negativity": 0.0,
+        "collective_wigner_min": 1.5163337487132975e-13
+      },
+      "grid61": {
+        "local_negativity": 0.018330636846416264,
+        "local_wigner_min": -0.026272578599018454,
+        "collective_negativity": 0.0,
+        "collective_wigner_min": 1.5163337487132975e-13
+      },
+      "grid91": {
+        "local_negativity": 0.018215691743432204,
+        "local_wigner_min": -0.026290938568337797,
+        "collective_negativity": 0.0,
+        "collective_wigner_min": 1.5163337487132975e-13
+      }
+    }
+  }
+}

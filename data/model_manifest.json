@@ -1,0 +1,38 @@
+{
+  "manifest_status": "SOURCE_MODEL_MANIFEST_FOR_AUDIT",
+  "date": "2026-08-14",
+  "scope": "Track A reconstruction and candidate-sector selection",
+  "important_boundary": "The FL_QOM two-step Floquet model used for invariant auditing and the QuTiP N=6 open-chain model used for finite-time dynamics are not yet proven to be the same physical model.",
+  "floquet_invariant_audit_model": {
+    "implementation": "/home/nanaengo/FL_QOM/src/fl_qom/analysis/topological.py",
+    "hamiltonian": "fl_qom.analysis.topological.TopologicalAnalyzer.floquet_two_step_hamiltonian",
+    "k_domain": "[0, 2*pi)",
+    "basis_dimension": 2,
+    "step_0": "[[M + J2*cos(k), J1*sin(k)], [J1*sin(k), -(M + J2*cos(k))]]",
+    "step_1": "[[M-delta + J2*cos(k), J1*sin(k)], [J1*sin(k), -(M-delta + J2*cos(k))]]",
+    "period_convention": "n_t alternating piecewise-constant steps with dt=2*pi/n_t",
+    "framework_winding_method": "TopologicalAnalyzer.compute_floquet_winding_number(method=effective)",
+    "audit_resolutions": [20, 40],
+    "fixed_parameters": {"M": 1.0, "delta": 0.5},
+    "caveat": "The framework method returns an integer label but is not independently established here as the correct invariant for the open dissipative N-site dynamics."
+  },
+  "qutip_dynamics_model": {
+    "implementation": "scripts/run_trackA_n6_independent.py and parent code/scripts/papers/compute_trackA_n6_bootstrap.py",
+    "chain_sites": 6,
+    "local_fock_cutoff": 2,
+    "hopping": "nearest-neighbour real hopping alternating J1 and J2",
+    "nonlinearity": "0.5*a_0^dagger*a_0^dagger*a_0*a_0 on the first site",
+    "loss": "edge rate gamma_edge=1e-4; bulk rate gamma_bulk=1.0, with disorder added to rates",
+    "initial_state": "single-site truncated even cat with alpha=1 and vacuum elsewhere",
+    "wigner_observable": "single-site reduced-state Wigner negativity on [-4,4]^2 with 31 points per axis",
+    "time": {"t_start": 0.0, "t_stop": 1.0, "n_time_points": 6},
+    "disorder": "independent uniform perturbation of local loss rates, scaled by edge/bulk baseline",
+    "trajectory_sampling": "quantum trajectories nested within disorder realizations"
+  },
+  "required_before_topological_claim": [
+    "derive or verify the mapping from the 2x2 Floquet invariant model to the N-site dissipative chain",
+    "use parameter-matched certified W=1 and W=0 sectors in the dynamics model",
+    "freeze a complete seed and run manifest",
+    "perform cutoff, Wigner-grid, trajectory-number, solver and finite-size convergence"
+  ]
+}

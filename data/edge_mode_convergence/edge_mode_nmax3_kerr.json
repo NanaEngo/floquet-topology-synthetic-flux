@@ -1,0 +1,669 @@
+{
+  "status": "COMPLETED_EDGE_MODE_MECHANISM_PILOT",
+  "scientific_status": "PROVISIONAL_EDGE_MODE_OBSERVABLE_PILOT",
+  "claim_scope": "finite-time matched dynamics; no topological-protection or metrological claim",
+  "model": "same two-step chiral Floquet SSH backbone as the invariant audit, with local Kerr boundary perturbation and site Lindblad losses",
+  "audit_source": "data/chiral_floquet_phase_audit.json",
+  "parameter_status": "NORMALIZED_UNCALIBRATED_NOT_OPTIMIZED",
+  "reference_frequency": null,
+  "physical_units": null,
+  "optimality_status": "NOT_OPTIMIZED; sectors selected for invariant/gap diagnostics, not an objective optimum",
+  "design": {
+    "n_cells": 2,
+    "n_modes": 4,
+    "n_max": 3,
+    "n_mc": 3,
+    "ntraj": 3,
+    "wigner_grid": 31,
+    "initial_state_mode": "common_edge_site",
+    "kerr": 0.5,
+    "gamma_edge": 0.0001,
+    "gamma_bulk": 0.2,
+    "t_stop": 50.26548245743669,
+    "n_time_points": 17,
+    "period": 6.283185307179586,
+    "paired_disorder": true,
+    "profiles": [
+      "edge_low_loss"
+    ],
+    "disorder_levels": [
+      0.0
+    ],
+    "independent_unit": "paired disorder realization; trajectories nested",
+    "passive_bound": "n_edge(t) = n_edge(0) exp(-gamma_eff t) is recorded only for the topological sector at kerr=0; it is a reference diagnostic, exact only for an isolated passive edge mode"
+  },
+  "edge_mode_definition": {
+    "operator": "b_edge = sum_j conjugate(u_j) a_j",
+    "vector_source": "most edge-localized eigenvector of the certified topological one-period single-particle unitary",
+    "local_wigner_status": "site-resolved Wigner negativity is recorded; collective-mode Wigner negativity requires a validated bosonic mode transform and is not silently substituted"
+  },
+  "records": [
+    {
+      "n_cells": 2,
+      "n_modes": 4,
+      "n_max": 3,
+      "sector": "chiral_topological",
+      "intra_A": 0.1,
+      "inter_B": 1.2,
+      "nu_0": -1,
+      "nu_pi": 0,
+      "kerr": 0.5,
+      "initial_state_mode": "common_edge_site",
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 0,
+      "draw_seed": 20260818,
+      "trajectory_seed": 20260918,
+      "ntraj": 3,
+      "t_stop": 50.26548245743669,
+      "period": 6.283185307179586,
+      "wigner_grid": 31,
+      "rates": [
+        0.0001,
+        0.2,
+        0.2,
+        0.0001
+      ],
+      "edge_vector": [
+        [
+          0.03580515140206943,
+          -0.11019692501621552
+        ],
+        [
+          -0.6975490153745644,
+          7.60502771868232e-15
+        ],
+        [
+          0.697549015374594,
+          0.0
+        ],
+        [
+          -0.035805151402069135,
+          0.11019692501622065
+        ]
+      ],
+      "gamma_eff": 0.19463253661424798,
+      "initial_edge_population": 0.008498596450025486,
+      "edge_mode_population": 0.006097880384052734,
+      "total_population": 0.24464199350695198,
+      "bulk_mode_population_proxy": 0.23854411312289925,
+      "edge_loss_current": 2.3946404830840072e-05,
+      "bulk_loss_current": 0.0010355890397102615,
+      "negativity_site_0": 0.008013003312279382,
+      "negativity_site_center": 0.0,
+      "occupations": [
+        0.19801146159365546,
+        0.0038804691575223178,
+        0.0012974760410289898,
+        0.041452586714745235
+      ],
+      "time_points": [
+        0.0,
+        3.141592653589793,
+        6.283185307179586,
+        9.42477796076938,
+        12.566370614359172,
+        15.707963267948966,
+        18.84955592153876,
+        21.991148575128552,
+        25.132741228718345,
+        28.274333882308138,
+        31.41592653589793,
+        34.55751918948772,
+        37.69911184307752,
+        40.840704496667314,
+        43.982297150257104,
+        47.12388980384689,
+        50.26548245743669
+      ],
+      "edge_mode_population_timeseries": [
+        0.008498596450025486,
+        0.010166245017909012,
+        0.008015637027957215,
+        0.011241139724253566,
+        0.026297741987315954,
+        0.004650172742265122,
+        0.021736362380760575,
+        0.007302456895752488,
+        0.0061543469880806015,
+        0.005659889167152425,
+        0.0030978628614455324,
+        0.004638987475140447,
+        0.013781092059453421,
+        0.002350124971476244,
+        0.01693761312515909,
+        0.0033754568930196797,
+        0.006097880384052734
+      ],
+      "passive_prediction_timeseries": null,
+      "passive_prediction_edge_population": null,
+      "passive_prediction_error": null,
+      "max_abs_passive_residual": null,
+      "passive_reference_status": "comparison_only"
+    },
+    {
+      "n_cells": 2,
+      "n_modes": 4,
+      "n_max": 3,
+      "sector": "chiral_trivial",
+      "intra_A": 1.2,
+      "inter_B": 0.1,
+      "nu_0": 0,
+      "nu_pi": 0,
+      "kerr": 0.5,
+      "initial_state_mode": "common_edge_site",
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 0,
+      "draw_seed": 20260818,
+      "trajectory_seed": 20260919,
+      "ntraj": 3,
+      "t_stop": 50.26548245743669,
+      "period": 6.283185307179586,
+      "wigner_grid": 31,
+      "rates": [
+        0.0001,
+        0.2,
+        0.2,
+        0.0001
+      ],
+      "edge_vector": [
+        [
+          0.03580515140206943,
+          -0.11019692501621552
+        ],
+        [
+          -0.6975490153745644,
+          7.60502771868232e-15
+        ],
+        [
+          0.697549015374594,
+          0.0
+        ],
+        [
+          -0.035805151402069135,
+          0.11019692501622065
+        ]
+      ],
+      "gamma_eff": 0.19463253661424798,
+      "initial_edge_population": 0.008498596450025486,
+      "edge_mode_population": 8.469578421984163e-05,
+      "total_population": 0.0009074587211887144,
+      "bulk_mode_population_proxy": 0.0008227629369688728,
+      "edge_loss_current": 7.940149877420756e-08,
+      "bulk_loss_current": 2.268874668932779e-05,
+      "negativity_site_0": 0.0,
+      "negativity_site_center": 0.0,
+      "occupations": [
+        0.0007762919580167383,
+        0.000109070760804799,
+        4.372972641839943e-06,
+        1.7723029725337178e-05
+      ],
+      "time_points": [
+        0.0,
+        3.141592653589793,
+        6.283185307179586,
+        9.42477796076938,
+        12.566370614359172,
+        15.707963267948966,
+        18.84955592153876,
+        21.991148575128552,
+        25.132741228718345,
+        28.274333882308138,
+        31.41592653589793,
+        34.55751918948772,
+        37.69911184307752,
+        40.840704496667314,
+        43.982297150257104,
+        47.12388980384689,
+        50.26548245743669
+      ],
+      "edge_mode_population_timeseries": [
+        0.008498596450025486,
+        0.04505070757609232,
+        0.04201255001431822,
+        0.03563310176814088,
+        0.021400369775448545,
+        0.00357735084760393,
+        0.0038988221642041005,
+        0.044201809013261324,
+        0.03181732839019372,
+        0.10060134359254927,
+        0.0009916965384492464,
+        0.00033074035220393404,
+        0.0003897344507418286,
+        0.00010993416063964045,
+        0.00016064911312419796,
+        6.041882918662942e-05,
+        8.469578421984163e-05
+      ],
+      "passive_prediction_timeseries": null,
+      "passive_prediction_edge_population": null,
+      "passive_prediction_error": null,
+      "max_abs_passive_residual": null,
+      "passive_reference_status": "comparison_only"
+    },
+    {
+      "n_cells": 2,
+      "n_modes": 4,
+      "n_max": 3,
+      "sector": "chiral_topological",
+      "intra_A": 0.1,
+      "inter_B": 1.2,
+      "nu_0": -1,
+      "nu_pi": 0,
+      "kerr": 0.5,
+      "initial_state_mode": "common_edge_site",
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 1,
+      "draw_seed": 20260819,
+      "trajectory_seed": 20260919,
+      "ntraj": 3,
+      "t_stop": 50.26548245743669,
+      "period": 6.283185307179586,
+      "wigner_grid": 31,
+      "rates": [
+        0.0001,
+        0.2,
+        0.2,
+        0.0001
+      ],
+      "edge_vector": [
+        [
+          0.03580515140206943,
+          -0.11019692501621552
+        ],
+        [
+          -0.6975490153745644,
+          7.60502771868232e-15
+        ],
+        [
+          0.697549015374594,
+          0.0
+        ],
+        [
+          -0.035805151402069135,
+          0.11019692501622065
+        ]
+      ],
+      "gamma_eff": 0.19463253661424798,
+      "initial_edge_population": 0.008498596450025486,
+      "edge_mode_population": 0.009146820576079105,
+      "total_population": 0.36696299026042795,
+      "bulk_mode_population_proxy": 0.3578161696843488,
+      "edge_loss_current": 3.5919607246260105e-05,
+      "bulk_loss_current": 0.0015533835595653925,
+      "negativity_site_0": 0.05229749145760405,
+      "negativity_site_center": 0.0,
+      "occupations": [
+        0.29701719239048313,
+        0.005820703736283477,
+        0.0019462140615434846,
+        0.06217888007211785
+      ],
+      "time_points": [
+        0.0,
+        3.141592653589793,
+        6.283185307179586,
+        9.42477796076938,
+        12.566370614359172,
+        15.707963267948966,
+        18.84955592153876,
+        21.991148575128552,
+        25.132741228718345,
+        28.274333882308138,
+        31.41592653589793,
+        34.55751918948772,
+        37.69911184307752,
+        40.840704496667314,
+        43.982297150257104,
+        47.12388980384689,
+        50.26548245743669
+      ],
+      "edge_mode_population_timeseries": [
+        0.008498596450025486,
+        0.010166245017909012,
+        0.008015637027957215,
+        0.011241139724253566,
+        0.026297741987315954,
+        0.00526387264530337,
+        0.032282399722878115,
+        0.010372568121808387,
+        0.008539722371941892,
+        0.00835633910178792,
+        0.004484121859215613,
+        0.006958481212710671,
+        0.020671638089180128,
+        0.0035251874572143653,
+        0.025406419687738633,
+        0.00506318533952952,
+        0.009146820576079105
+      ],
+      "passive_prediction_timeseries": null,
+      "passive_prediction_edge_population": null,
+      "passive_prediction_error": null,
+      "max_abs_passive_residual": null,
+      "passive_reference_status": "comparison_only"
+    },
+    {
+      "n_cells": 2,
+      "n_modes": 4,
+      "n_max": 3,
+      "sector": "chiral_trivial",
+      "intra_A": 1.2,
+      "inter_B": 0.1,
+      "nu_0": 0,
+      "nu_pi": 0,
+      "kerr": 0.5,
+      "initial_state_mode": "common_edge_site",
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 1,
+      "draw_seed": 20260819,
+      "trajectory_seed": 20260920,
+      "ntraj": 3,
+      "t_stop": 50.26548245743669,
+      "period": 6.283185307179586,
+      "wigner_grid": 31,
+      "rates": [
+        0.0001,
+        0.2,
+        0.2,
+        0.0001
+      ],
+      "edge_vector": [
+        [
+          0.03580515140206943,
+          -0.11019692501621552
+        ],
+        [
+          -0.6975490153745644,
+          7.60502771868232e-15
+        ],
+        [
+          0.697549015374594,
+          0.0
+        ],
+        [
+          -0.035805151402069135,
+          0.11019692501622065
+        ]
+      ],
+      "gamma_eff": 0.19463253661424798,
+      "initial_edge_population": 0.008498596450025486,
+      "edge_mode_population": 8.469578421984163e-05,
+      "total_population": 0.0009074587211887144,
+      "bulk_mode_population_proxy": 0.0008227629369688728,
+      "edge_loss_current": 7.940149877420756e-08,
+      "bulk_loss_current": 2.268874668932779e-05,
+      "negativity_site_0": 0.0,
+      "negativity_site_center": 0.0,
+      "occupations": [
+        0.0007762919580167383,
+        0.000109070760804799,
+        4.372972641839943e-06,
+        1.7723029725337178e-05
+      ],
+      "time_points": [
+        0.0,
+        3.141592653589793,
+        6.283185307179586,
+        9.42477796076938,
+        12.566370614359172,
+        15.707963267948966,
+        18.84955592153876,
+        21.991148575128552,
+        25.132741228718345,
+        28.274333882308138,
+        31.41592653589793,
+        34.55751918948772,
+        37.69911184307752,
+        40.840704496667314,
+        43.982297150257104,
+        47.12388980384689,
+        50.26548245743669
+      ],
+      "edge_mode_population_timeseries": [
+        0.008498596450025486,
+        0.04505070757609232,
+        0.0638333413887096,
+        0.1262520882880326,
+        0.014266913183632362,
+        0.0028394319355856635,
+        0.00317061918748774,
+        0.000825486428471538,
+        0.0016985101338146459,
+        0.0009858586611642599,
+        0.0009916965384492464,
+        0.00033074035220393404,
+        0.0003897344507418286,
+        0.00010993416063964045,
+        0.00016064911312419796,
+        6.041882918662942e-05,
+        8.469578421984163e-05
+      ],
+      "passive_prediction_timeseries": null,
+      "passive_prediction_edge_population": null,
+      "passive_prediction_error": null,
+      "max_abs_passive_residual": null,
+      "passive_reference_status": "comparison_only"
+    },
+    {
+      "n_cells": 2,
+      "n_modes": 4,
+      "n_max": 3,
+      "sector": "chiral_topological",
+      "intra_A": 0.1,
+      "inter_B": 1.2,
+      "nu_0": -1,
+      "nu_pi": 0,
+      "kerr": 0.5,
+      "initial_state_mode": "common_edge_site",
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 2,
+      "draw_seed": 20260820,
+      "trajectory_seed": 20260920,
+      "ntraj": 3,
+      "t_stop": 50.26548245743669,
+      "period": 6.283185307179586,
+      "wigner_grid": 31,
+      "rates": [
+        0.0001,
+        0.2,
+        0.2,
+        0.0001
+      ],
+      "edge_vector": [
+        [
+          0.03580515140206943,
+          -0.11019692501621552
+        ],
+        [
+          -0.6975490153745644,
+          7.60502771868232e-15
+        ],
+        [
+          0.697549015374594,
+          0.0
+        ],
+        [
+          -0.035805151402069135,
+          0.11019692501622065
+        ]
+      ],
+      "gamma_eff": 0.19463253661424798,
+      "initial_edge_population": 0.008498596450025486,
+      "edge_mode_population": 0.009146820576079105,
+      "total_population": 0.36696299026042795,
+      "bulk_mode_population_proxy": 0.3578161696843488,
+      "edge_loss_current": 3.5919607246260105e-05,
+      "bulk_loss_current": 0.0015533835595653925,
+      "negativity_site_0": 0.05229749145760405,
+      "negativity_site_center": 0.0,
+      "occupations": [
+        0.29701719239048313,
+        0.005820703736283477,
+        0.0019462140615434846,
+        0.06217888007211785
+      ],
+      "time_points": [
+        0.0,
+        3.141592653589793,
+        6.283185307179586,
+        9.42477796076938,
+        12.566370614359172,
+        15.707963267948966,
+        18.84955592153876,
+        21.991148575128552,
+        25.132741228718345,
+        28.274333882308138,
+        31.41592653589793,
+        34.55751918948772,
+        37.69911184307752,
+        40.840704496667314,
+        43.982297150257104,
+        47.12388980384689,
+        50.26548245743669
+      ],
+      "edge_mode_population_timeseries": [
+        0.008498596450025486,
+        0.010166245017909012,
+        0.008015637027957215,
+        0.011241139724253566,
+        0.026297741987315954,
+        0.00526387264530337,
+        0.032282399722878115,
+        0.010372568121808387,
+        0.008539722371941892,
+        0.00835633910178792,
+        0.004484121859215613,
+        0.006958481212710671,
+        0.020671638089180128,
+        0.0035251874572143653,
+        0.025406419687738633,
+        0.00506318533952952,
+        0.009146820576079105
+      ],
+      "passive_prediction_timeseries": null,
+      "passive_prediction_edge_population": null,
+      "passive_prediction_error": null,
+      "max_abs_passive_residual": null,
+      "passive_reference_status": "comparison_only"
+    },
+    {
+      "n_cells": 2,
+      "n_modes": 4,
+      "n_max": 3,
+      "sector": "chiral_trivial",
+      "intra_A": 1.2,
+      "inter_B": 0.1,
+      "nu_0": 0,
+      "nu_pi": 0,
+      "kerr": 0.5,
+      "initial_state_mode": "common_edge_site",
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 2,
+      "draw_seed": 20260820,
+      "trajectory_seed": 20260921,
+      "ntraj": 3,
+      "t_stop": 50.26548245743669,
+      "period": 6.283185307179586,
+      "wigner_grid": 31,
+      "rates": [
+        0.0001,
+        0.2,
+        0.2,
+        0.0001
+      ],
+      "edge_vector": [
+        [
+          0.03580515140206943,
+          -0.11019692501621552
+        ],
+        [
+          -0.6975490153745644,
+          7.60502771868232e-15
+        ],
+        [
+          0.697549015374594,
+          0.0
+        ],
+        [
+          -0.035805151402069135,
+          0.11019692501622065
+        ]
+      ],
+      "gamma_eff": 0.19463253661424798,
+      "initial_edge_population": 0.008498596450025486,
+      "edge_mode_population": 0.00012704367632976243,
+      "total_population": 0.0013611880817830716,
+      "bulk_mode_population_proxy": 0.0012341444054533091,
+      "edge_loss_current": 1.1910224816131131e-07,
+      "bulk_loss_current": 3.403312003399168e-05,
+      "negativity_site_0": 0.0,
+      "negativity_site_center": 0.0,
+      "occupations": [
+        0.0011644379370251074,
+        0.0001636061412071985,
+        6.559458962759915e-06,
+        2.658454458800577e-05
+      ],
+      "time_points": [
+        0.0,
+        3.141592653589793,
+        6.283185307179586,
+        9.42477796076938,
+        12.566370614359172,
+        15.707963267948966,
+        18.84955592153876,
+        21.991148575128552,
+        25.132741228718345,
+        28.274333882308138,
+        31.41592653589793,
+        34.55751918948772,
+        37.69911184307752,
+        40.840704496667314,
+        43.982297150257104,
+        47.12388980384689,
+        50.26548245743669
+      ],
+      "edge_mode_population_timeseries": [
+        0.008498596450025486,
+        0.04505070757609232,
+        0.04201255001431822,
+        0.03563310176814088,
+        0.021400369775448545,
+        0.004259147903378495,
+        0.00475592878123161,
+        0.0012382296427073066,
+        0.002547765200721968,
+        0.0014787879917463902,
+        0.0014875448076738696,
+        0.0004961105283059009,
+        0.0005846016761127427,
+        0.00016490124095946062,
+        0.00024097366968629696,
+        9.062824377994411e-05,
+        0.00012704367632976243
+      ],
+      "passive_prediction_timeseries": null,
+      "passive_prediction_edge_population": null,
+      "passive_prediction_error": null,
+      "max_abs_passive_residual": null,
+      "passive_reference_status": "comparison_only"
+    }
+  ],
+  "elapsed_seconds": 1.2010893821716309,
+  "not_supported": [
+    "global basin structure",
+    "topological protection theorem",
+    "Liouvillian invariant",
+    "experimental validation",
+    "metrological gain",
+    "collective-mode Wigner negativity until transform validation"
+  ]
+}

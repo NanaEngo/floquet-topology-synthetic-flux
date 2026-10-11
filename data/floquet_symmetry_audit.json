@@ -1,0 +1,229 @@
+{
+  "status": "COMPLETED_ALGEBRAIC_AUDIT",
+  "model": "FL_QOM two-step Hamiltonian",
+  "symmetry_operator": "sigma_z",
+  "required_for_simple_chiral_1D_winding": "{Gamma,H(k,t)}=0 for every k,t",
+  "cases": {
+    "historical_N6_source": {
+      "J1": 0.1,
+      "J2": 1.0,
+      "hamiltonian": [
+        {
+          "step": 0,
+          "max_hermiticity_residual": 0.0,
+          "max_chiral_anticommutator_norm": 5.656854249492381,
+          "max_periodicity_residual": 1.7272132132009147e-15
+        },
+        {
+          "step": 1,
+          "max_hermiticity_residual": 0.0,
+          "max_chiral_anticommutator_norm": 4.242640687119285,
+          "max_periodicity_residual": 1.6487138998347e-15
+        }
+      ],
+      "unitarity": [
+        {
+          "n_t": 20,
+          "max_unitarity_residual": 3.2811871180953952e-15
+        },
+        {
+          "n_t": 40,
+          "max_unitarity_residual": 5.6643616580201714e-15
+        },
+        {
+          "n_t": 80,
+          "max_unitarity_residual": 1.2418656960083964e-14
+        }
+      ],
+      "winding_resolution": [
+        {
+          "n_k": 20,
+          "n_t": 20,
+          "framework_winding": 0
+        },
+        {
+          "n_k": 40,
+          "n_t": 40,
+          "framework_winding": 1
+        },
+        {
+          "n_k": 80,
+          "n_t": 80,
+          "framework_winding": 1
+        },
+        {
+          "n_k": 120,
+          "n_t": 120,
+          "framework_winding": 1
+        }
+      ]
+    },
+    "candidate_W1": {
+      "J1": 0.2,
+      "J2": 1.2,
+      "hamiltonian": [
+        {
+          "step": 0,
+          "max_hermiticity_residual": 0.0,
+          "max_chiral_anticommutator_norm": 6.222539674441618,
+          "max_periodicity_residual": 1.8845197843084756e-15
+        },
+        {
+          "step": 1,
+          "max_hermiticity_residual": 0.0,
+          "max_chiral_anticommutator_norm": 4.808326112068523,
+          "max_periodicity_residual": 1.8845197843084756e-15
+        }
+      ],
+      "unitarity": [
+        {
+          "n_t": 20,
+          "max_unitarity_residual": 3.1185235141819838e-15
+        },
+        {
+          "n_t": 40,
+          "max_unitarity_residual": 5.0242958677880805e-15
+        },
+        {
+          "n_t": 80,
+          "max_unitarity_residual": 1.0206939168588007e-14
+        }
+      ],
+      "winding_resolution": [
+        {
+          "n_k": 20,
+          "n_t": 20,
+          "framework_winding": 1
+        },
+        {
+          "n_k": 40,
+          "n_t": 40,
+          "framework_winding": 1
+        },
+        {
+          "n_k": 80,
+          "n_t": 80,
+          "framework_winding": 1
+        },
+        {
+          "n_k": 120,
+          "n_t": 120,
+          "framework_winding": 1
+        }
+      ]
+    },
+    "candidate_W0": {
+      "J1": 0.1,
+      "J2": 0.1,
+      "hamiltonian": [
+        {
+          "step": 0,
+          "max_hermiticity_residual": 0.0,
+          "max_chiral_anticommutator_norm": 3.111269837220809,
+          "max_periodicity_residual": 3.510833468576701e-16
+        },
+        {
+          "step": 1,
+          "max_hermiticity_residual": 0.0,
+          "max_chiral_anticommutator_norm": 1.697056274847714,
+          "max_periodicity_residual": 2.3633021048361517e-16
+        }
+      ],
+      "unitarity": [
+        {
+          "n_t": 20,
+          "max_unitarity_residual": 2.988710442591371e-15
+        },
+        {
+          "n_t": 40,
+          "max_unitarity_residual": 5.657622587816529e-15
+        },
+        {
+          "n_t": 80,
+          "max_unitarity_residual": 1.0868611711591582e-14
+        }
+      ],
+      "winding_resolution": [
+        {
+          "n_k": 20,
+          "n_t": 20,
+          "framework_winding": 0
+        },
+        {
+          "n_k": 40,
+          "n_t": 40,
+          "framework_winding": 0
+        },
+        {
+          "n_k": 80,
+          "n_t": 80,
+          "framework_winding": 0
+        },
+        {
+          "n_k": 120,
+          "n_t": 120,
+          "framework_winding": 0
+        }
+      ]
+    },
+    "historical_control": {
+      "J1": 1.0,
+      "J2": 1.0,
+      "hamiltonian": [
+        {
+          "step": 0,
+          "max_hermiticity_residual": 0.0,
+          "max_chiral_anticommutator_norm": 5.656854249492381,
+          "max_periodicity_residual": 1.7342238036525468e-15
+        },
+        {
+          "step": 1,
+          "max_hermiticity_residual": 0.0,
+          "max_chiral_anticommutator_norm": 4.242640687119285,
+          "max_periodicity_residual": 1.685565737062797e-15
+        }
+      ],
+      "unitarity": [
+        {
+          "n_t": 20,
+          "max_unitarity_residual": 3.4543187455968915e-15
+        },
+        {
+          "n_t": 40,
+          "max_unitarity_residual": 5.296689895779293e-15
+        },
+        {
+          "n_t": 80,
+          "max_unitarity_residual": 8.400484225581198e-15
+        }
+      ],
+      "winding_resolution": [
+        {
+          "n_k": 20,
+          "n_t": 20,
+          "framework_winding": 1
+        },
+        {
+          "n_k": 40,
+          "n_t": 40,
+          "framework_winding": 1
+        },
+        {
+          "n_k": 80,
+          "n_t": 80,
+          "framework_winding": 1
+        },
+        {
+          "n_k": 120,
+          "n_t": 120,
+          "framework_winding": 1
+        }
+      ]
+    }
+  },
+  "decision": {
+    "source_has_exact_chiral_symmetry": false,
+    "source_winding_is_not_yet_validated_as_chiral_invariant": true,
+    "next_action": "Implement an explicitly chiral Floquet model or define a different invariant with its assumptions."
+  }
+}

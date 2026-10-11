@@ -1,0 +1,5269 @@
+{
+  "status": "COMPLETED_R8_WITNESS_ANALYSIS",
+  "audit_source": "AUDIT_RESEARCH_REFINEMENTS_20261001.md (line 126)",
+  "gates": {
+    "production_parity": "PASSED (exact field equality)",
+    "block_sanity": "PASSED (Hermitian, unit trace, PSD)"
+  },
+  "witness_reference": "Chabaud et al., Quantum 5, 471 (2021)",
+  "certification_rule": "max_alpha F_n > omega_n with omega_1=omega_2=0.5 exact; n>=3 uses conservative omega_hi",
+  "n_records": 24000,
+  "strata": {
+    "2cells_d0_edge_low_loss": {
+      "n": 500,
+      "witness": {
+        "n1": {
+          "chiral_topological": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.4950066476314063,
+            "se": 0.0006086902647687514,
+            "certified": 412,
+            "certified_rate": 0.824,
+            "certified_wilson95": [
+              0.788185127237469,
+              0.8548741199545055
+            ],
+            "max": 0.5010328557289027
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.45285833290252503,
+            "se": 0.0018883759996024842,
+            "certified": 54,
+            "certified_rate": 0.108,
+            "certified_wilson95": [
+              0.08372241545896647,
+              0.13825528546926177
+            ],
+            "max": 0.533552803059858
+          },
+          "paired_topo_minus_trivial": {
+            "mean": 0.04214831472888134,
+            "se": 0.0020023421796075873
+          }
+        },
+        "n2": {
+          "chiral_topological": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.3368947130860512,
+            "se": 0.0004437177766142034,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.34126559979687665
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.3136858563342504,
+            "se": 0.001494749554623238,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.3721401450458805
+          },
+          "paired_topo_minus_trivial": {
+            "mean": 0.023208856751800778,
+            "se": 0.001577145891573454
+          }
+        },
+        "n3": {
+          "chiral_topological": {
+            "omega_lo": 0.378,
+            "omega_hi": 0.427,
+            "mean": 0.27382098816642964,
+            "se": 0.0003632644939394106,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.2773963016657849
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.378,
+            "omega_hi": 0.427,
+            "mean": 0.256159340745242,
+            "se": 0.0012355306434457215,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.3039433074727223
+          },
+          "paired_topo_minus_trivial": {
+            "mean": 0.017661647421187702,
+            "se": 0.0013028213209430944
+          }
+        },
+        "n4": {
+          "chiral_topological": {
+            "omega_lo": 0.375,
+            "omega_hi": 0.441,
+            "mean": 0.23681072474798692,
+            "se": 0.00031497022508169674,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.2399095610899875
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.375,
+            "omega_hi": 0.441,
+            "mean": 0.22201151904504507,
+            "se": 0.0010755800876613983,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.26341953971681076
+          },
+          "paired_topo_minus_trivial": {
+            "mean": 0.014799205702941794,
+            "se": 0.0011338598872848986
+          }
+        },
+        "n5": {
+          "chiral_topological": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.385,
+            "mean": 0.21168782224932958,
+            "se": 0.0002819226906515579,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.21446094935119786
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.385,
+            "mean": 0.1987023812685015,
+            "se": 0.0009648404885690493,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.23575386232269968
+          },
+          "paired_topo_minus_trivial": {
+            "mean": 0.012985440980828019,
+            "se": 0.001016973198811123
+          }
+        },
+        "n6": {
+          "chiral_topological": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.378,
+            "mean": 0.19318777735715384,
+            "se": 0.00025748245956546344,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.1957201597707846
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.378,
+            "mean": 0.18148130833204126,
+            "se": 0.0008824332908252706,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.21531422058980512
+          },
+          "paired_topo_minus_trivial": {
+            "mean": 0.01170646902511255,
+            "se": 0.0009300271795159048
+          }
+        }
+      },
+      "center_control_n1": {
+        "mean": 0.3678794411716682,
+        "max": 0.36787944117205074
+      },
+      "non_gaussianity": {
+        "chiral_topological": {
+          "mean": 0.33552805310898254,
+          "se": 0.0009801924091746284
+        },
+        "chiral_trivial": {
+          "mean": 0.20391058826707842,
+          "se": 0.002294893806441176
+        },
+        "paired_topo_minus_trivial": {
+          "mean": 0.1316174648419041,
+          "se": 0.0024929645701568287
+        }
+      },
+      "negativity_contrast": {
+        "mean": 0.016730854021193817,
+        "se": 0.0005496846137365152
+      }
+    },
+    "2cells_d0_uniform_loss": {
+      "n": 500,
+      "witness": {
+        "n1": {
+          "chiral_topological": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.37239275661398463,
+            "se": 0.0014315368514023464,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.44285831954474913
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.37395501392640285,
+            "se": 0.0014201745851546172,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.4433220696625184
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0015622573124181621,
+            "se": 0.0020217363004845328
+          }
+        },
+        "n2": {
+          "chiral_topological": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.27154409905385707,
+            "se": 0.0010955447954709948,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.32241281899047125
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.27298927512879967,
+            "se": 0.0010624814465348582,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.3227663291366591
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.001445176074942576,
+            "se": 0.0015305704993134567
+          }
+        },
+        "n3": {
+          "chiral_topological": {
+            "omega_lo": 0.378,
+            "omega_hi": 0.427,
+            "mean": 0.22429670103030536,
+            "se": 0.0009064198597962673,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.26606645010253566
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.378,
+            "omega_hi": 0.427,
+            "mean": 0.2255055403657086,
+            "se": 0.0008783841645127464,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.2663613661697018
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0012088393354032822,
+            "se": 0.001265701229738778
+          }
+        },
+        "n4": {
+          "chiral_topological": {
+            "omega_lo": 0.375,
+            "omega_hi": 0.441,
+            "mean": 0.19539705930341825,
+            "se": 0.0007901038271345733,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.2316801341597815
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.375,
+            "omega_hi": 0.441,
+            "mean": 0.19645580573032487,
+            "se": 0.0007654207192107065,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.23193816283515958
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0010587464269066237,
+            "se": 0.0011030397319031471
+          }
+        },
+        "n5": {
+          "chiral_topological": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.385,
+            "mean": 0.17539415544540937,
+            "se": 0.0007094348295149193,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.20790751637605298
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.385,
+            "mean": 0.17634734614094583,
+            "se": 0.000687150576969385,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.20813975168320364
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0009531906955364571,
+            "se": 0.0009902993643647157
+          }
+        },
+        "n6": {
+          "chiral_topological": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.378,
+            "mean": 0.1604959534174891,
+            "se": 0.0006492926815897795,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.19021427941850186
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.378,
+            "mean": 0.16136985258767442,
+            "se": 0.0006288275464209015,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.19042719110026976
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0008738991701853206,
+            "se": 0.0009062764980137485
+          }
+        }
+      },
+      "center_control_n1": {
+        "mean": 0.3678794411735257,
+        "max": 0.3678794411789768
+      },
+      "non_gaussianity": {
+        "chiral_topological": {
+          "mean": 0.027754890102331935,
+          "se": 0.0007951232514963259
+        },
+        "chiral_trivial": {
+          "mean": 0.025994807769745967,
+          "se": 0.0007116055269780257
+        },
+        "paired_topo_minus_trivial": {
+          "mean": 0.0017600823325859625,
+          "se": 0.0010768705334121428
+        }
+      },
+      "negativity_contrast": {
+        "mean": -8.115478363489057e-07,
+        "se": 3.9705330610865895e-06
+      }
+    },
+    "2cells_d0.5_edge_low_loss": {
+      "n": 500,
+      "witness": {
+        "n1": {
+          "chiral_topological": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.49416917658217924,
+            "se": 0.0006286559532617095,
+            "certified": 291,
+            "certified_rate": 0.582,
+            "certified_wilson95": [
+              0.5383018478283397,
+              0.6244477147325922
+            ],
+            "max": 0.5025703869119303
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.45283850383187346,
+            "se": 0.0019533579735506474,
+            "certified": 53,
+            "certified_rate": 0.106,
+            "certified_wilson95": [
+              0.08195666053446124,
+              0.1360515388678906
+            ],
+            "max": 0.5348593427228234
+          },
+          "paired_topo_minus_trivial": {
+            "mean": 0.04133067275030582,
+            "se": 0.00206493465465123
+          }
+        },
+        "n2": {
+          "chiral_topological": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.33630569486634765,
+            "se": 0.0004575861384278223,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.34238021137015473
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.31416602996596293,
+            "se": 0.001464487557667365,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.3756345388934438
+          },
+          "paired_topo_minus_trivial": {
+            "mean": 0.02213966490038473,
+            "se": 0.0015421564423793229
+          }
+        },
+        "n3": {
+          "chiral_topological": {
+            "omega_lo": 0.378,
+            "omega_hi": 0.427,
+            "mean": 0.27334241135192416,
+            "se": 0.0003744994321502692,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.2783099144480382
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.378,
+            "omega_hi": 0.427,
+            "mean": 0.25656307465668815,
+            "se": 0.0012032941713699906,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.3073130692044921
+          },
+          "paired_topo_minus_trivial": {
+            "mean": 0.01677933669523599,
+            "se": 0.0012664132715754415
+          }
+        },
+        "n4": {
+          "chiral_topological": {
+            "omega_lo": 0.375,
+            "omega_hi": 0.441,
+            "mean": 0.23639701414569458,
+            "se": 0.0003246646340731697,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.24070175367487684
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.375,
+            "omega_hi": 0.441,
+            "mean": 0.22236361063220006,
+            "se": 0.0010450824640684427,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.26653914835331877
+          },
+          "paired_topo_minus_trivial": {
+            "mean": 0.014033403513494552,
+            "se": 0.0010996314601979024
+          }
+        },
+        "n5": {
+          "chiral_topological": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.385,
+            "mean": 0.21131812040791823,
+            "se": 0.00029057362457621315,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.2151700874994148
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.385,
+            "mean": 0.1990181854505403,
+            "se": 0.000936325898683641,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.23864753642382602
+          },
+          "paired_topo_minus_trivial": {
+            "mean": 0.012299934957377951,
+            "se": 0.0009850606127965373
+          }
+        },
+        "n6": {
+          "chiral_topological": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.378,
+            "mean": 0.19285034882612914,
+            "se": 0.0002653689323478113,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.19636752793030587
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.378,
+            "mean": 0.18177000911330207,
+            "se": 0.0008556966932542819,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.21801691441865417
+          },
+          "paired_topo_minus_trivial": {
+            "mean": 0.01108033971282702,
+            "se": 0.000900153323003831
+          }
+        }
+      },
+      "center_control_n1": {
+        "mean": 0.36787944117219784,
+        "max": 0.36787944118562543
+      },
+      "non_gaussianity": {
+        "chiral_topological": {
+          "mean": 0.3339111809982645,
+          "se": 0.0010347743285263895
+        },
+        "chiral_trivial": {
+          "mean": 0.20638192462990707,
+          "se": 0.0026522482057805214
+        },
+        "paired_topo_minus_trivial": {
+          "mean": 0.1275292563683574,
+          "se": 0.002873757713996133
+        }
+      },
+      "negativity_contrast": {
+        "mean": 0.01575214961955194,
+        "se": 0.0005706691729612445
+      }
+    },
+    "2cells_d0.5_uniform_loss": {
+      "n": 500,
+      "witness": {
+        "n1": {
+          "chiral_topological": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.37709184559596864,
+            "se": 0.0015862527955011517,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.47531506166014237
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.37942652824303996,
+            "se": 0.001461494485724936,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.48137340991041083
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0023346826470712788,
+            "se": 0.0021020622167801694
+          }
+        },
+        "n2": {
+          "chiral_topological": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.2737224085096796,
+            "se": 0.0011984623284624627,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.34090954374851573
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.2760759973539437,
+            "se": 0.0010856959027861698,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.3441050901636076
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0023535888442641193,
+            "se": 0.001615548122970346
+          }
+        },
+        "n3": {
+          "chiral_topological": {
+            "omega_lo": 0.378,
+            "omega_hi": 0.427,
+            "mean": 0.22593135347540033,
+            "se": 0.0009903055943810944,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.2802697175106083
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.378,
+            "omega_hi": 0.427,
+            "mean": 0.22792392356044308,
+            "se": 0.0008948800608388984,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.2826696600816888
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0019925700850427328,
+            "se": 0.0013390263173331807
+          }
+        },
+        "n4": {
+          "chiral_topological": {
+            "omega_lo": 0.375,
+            "omega_hi": 0.441,
+            "mean": 0.1967591186089802,
+            "se": 0.0008626741597450707,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.24362463565813947
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.375,
+            "omega_hi": 0.441,
+            "mean": 0.1985127094515109,
+            "se": 0.0007787040266762525,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.24562097928679058
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0017535908425306524,
+            "se": 0.00116787802151334
+          }
+        },
+        "n5": {
+          "chiral_topological": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.385,
+            "mean": 0.17658560354445754,
+            "se": 0.0007743130697910591,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.21840840404777018
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.385,
+            "mean": 0.17816852129793806,
+            "se": 0.0006985184063972661,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.22015171764062308
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.00158291775348053,
+            "se": 0.0010489421505348547
+          }
+        },
+        "n6": {
+          "chiral_topological": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.378,
+            "mean": 0.1615679330817692,
+            "se": 0.0007085064738058619,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.19969212266368566
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.378,
+            "mean": 0.16302157730564845,
+            "se": 0.0006389016039474056,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.20125877511707962
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0014536442238792361,
+            "se": 0.0009601848458660948
+          }
+        }
+      },
+      "center_control_n1": {
+        "mean": 0.36787944117290167,
+        "max": 0.36787944119802496
+      },
+      "non_gaussianity": {
+        "chiral_topological": {
+          "mean": 0.035041326684318176,
+          "se": 0.0013730026382356548
+        },
+        "chiral_trivial": {
+          "mean": 0.03149865014623837,
+          "se": 0.0012491835104065222
+        },
+        "paired_topo_minus_trivial": {
+          "mean": 0.003542676538079809,
+          "se": 0.001177120549217292
+        }
+      },
+      "negativity_contrast": {
+        "mean": -1.1762252325930936e-06,
+        "se": 2.7478125162028423e-05
+      }
+    },
+    "2cells_d1_edge_low_loss": {
+      "n": 500,
+      "witness": {
+        "n1": {
+          "chiral_topological": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.4947684944743666,
+            "se": 0.0005872784812123163,
+            "certified": 242,
+            "certified_rate": 0.484,
+            "certified_wilson95": [
+              0.4404846519415505,
+              0.5277593358514384
+            ],
+            "max": 0.5035428517330133
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.4560438539688954,
+            "se": 0.001936392356892626,
+            "certified": 75,
+            "certified_rate": 0.15,
+            "certified_wilson95": [
+              0.12137548023138253,
+              0.1839617527402498
+            ],
+            "max": 0.5346918394442496
+          },
+          "paired_topo_minus_trivial": {
+            "mean": 0.038724640505471274,
+            "se": 0.001981587426591064
+          }
+        },
+        "n2": {
+          "chiral_topological": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.336726741831802,
+            "se": 0.00043055883316455134,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.34308640353007014
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.31483240073139324,
+            "se": 0.001517625281555808,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.3758426423421195
+          },
+          "paired_topo_minus_trivial": {
+            "mean": 0.021894341100408724,
+            "se": 0.0015410128413534756
+          }
+        },
+        "n3": {
+          "chiral_topological": {
+            "omega_lo": 0.378,
+            "omega_hi": 0.427,
+            "mean": 0.2736848794451324,
+            "se": 0.00035277930280296316,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.2788882255589091
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.378,
+            "omega_hi": 0.427,
+            "mean": 0.25699934704897104,
+            "se": 0.0012515074803731686,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.3076764081471901
+          },
+          "paired_topo_minus_trivial": {
+            "mean": 0.01668553239616139,
+            "se": 0.0012699121072233322
+          }
+        },
+        "n4": {
+          "chiral_topological": {
+            "omega_lo": 0.375,
+            "omega_hi": 0.441,
+            "mean": 0.23669302698839867,
+            "se": 0.000305984234633811,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.2412037235280763
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.375,
+            "omega_hi": 0.441,
+            "mean": 0.2227044635583578,
+            "se": 0.0010883973109032767,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.26692997876771074
+          },
+          "paired_topo_minus_trivial": {
+            "mean": 0.013988563430040887,
+            "se": 0.0011040999055713895
+          }
+        },
+        "n5": {
+          "chiral_topological": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.385,
+            "mean": 0.21158267778131837,
+            "se": 0.0002739254223400979,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.2156194433483423
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.385,
+            "mean": 0.19930519090064303,
+            "se": 0.0009758054727342262,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.23903588987434107
+          },
+          "paired_topo_minus_trivial": {
+            "mean": 0.012277486880675335,
+            "se": 0.0009897358175305977
+          }
+        },
+        "n6": {
+          "chiral_topological": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.378,
+            "mean": 0.19309160366083283,
+            "se": 0.0002502057933231558,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.19677797007549275
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.378,
+            "mean": 0.18202179222675813,
+            "se": 0.000892155477825132,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.21839426632089826
+          },
+          "paired_topo_minus_trivial": {
+            "mean": 0.01106981143407475,
+            "se": 0.0009048066935063712
+          }
+        }
+      },
+      "center_control_n1": {
+        "mean": 0.3678794411722887,
+        "max": 0.3678794411879337
+      },
+      "non_gaussianity": {
+        "chiral_topological": {
+          "mean": 0.33496049139247697,
+          "se": 0.0009359824281165788
+        },
+        "chiral_trivial": {
+          "mean": 0.21291008630474467,
+          "se": 0.003254268634287843
+        },
+        "paired_topo_minus_trivial": {
+          "mean": 0.12205040508773228,
+          "se": 0.003373317774492607
+        }
+      },
+      "negativity_contrast": {
+        "mean": 0.01473392326946071,
+        "se": 0.0005618140624658671
+      }
+    },
+    "2cells_d1_uniform_loss": {
+      "n": 500,
+      "witness": {
+        "n1": {
+          "chiral_topological": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.39331489218201626,
+            "se": 0.0020397539447766233,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.49632556422517116
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.3938998671508934,
+            "se": 0.0020636377966195135,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.4984921511207445
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.000584974968877186,
+            "se": 0.002007851948701303
+          }
+        },
+        "n2": {
+          "chiral_topological": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.28314696069062945,
+            "se": 0.00129886796577365,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.34646806407990577
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.2833485468642181,
+            "se": 0.001334759818904343,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.3479818957663499
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.00020158617358866337,
+            "se": 0.0015169892461994417
+          }
+        },
+        "n3": {
+          "chiral_topological": {
+            "omega_lo": 0.378,
+            "omega_hi": 0.427,
+            "mean": 0.23318529120354226,
+            "se": 0.001039568267852027,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.2835826519945519
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.378,
+            "omega_hi": 0.427,
+            "mean": 0.23336373673551145,
+            "se": 0.0010687549585078947,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.2849027418589957
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0001784455319691846,
+            "se": 0.001252718452200035
+          }
+        },
+        "n4": {
+          "chiral_topological": {
+            "omega_lo": 0.375,
+            "omega_hi": 0.441,
+            "mean": 0.202871634562954,
+            "se": 0.0008930985017665612,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.24601885109124028
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.375,
+            "omega_hi": 0.441,
+            "mean": 0.2030322665618181,
+            "se": 0.0009181307238932937,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.24720067715771726
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.00016063199886413875,
+            "se": 0.0010907434418523682
+          }
+        },
+        "n5": {
+          "chiral_topological": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.385,
+            "mean": 0.18196704964000238,
+            "se": 0.0007954067963588105,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.22042088040639637
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.385,
+            "mean": 0.18211395896717233,
+            "se": 0.0008176280434550367,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.22143179441114944
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0001469093271699252,
+            "se": 0.000978698463800318
+          }
+        },
+        "n6": {
+          "chiral_topological": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.378,
+            "mean": 0.16643016203870042,
+            "se": 0.0007241902308133855,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.2014526395580037
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.378,
+            "mean": 0.16656621803249566,
+            "se": 0.0007443615733730313,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.2023594925374377
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.00013605599379526721,
+            "se": 0.0008953074661086375
+          }
+        }
+      },
+      "center_control_n1": {
+        "mean": 0.3678794411727298,
+        "max": 0.36787944119921884
+      },
+      "non_gaussianity": {
+        "chiral_topological": {
+          "mean": 0.06801999744074391,
+          "se": 0.0037377988927271492
+        },
+        "chiral_trivial": {
+          "mean": 0.06707606341134952,
+          "se": 0.0037090492211951627
+        },
+        "paired_topo_minus_trivial": {
+          "mean": 0.0009439340293944074,
+          "se": 0.0014031418294621423
+        }
+      },
+      "negativity_contrast": {
+        "mean": -0.00018368906533572645,
+        "se": 0.0001750403742545493
+      }
+    },
+    "2cells_d1.5_edge_low_loss": {
+      "n": 500,
+      "witness": {
+        "n1": {
+          "chiral_topological": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.4948344017147048,
+            "se": 0.0005968456833235341,
+            "certified": 226,
+            "certified_rate": 0.452,
+            "certified_wilson95": [
+              0.4089065586120002,
+              0.49582540476696657
+            ],
+            "max": 0.5041685390030979
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.4574695117531526,
+            "se": 0.0021006784470383325,
+            "certified": 65,
+            "certified_rate": 0.13,
+            "certified_wilson95": [
+              0.10332021037816715,
+              0.16232200733470134
+            ],
+            "max": 0.5346950276514677
+          },
+          "paired_topo_minus_trivial": {
+            "mean": 0.037364889961552177,
+            "se": 0.002162310310424848
+          }
+        },
+        "n2": {
+          "chiral_topological": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.33679054698582656,
+            "se": 0.00043793942047633185,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.3435392688302567
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.3164824613436659,
+            "se": 0.0015359337380276231,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.3754682828853166
+          },
+          "paired_topo_minus_trivial": {
+            "mean": 0.020308085642160665,
+            "se": 0.001587285429460915
+          }
+        },
+        "n3": {
+          "chiral_topological": {
+            "omega_lo": 0.378,
+            "omega_hi": 0.427,
+            "mean": 0.2737400937635833,
+            "se": 0.00035877424983422396,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.2792598271729039
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.378,
+            "omega_hi": 0.427,
+            "mean": 0.2584210084352695,
+            "se": 0.00125551447818183,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.3071209575878667
+          },
+          "paired_topo_minus_trivial": {
+            "mean": 0.015319085328313884,
+            "se": 0.001298158124620996
+          }
+        },
+        "n4": {
+          "chiral_topological": {
+            "omega_lo": 0.375,
+            "omega_hi": 0.441,
+            "mean": 0.23674201807618664,
+            "se": 0.0003111596867539704,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.24152566940290934
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.375,
+            "omega_hi": 0.441,
+            "mean": 0.22396373737936448,
+            "se": 0.0010879865464514082,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.2663509855417397
+          },
+          "paired_topo_minus_trivial": {
+            "mean": 0.012778280696822105,
+            "se": 0.0011251731562153307
+          }
+        },
+        "n5": {
+          "chiral_topological": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.385,
+            "mean": 0.2116271054955405,
+            "se": 0.00027854548505980325,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.2159076873127903
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.385,
+            "mean": 0.2004457036387097,
+            "se": 0.0009735473811810388,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.23846782010512244
+          },
+          "paired_topo_minus_trivial": {
+            "mean": 0.011181401856830805,
+            "se": 0.0010069349613728818
+          }
+        },
+        "n6": {
+          "chiral_topological": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.378,
+            "mean": 0.1931325750890625,
+            "se": 0.0002544178955494626,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.1970415031913482
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.378,
+            "mean": 0.18307121533294782,
+            "se": 0.0008890092371138626,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.21784614771025942
+          },
+          "paired_topo_minus_trivial": {
+            "mean": 0.01006135975611468,
+            "se": 0.0009195605879970953
+          }
+        }
+      },
+      "center_control_n1": {
+        "mean": 0.36787944117238,
+        "max": 0.3678794411873467
+      },
+      "non_gaussianity": {
+        "chiral_topological": {
+          "mean": 0.3348573670988584,
+          "se": 0.0009600968839297542
+        },
+        "chiral_trivial": {
+          "mean": 0.21353467805505463,
+          "se": 0.004118782767681773
+        },
+        "paired_topo_minus_trivial": {
+          "mean": 0.12132268904380379,
+          "se": 0.004238826122072269
+        }
+      },
+      "negativity_contrast": {
+        "mean": 0.013063842822207726,
+        "se": 0.0006055971251670199
+      }
+    },
+    "2cells_d1.5_uniform_loss": {
+      "n": 500,
+      "witness": {
+        "n1": {
+          "chiral_topological": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.4019419793580726,
+            "se": 0.002437529710289264,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.4963365800629742
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.40279098821519355,
+            "se": 0.0024578467222456453,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.49848689061013784
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.000849008857120943,
+            "se": 0.0016252095243108951
+          }
+        },
+        "n2": {
+          "chiral_topological": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.28761627707012505,
+            "se": 0.001445944718613491,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.3463832952895444
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.2884761254900003,
+            "se": 0.0014554558629334814,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.34728636331396723
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0008598484198752522,
+            "se": 0.0012389982784134963
+          }
+        },
+        "n3": {
+          "chiral_topological": {
+            "omega_lo": 0.378,
+            "omega_hi": 0.427,
+            "mean": 0.2365911875983518,
+            "se": 0.001132717179950478,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.2835187976672704
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.378,
+            "omega_hi": 0.427,
+            "mean": 0.23733342386656364,
+            "se": 0.0011411892314811118,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.284565694737068
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0007422362682118147,
+            "se": 0.0010246443794600603
+          }
+        },
+        "n4": {
+          "chiral_topological": {
+            "omega_lo": 0.375,
+            "omega_hi": 0.441,
+            "mean": 0.20572980971283478,
+            "se": 0.0009632965246023443,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.24614587349399497
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.375,
+            "omega_hi": 0.441,
+            "mean": 0.20638919340827613,
+            "se": 0.0009707554531313966,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.24707358518150313
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0006593836954413708,
+            "se": 0.0008926835842409204
+          }
+        },
+        "n5": {
+          "chiral_topological": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.385,
+            "mean": 0.1844776931060733,
+            "se": 0.0008528668061072472,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.22051341105347383
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.385,
+            "mean": 0.18507616481926742,
+            "se": 0.0008595603847236239,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.22135451112954077
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0005984717131941665,
+            "se": 0.0008012374463143019
+          }
+        },
+        "n6": {
+          "chiral_topological": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.378,
+            "mean": 0.1686953696000977,
+            "se": 0.0007735074475214331,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.20152471525206642
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.378,
+            "mean": 0.16924686213508147,
+            "se": 0.0007796133886430998,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.20229916362876632
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.000551492534983791,
+            "se": 0.0007331124316546196
+          }
+        }
+      },
+      "center_control_n1": {
+        "mean": 0.3678794411727842,
+        "max": 0.3678794411977718
+      },
+      "non_gaussianity": {
+        "chiral_topological": {
+          "mean": 0.09215532918330004,
+          "se": 0.005438948560178871
+        },
+        "chiral_trivial": {
+          "mean": 0.08951923052967312,
+          "se": 0.005402246287219837
+        },
+        "paired_topo_minus_trivial": {
+          "mean": 0.0026360986536269468,
+          "se": 0.0011393869575730897
+        }
+      },
+      "negativity_contrast": {
+        "mean": -0.000299687637298961,
+        "se": 0.00015096345530873583
+      }
+    },
+    "3cells_d0_edge_low_loss": {
+      "n": 500,
+      "witness": {
+        "n1": {
+          "chiral_topological": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.44805724972149485,
+            "se": 0.0016012011531123748,
+            "certified": 57,
+            "certified_rate": 0.114,
+            "certified_wilson95": [
+              0.08903649378821105,
+              0.14484971171764635
+            ],
+            "max": 0.5040846150325207
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.4525222244433704,
+            "se": 0.001881725307450899,
+            "certified": 50,
+            "certified_rate": 0.1,
+            "certified_wilson95": [
+              0.07667718662472012,
+              0.1294225082000026
+            ],
+            "max": 0.5350329379109633
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.004464974721875565,
+            "se": 0.0024120431952629946
+          }
+        },
+        "n2": {
+          "chiral_topological": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.3102694744481105,
+            "se": 0.0012221216902472641,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.3506973241697523
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.3129325765591293,
+            "se": 0.0015196226592390492,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.37317966630615085
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.002663102111018842,
+            "se": 0.001910162128360609
+          }
+        },
+        "n3": {
+          "chiral_topological": {
+            "omega_lo": 0.378,
+            "omega_hi": 0.427,
+            "mean": 0.2532715621600453,
+            "se": 0.0010061711526545135,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.28632078733662114
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.378,
+            "omega_hi": 0.427,
+            "mean": 0.25550192801096394,
+            "se": 0.001259001413477604,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.3047913339670373
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.002230365850918551,
+            "se": 0.0015788792258585147
+          }
+        },
+        "n4": {
+          "chiral_topological": {
+            "omega_lo": 0.375,
+            "omega_hi": 0.441,
+            "mean": 0.21946950944448115,
+            "se": 0.0008745180240558873,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.24810915524952043
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.375,
+            "omega_hi": 0.441,
+            "mean": 0.22142707513309773,
+            "se": 0.0010970002589389305,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.2641534518340536
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0019575656886165966,
+            "se": 0.0013744421352058426
+          }
+        },
+        "n5": {
+          "chiral_topological": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.385,
+            "mean": 0.19640706968995914,
+            "se": 0.0007837995608235133,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.22203342154253108
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.385,
+            "mean": 0.19817235479413914,
+            "se": 0.0009845362023997986,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.2364107245181592
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.001765285104179989,
+            "se": 0.0012329112573948803
+          }
+        },
+        "n6": {
+          "chiral_topological": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.378,
+            "mean": 0.1793730610045747,
+            "se": 0.000716468098593469,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.20277363364149736
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.378,
+            "mean": 0.1809932361054556,
+            "se": 0.0009007171020869808,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.215914057008784
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0016201751008808937,
+            "se": 0.0011275932958394867
+          }
+        }
+      },
+      "center_control_n1": {
+        "mean": 0.3756744547418681,
+        "max": 0.41507873885633867
+      },
+      "non_gaussianity": {
+        "chiral_topological": {
+          "mean": 0.2044676274676588,
+          "se": 0.0017641838156860863
+        },
+        "chiral_trivial": {
+          "mean": 0.2052917575878836,
+          "se": 0.0022904723937148823
+        },
+        "paired_topo_minus_trivial": {
+          "mean": -0.0008241301202248099,
+          "se": 0.0028615104108825552
+        }
+      },
+      "negativity_contrast": {
+        "mean": -0.002104060748312782,
+        "se": 0.0005573985312501696
+      }
+    },
+    "3cells_d0_uniform_loss": {
+      "n": 500,
+      "witness": {
+        "n1": {
+          "chiral_topological": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.372398291337241,
+            "se": 0.0014315971456104195,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.4428610065399812
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.37395256657265213,
+            "se": 0.001420128332106577,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.4433167423041682
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0015542752354110955,
+            "se": 0.002021372294184487
+          }
+        },
+        "n2": {
+          "chiral_topological": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.27154773062195237,
+            "se": 0.001095625983380621,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.32241459405407996
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.27298768865404655,
+            "se": 0.001062450992382696,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.32276280189925555
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0014399580320941796,
+            "se": 0.0015303286551445333
+          }
+        },
+        "n3": {
+          "chiral_topological": {
+            "omega_lo": 0.378,
+            "omega_hi": 0.427,
+            "mean": 0.2242996978327567,
+            "se": 0.000906486932102426,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.2660678732238229
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.378,
+            "omega_hi": 0.427,
+            "mean": 0.22550427962719677,
+            "se": 0.0008783592217685705,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.26635853640231727
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0012045817944401106,
+            "se": 0.0012654999773692762
+          }
+        },
+        "n4": {
+          "chiral_topological": {
+            "omega_lo": 0.375,
+            "omega_hi": 0.441,
+            "mean": 0.19539966935506997,
+            "se": 0.0007901621768656484,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.23168135920721275
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.375,
+            "omega_hi": 0.441,
+            "mean": 0.19645472741693482,
+            "se": 0.0007653990709594567,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.23193572619831676
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0010550580618648249,
+            "se": 0.001102863767019717
+          }
+        },
+        "n5": {
+          "chiral_topological": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.385,
+            "mean": 0.17539649797738102,
+            "se": 0.0007094871444537267,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.20790860587835558
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.385,
+            "mean": 0.17634638835069222,
+            "se": 0.0006871311782086485,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.20813758421270237
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0009498903733111848,
+            "se": 0.000990141086186003
+          }
+        },
+        "n6": {
+          "chiral_topological": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.378,
+            "mean": 0.16049809676578378,
+            "se": 0.0006493405028740692,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.19021527203707095
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.378,
+            "mean": 0.16136898281033207,
+            "se": 0.000628809843433877,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.19042521612692595
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0008708860445483238,
+            "se": 0.0009061314633781208
+          }
+        }
+      },
+      "center_control_n1": {
+        "mean": 0.36866362021631915,
+        "max": 0.4100156531103895
+      },
+      "non_gaussianity": {
+        "chiral_topological": {
+          "mean": 0.027752699704402403,
+          "se": 0.0007951712922358422
+        },
+        "chiral_trivial": {
+          "mean": 0.025992721780117738,
+          "se": 0.0007116080898889552
+        },
+        "paired_topo_minus_trivial": {
+          "mean": 0.0017599779242846634,
+          "se": 0.0010768428875087782
+        }
+      },
+      "negativity_contrast": {
+        "mean": -8.041454189779636e-07,
+        "se": 3.969896484695793e-06
+      }
+    },
+    "3cells_d0.5_edge_low_loss": {
+      "n": 500,
+      "witness": {
+        "n1": {
+          "chiral_topological": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.44729480799939536,
+            "se": 0.0016452402389979983,
+            "certified": 72,
+            "certified_rate": 0.144,
+            "certified_wilson95": [
+              0.11593760751948218,
+              0.177491120874521
+            ],
+            "max": 0.5042022677608388
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.4524465728393061,
+            "se": 0.0019521873909452258,
+            "certified": 50,
+            "certified_rate": 0.1,
+            "certified_wilson95": [
+              0.07667718662472012,
+              0.1294225082000026
+            ],
+            "max": 0.5365224904913222
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.005151764839910785,
+            "se": 0.0025079669729318604
+          }
+        },
+        "n2": {
+          "chiral_topological": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.3095788972916796,
+            "se": 0.0012320319380905909,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.3532509305929737
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.3135765262514515,
+            "se": 0.0014826831929186824,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.3768738655230026
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.003997628959771898,
+            "se": 0.0019215502635124937
+          }
+        },
+        "n3": {
+          "chiral_topological": {
+            "omega_lo": 0.378,
+            "omega_hi": 0.427,
+            "mean": 0.25268836848569254,
+            "se": 0.0010110677513598153,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.28895169433833773
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.378,
+            "omega_hi": 0.427,
+            "mean": 0.2560538601432723,
+            "se": 0.0012196598930404809,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.30832808223357144
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.003365491657579721,
+            "se": 0.001582767318372027
+          }
+        },
+        "n4": {
+          "chiral_topological": {
+            "omega_lo": 0.375,
+            "omega_hi": 0.441,
+            "mean": 0.21895693339947836,
+            "se": 0.0008775881579444387,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.25059978031740476
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.375,
+            "omega_hi": 0.441,
+            "mean": 0.22191242680064682,
+            "se": 0.001059782307460368,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.2674198238598462
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.002955493401168406,
+            "se": 0.0013759855624132166
+          }
+        },
+        "n5": {
+          "chiral_topological": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.385,
+            "mean": 0.19594488408768299,
+            "se": 0.0007859716042527497,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.22436975397378617
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.385,
+            "mean": 0.19860959269878334,
+            "se": 0.0009497320010344224,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.23943604475653754
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.002664708611100339,
+            "se": 0.0012334239944927414
+          }
+        },
+        "n6": {
+          "chiral_topological": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.378,
+            "mean": 0.17894886717697206,
+            "se": 0.0007181140651538431,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.20496996259246664
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.378,
+            "mean": 0.1813940569229678,
+            "se": 0.0008680828747468319,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.21873718074643853
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.002445189745995739,
+            "se": 0.0011275672589312268
+          }
+        }
+      },
+      "center_control_n1": {
+        "mean": 0.37554758717358094,
+        "max": 0.41784437468166075
+      },
+      "non_gaussianity": {
+        "chiral_topological": {
+          "mean": 0.20564588698460903,
+          "se": 0.0021414221688781667
+        },
+        "chiral_trivial": {
+          "mean": 0.20753463819605325,
+          "se": 0.002655976806109322
+        },
+        "paired_topo_minus_trivial": {
+          "mean": -0.0018887512114441922,
+          "se": 0.002908940550904461
+        }
+      },
+      "negativity_contrast": {
+        "mean": -0.0023156480723267544,
+        "se": 0.0005627801400308958
+      }
+    },
+    "3cells_d0.5_uniform_loss": {
+      "n": 500,
+      "witness": {
+        "n1": {
+          "chiral_topological": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.3770914748201884,
+            "se": 0.0015863069902456123,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.4753129037696628
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.3794286901010425,
+            "se": 0.0014615244082984574,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.481370815215642
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0023372152808541903,
+            "se": 0.002102100969869711
+          }
+        },
+        "n2": {
+          "chiral_topological": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.2737212964762366,
+            "se": 0.0011985305438898827,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.34090820136982675
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.27607733437355675,
+            "se": 0.001085722140521658,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.344103671448089
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0023560378973201896,
+            "se": 0.0016156112623126571
+          }
+        },
+        "n3": {
+          "chiral_topological": {
+            "omega_lo": 0.378,
+            "omega_hi": 0.427,
+            "mean": 0.22593035566861375,
+            "se": 0.0009903633490704646,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.2802686581645598
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.378,
+            "omega_hi": 0.427,
+            "mean": 0.22792499499683175,
+            "se": 0.0008949023313867269,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.2826685837663479
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0019946393282179913,
+            "se": 0.0013390809970744992
+          }
+        },
+        "n4": {
+          "chiral_topological": {
+            "omega_lo": 0.375,
+            "omega_hi": 0.441,
+            "mean": 0.19675821857530013,
+            "se": 0.0008627250466622351,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.24362373017137837
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.375,
+            "omega_hi": 0.441,
+            "mean": 0.19851362957915325,
+            "se": 0.0007787235689899527,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.24562008177298975
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0017554110038531042,
+            "se": 0.0011679265750745833
+          }
+        },
+        "n5": {
+          "chiral_topological": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.385,
+            "mean": 0.17658478010339332,
+            "se": 0.0007743590310493974,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.21840760039870505
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.385,
+            "mean": 0.17816934026707387,
+            "se": 0.000698535993650112,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.22015092929120803
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0015845601636805533,
+            "se": 0.0010489861628609435
+          }
+        },
+        "n6": {
+          "chiral_topological": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.378,
+            "mean": 0.16156717055205128,
+            "se": 0.0007085487138123102,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.19969139465852082
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.378,
+            "mean": 0.16302232266789543,
+            "se": 0.0006389177326534439,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.2012580659741686
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0014551521158441716,
+            "se": 0.0009602253890314111
+          }
+        }
+      },
+      "center_control_n1": {
+        "mean": 0.36948950447670886,
+        "max": 0.4243182267749104
+      },
+      "non_gaussianity": {
+        "chiral_topological": {
+          "mean": 0.035046312866770506,
+          "se": 0.0013731581763714031
+        },
+        "chiral_trivial": {
+          "mean": 0.03150002673158268,
+          "se": 0.0012491982858001223
+        },
+        "paired_topo_minus_trivial": {
+          "mean": 0.0035462861351878276,
+          "se": 0.0011772381946584213
+        }
+      },
+      "negativity_contrast": {
+        "mean": -1.17291508556645e-06,
+        "se": 2.747966147030702e-05
+      }
+    },
+    "3cells_d1_edge_low_loss": {
+      "n": 500,
+      "witness": {
+        "n1": {
+          "chiral_topological": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.45145906229184185,
+            "se": 0.001753468524553331,
+            "certified": 55,
+            "certified_rate": 0.11,
+            "certified_wilson95": [
+              0.08549101658817662,
+              0.140456185865928
+            ],
+            "max": 0.5042089293627443
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.4563640656233403,
+            "se": 0.001964876889366958,
+            "certified": 78,
+            "certified_rate": 0.156,
+            "certified_wilson95": [
+              0.12683030337229503,
+              0.19041543417696646
+            ],
+            "max": 0.5363214383688587
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.004905003331498472,
+            "se": 0.002357982108345635
+          }
+        },
+        "n2": {
+          "chiral_topological": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.3124079227654019,
+            "se": 0.0012530981849470041,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.35363178077903845
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.314655930859887,
+            "se": 0.0015563874847251248,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.3771217742873056
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.002248008094485133,
+            "se": 0.0018588630349785792
+          }
+        },
+        "n3": {
+          "chiral_topological": {
+            "omega_lo": 0.378,
+            "omega_hi": 0.427,
+            "mean": 0.2549911927174707,
+            "se": 0.0010215172228464754,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.2896722945994865
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.378,
+            "omega_hi": 0.427,
+            "mean": 0.256818369547632,
+            "se": 0.0012871216329837292,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.30872645813514465
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0018271768301612217,
+            "se": 0.0015419298584178293
+          }
+        },
+        "n4": {
+          "chiral_topological": {
+            "omega_lo": 0.375,
+            "omega_hi": 0.441,
+            "mean": 0.22094885457458865,
+            "se": 0.000884301470411258,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.2513832168499494
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.375,
+            "omega_hi": 0.441,
+            "mean": 0.22253462378416702,
+            "se": 0.0011207279582941155,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.26784121828908536
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0015857692095783233,
+            "se": 0.0013444539498385694
+          }
+        },
+        "n5": {
+          "chiral_topological": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.385,
+            "mean": 0.19772537360331283,
+            "se": 0.0007908679876270456,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.22515174127354604
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.385,
+            "mean": 0.19914684650740627,
+            "se": 0.0010054789457079793,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.2398520048930692
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0014214729040934709,
+            "se": 0.0012071469432535075
+          }
+        },
+        "n6": {
+          "chiral_topological": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.378,
+            "mean": 0.18057355299406527,
+            "se": 0.0007219638373467633,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.20573190253715834
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.378,
+            "mean": 0.18187345579557831,
+            "se": 0.0009196913100368882,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.21914008439210822
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0012999028015130434,
+            "se": 0.0011047114953668948
+          }
+        }
+      },
+      "center_control_n1": {
+        "mean": 0.37734238548521093,
+        "max": 0.41882662505394186
+      },
+      "non_gaussianity": {
+        "chiral_topological": {
+          "mean": 0.2119038707577388,
+          "se": 0.003109414374936846
+        },
+        "chiral_trivial": {
+          "mean": 0.21469328882306174,
+          "se": 0.0032557565491132135
+        },
+        "paired_topo_minus_trivial": {
+          "mean": -0.002789418065322952,
+          "se": 0.0027832259216676114
+        }
+      },
+      "negativity_contrast": {
+        "mean": -0.0019814983150641613,
+        "se": 0.0005337888042840081
+      }
+    },
+    "3cells_d1_uniform_loss": {
+      "n": 500,
+      "witness": {
+        "n1": {
+          "chiral_topological": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.39327226359177425,
+            "se": 0.0020425860379240613,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.4963206307242358
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.3939023754365136,
+            "se": 0.002063682890413941,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.4984819550729467
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0006301118447392741,
+            "se": 0.0020109775615298046
+          }
+        },
+        "n2": {
+          "chiral_topological": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.28311475250639384,
+            "se": 0.001300974669699279,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.34647248859739693
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.28335019537982825,
+            "se": 0.0013347883852970637,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.34797101865249985
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0002354428734344605,
+            "se": 0.0015192468314657404
+          }
+        },
+        "n3": {
+          "chiral_topological": {
+            "omega_lo": 0.378,
+            "omega_hi": 0.427,
+            "mean": 0.23315849036089342,
+            "se": 0.0010413135588810702,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.2835860820666138
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.378,
+            "omega_hi": 0.427,
+            "mean": 0.23336505627410817,
+            "se": 0.0010687777527828444,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.2849078633106366
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.00020656591321472367,
+            "se": 0.0012545911111616667
+          }
+        },
+        "n4": {
+          "chiral_topological": {
+            "omega_lo": 0.375,
+            "omega_hi": 0.441,
+            "mean": 0.20284820885485205,
+            "se": 0.0008946201129956831,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.2460233225265412
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.375,
+            "omega_hi": 0.441,
+            "mean": 0.20303339950811436,
+            "se": 0.0009181502711717244,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.2472049889850541
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0001851906532623143,
+            "se": 0.001092378549249933
+          }
+        },
+        "n5": {
+          "chiral_topological": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.385,
+            "mean": 0.18194598175476695,
+            "se": 0.0007967730234874103,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.22042482303027458
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.385,
+            "mean": 0.1821149675641937,
+            "se": 0.0008176454175406151,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.22143467055150873
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0001689858094267595,
+            "se": 0.0009801682801422072
+          }
+        },
+        "n6": {
+          "chiral_topological": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.378,
+            "mean": 0.166410859558734,
+            "se": 0.0007254405538931679,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.2014562231618512
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.378,
+            "mean": 0.16656713545718188,
+            "se": 0.000744377371341544,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.20236208999317956
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.00015627589844788666,
+            "se": 0.0008966537161103237
+          }
+        }
+      },
+      "center_control_n1": {
+        "mean": 0.3730161542556583,
+        "max": 0.4278789053347804
+      },
+      "non_gaussianity": {
+        "chiral_topological": {
+          "mean": 0.06806395351637198,
+          "se": 0.0037371859944092057
+        },
+        "chiral_trivial": {
+          "mean": 0.06707875294515576,
+          "se": 0.0037091439471573086
+        },
+        "paired_topo_minus_trivial": {
+          "mean": 0.0009852005712162218,
+          "se": 0.0014042000936054606
+        }
+      },
+      "negativity_contrast": {
+        "mean": -0.00018354614962190615,
+        "se": 0.00017505025837359663
+      }
+    },
+    "3cells_d1.5_edge_low_loss": {
+      "n": 500,
+      "witness": {
+        "n1": {
+          "chiral_topological": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.4530462313914321,
+            "se": 0.0018551446860344265,
+            "certified": 36,
+            "certified_rate": 0.072,
+            "certified_wilson95": [
+              0.05245772605354006,
+              0.09806894740891321
+            ],
+            "max": 0.5041774385168578
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.45783164213522487,
+            "se": 0.002093221547705466,
+            "certified": 64,
+            "certified_rate": 0.128,
+            "certified_wilson95": [
+              0.10152638796079462,
+              0.1601463282261975
+            ],
+            "max": 0.5364178224964182
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.004785410743792781,
+            "se": 0.0021978984359906193
+          }
+        },
+        "n2": {
+          "chiral_topological": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.3138653963788355,
+            "se": 0.0012610972227553256,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.35366208831340296
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.3163531293422849,
+            "se": 0.0015491482118583579,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.3766938665034348
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0024877329634494577,
+            "se": 0.0017469548184899327
+          }
+        },
+        "n3": {
+          "chiral_topological": {
+            "omega_lo": 0.378,
+            "omega_hi": 0.427,
+            "mean": 0.25623151366629404,
+            "se": 0.0010174378518156009,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.28968121362578714
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.378,
+            "omega_hi": 0.427,
+            "mean": 0.25827840264809254,
+            "se": 0.0012704512914270478,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.30812438467106634
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.002046888981798471,
+            "se": 0.0014511313014083913
+          }
+        },
+        "n4": {
+          "chiral_topological": {
+            "omega_lo": 0.375,
+            "omega_hi": 0.441,
+            "mean": 0.2220426631464276,
+            "se": 0.0008768062394810433,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.25141006790284876
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.375,
+            "omega_hi": 0.441,
+            "mean": 0.22382648604769123,
+            "se": 0.0011025669441114092,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.2672215193352939
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0017838229012636258,
+            "se": 0.001266105160499947
+          }
+        },
+        "n5": {
+          "chiral_topological": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.385,
+            "mean": 0.19871382091959583,
+            "se": 0.0007821737410289844,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.22519782463843108
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.385,
+            "mean": 0.20031599174790812,
+            "se": 0.0009874503109751202,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.23924731507480565
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0016021708283122686,
+            "se": 0.0011372331083668666
+          }
+        },
+        "n6": {
+          "chiral_topological": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.378,
+            "mean": 0.18148196572539108,
+            "se": 0.0007128581316366425,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.20580270363369765
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.378,
+            "mean": 0.1829486829921852,
+            "se": 0.0009022222884617552,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.21855816038851478
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0014667172667941156,
+            "se": 0.0010409956269744828
+          }
+        }
+      },
+      "center_control_n1": {
+        "mean": 0.378477804174282,
+        "max": 0.41882694109548885
+      },
+      "non_gaussianity": {
+        "chiral_topological": {
+          "mean": 0.21355840228160403,
+          "se": 0.003894390257624478
+        },
+        "chiral_trivial": {
+          "mean": 0.21501262784474437,
+          "se": 0.004113196125138015
+        },
+        "paired_topo_minus_trivial": {
+          "mean": -0.0014542255631403561,
+          "se": 0.0026478763112169124
+        }
+      },
+      "negativity_contrast": {
+        "mean": -0.001997523602503625,
+        "se": 0.0004634603369569712
+      }
+    },
+    "3cells_d1.5_uniform_loss": {
+      "n": 500,
+      "witness": {
+        "n1": {
+          "chiral_topological": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.40194197127867437,
+            "se": 0.0024374981699006575,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.49633059279885505
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.4027895388304929,
+            "se": 0.002457628592251586,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.4985112365537734
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0008475675518185596,
+            "se": 0.0016252644297760292
+          }
+        },
+        "n2": {
+          "chiral_topological": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.28761616604889884,
+            "se": 0.0014459882475747865,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.3463804611556919
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.2884761254897294,
+            "se": 0.001455395538932488,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.34728864315919317
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0008599594408306063,
+            "se": 0.001239056125115683
+          }
+        },
+        "n3": {
+          "chiral_topological": {
+            "omega_lo": 0.378,
+            "omega_hi": 0.427,
+            "mean": 0.23659111753676373,
+            "se": 0.0011327611778938142,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.2835181189783258
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.378,
+            "omega_hi": 0.427,
+            "mean": 0.2373335920215148,
+            "se": 0.0011411549409767099,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.2845659839428433
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0007424744847510758,
+            "se": 0.0010246931728814523
+          }
+        },
+        "n4": {
+          "chiral_topological": {
+            "omega_lo": 0.375,
+            "omega_hi": 0.441,
+            "mean": 0.20572975716485797,
+            "se": 0.0009633377664014939,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.2461452965234849
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.375,
+            "omega_hi": 0.441,
+            "mean": 0.20638940217734125,
+            "se": 0.000970731311606074,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.24707385492563083
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0006596450124833005,
+            "se": 0.0008927264211166381
+          }
+        },
+        "n5": {
+          "chiral_topological": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.385,
+            "mean": 0.18447764950526044,
+            "se": 0.0008529052114352795,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.22051289894371745
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.385,
+            "mean": 0.18507638666886084,
+            "se": 0.0008595417710262776,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.22135476310476118
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0005987371636003982,
+            "se": 0.0008012760807161923
+          }
+        },
+        "n6": {
+          "chiral_topological": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.378,
+            "mean": 0.16869533444162646,
+            "se": 0.0007735435500141377,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.20152425121844095
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.378,
+            "mean": 0.1692470822647449,
+            "se": 0.000779597919758123,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.20229939889480406
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0005517478231184288,
+            "se": 0.0007331478611660082
+          }
+        }
+      },
+      "center_control_n1": {
+        "mean": 0.3747749705195206,
+        "max": 0.42773311404579895
+      },
+      "non_gaussianity": {
+        "chiral_topological": {
+          "mean": 0.09215274337404365,
+          "se": 0.005438418569367695
+        },
+        "chiral_trivial": {
+          "mean": 0.08950381336722629,
+          "se": 0.005400748385500332
+        },
+        "paired_topo_minus_trivial": {
+          "mean": 0.0026489300068173716,
+          "se": 0.0011396356141243997
+        }
+      },
+      "negativity_contrast": {
+        "mean": -0.0002978253998912445,
+        "se": 0.00015098784183367771
+      }
+    },
+    "4cells_d0_edge_low_loss": {
+      "n": 500,
+      "witness": {
+        "n1": {
+          "chiral_topological": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.44805558065407775,
+            "se": 0.001601191187347926,
+            "certified": 57,
+            "certified_rate": 0.114,
+            "certified_wilson95": [
+              0.08903649378821105,
+              0.14484971171764635
+            ],
+            "max": 0.504084301465074
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.4525399343837222,
+            "se": 0.001881850927843744,
+            "certified": 50,
+            "certified_rate": 0.1,
+            "certified_wilson95": [
+              0.07667718662472012,
+              0.1294225082000026
+            ],
+            "max": 0.5350568540880919
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.004484353729644497,
+            "se": 0.0024121350353741742
+          }
+        },
+        "n2": {
+          "chiral_topological": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.310266985379476,
+            "se": 0.001222196206451311,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.35069710851246066
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.3129403393305879,
+            "se": 0.0015197443891313465,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.373192075321083
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0026733539511119065,
+            "se": 0.0019102950249144913
+          }
+        },
+        "n3": {
+          "chiral_topological": {
+            "omega_lo": 0.378,
+            "omega_hi": 0.427,
+            "mean": 0.2532693955949423,
+            "se": 0.001006238847852372,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.2863206121900408
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.378,
+            "omega_hi": 0.427,
+            "mean": 0.2555075184229416,
+            "se": 0.001259105324275347,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.30480069465379733
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0022381228279992464,
+            "se": 0.0015789951473905801
+          }
+        },
+        "n4": {
+          "chiral_topological": {
+            "omega_lo": 0.375,
+            "omega_hi": 0.441,
+            "mean": 0.21946758338806432,
+            "se": 0.0008745791143963666,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.2481090042070926
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.375,
+            "omega_hi": 0.441,
+            "mean": 0.2214316303327362,
+            "se": 0.0010970917935210068,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.2641612442539502
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.001964046944671845,
+            "se": 0.0013745450673522896
+          }
+        },
+        "n5": {
+          "chiral_topological": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.385,
+            "mean": 0.19640532199675345,
+            "se": 0.0007838554078765143,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.22203328674175252
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.385,
+            "mean": 0.19817628766432765,
+            "se": 0.0009846188602869847,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.23641753846947877
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0017709656675742097,
+            "se": 0.001233004597300377
+          }
+        },
+        "n6": {
+          "chiral_topological": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.378,
+            "mean": 0.17937145126832008,
+            "se": 0.0007165197755127776,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.2027735103223027
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.378,
+            "mean": 0.1809967402254327,
+            "se": 0.0009007928179679534,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.21592017915097786
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0016252889571126113,
+            "se": 0.0011276790993784438
+          }
+        }
+      },
+      "center_control_n1": {
+        "mean": 0.3678794411714424,
+        "max": 0.36787944117144245
+      },
+      "non_gaussianity": {
+        "chiral_topological": {
+          "mean": 0.20447384536655197,
+          "se": 0.0017640753987895213
+        },
+        "chiral_trivial": {
+          "mean": 0.20535286527473762,
+          "se": 0.0022912986820173196
+        },
+        "paired_topo_minus_trivial": {
+          "mean": -0.0008790199081855798,
+          "se": 0.002862131127551409
+        }
+      },
+      "negativity_contrast": {
+        "mean": -0.0021097919092412107,
+        "se": 0.0005576214861361023
+      }
+    },
+    "4cells_d0_uniform_loss": {
+      "n": 500,
+      "witness": {
+        "n1": {
+          "chiral_topological": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.3723958821777929,
+            "se": 0.0014316623726228711,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.44286476677392383
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.3739611663091583,
+            "se": 0.0014201983018502884,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.4433349275008508
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0015652841313654488,
+            "se": 0.0020214749275945724
+          }
+        },
+        "n2": {
+          "chiral_topological": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.2715444402402071,
+            "se": 0.00109577956947298,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.32241707218458476
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.2729923364519374,
+            "se": 0.0010625872606310073,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.32277481011180015
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0014478962117303162,
+            "se": 0.0015305433373590236
+          }
+        },
+        "n3": {
+          "chiral_topological": {
+            "omega_lo": 0.378,
+            "omega_hi": 0.427,
+            "mean": 0.22429688754580032,
+            "se": 0.0009066168730944567,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.2660698584622434
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.378,
+            "omega_hi": 0.427,
+            "mean": 0.22550793205464004,
+            "se": 0.0008784722586710346,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.26636816324676993
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0012110445088397072,
+            "se": 0.0012656801279889481
+          }
+        },
+        "n4": {
+          "chiral_topological": {
+            "omega_lo": 0.375,
+            "omega_hi": 0.441,
+            "mean": 0.1953971860776792,
+            "se": 0.000790276434825121,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.2316830676641997
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.375,
+            "omega_hi": 0.441,
+            "mean": 0.19645783522257237,
+            "se": 0.000765497670114488,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.2319440123267698
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.001060649144893182,
+            "se": 0.0011030216506488996
+          }
+        },
+        "n5": {
+          "chiral_topological": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.385,
+            "mean": 0.17539425150964763,
+            "se": 0.0007095902154319721,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.20791012490142743
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.385,
+            "mean": 0.1763491402836001,
+            "se": 0.0006872197448238124,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.20814495361723778
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0009548887739524583,
+            "se": 0.000990283258956402
+          }
+        },
+        "n6": {
+          "chiral_topological": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.378,
+            "mean": 0.1604960305664487,
+            "se": 0.0006494351016805136,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.1902166558587073
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.378,
+            "mean": 0.16137147692205725,
+            "se": 0.0006288908271683259,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.19043192975074552
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0008754463556085319,
+            "se": 0.0009062617468801806
+          }
+        }
+      },
+      "center_control_n1": {
+        "mean": 0.3678794411714424,
+        "max": 0.36787944117144245
+      },
+      "non_gaussianity": {
+        "chiral_topological": {
+          "mean": 0.0277604971740468,
+          "se": 0.0007954795284311691
+        },
+        "chiral_trivial": {
+          "mean": 0.026001243868693066,
+          "se": 0.0007117257878554458
+        },
+        "paired_topo_minus_trivial": {
+          "mean": 0.001759253305353733,
+          "se": 0.0010771830116342066
+        }
+      },
+      "negativity_contrast": {
+        "mean": -8.173351075779583e-07,
+        "se": 3.9746985623357655e-06
+      }
+    },
+    "4cells_d0.5_edge_low_loss": {
+      "n": 500,
+      "witness": {
+        "n1": {
+          "chiral_topological": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.44730628938007055,
+            "se": 0.001645360255353089,
+            "certified": 72,
+            "certified_rate": 0.144,
+            "certified_wilson95": [
+              0.11593760751948218,
+              0.177491120874521
+            ],
+            "max": 0.50422944152214
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.4524559727444391,
+            "se": 0.001952273908410711,
+            "certified": 50,
+            "certified_rate": 0.1,
+            "certified_wilson95": [
+              0.07667718662472012,
+              0.1294225082000026
+            ],
+            "max": 0.5365718620149567
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.005149683364368615,
+            "se": 0.002508099885665572
+          }
+        },
+        "n2": {
+          "chiral_topological": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.3095839055588282,
+            "se": 0.0012321581625804863,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.35325344852826956
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.31358206011205725,
+            "se": 0.0014827407365151782,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.37688421107727504
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.003998154553229093,
+            "se": 0.0019216689135190413
+          }
+        },
+        "n3": {
+          "chiral_topological": {
+            "omega_lo": 0.378,
+            "omega_hi": 0.427,
+            "mean": 0.25269197801801324,
+            "se": 0.0010111744952145537,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.28895364616838515
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.378,
+            "omega_hi": 0.427,
+            "mean": 0.2560581689374003,
+            "se": 0.0012197067710098969,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.30833664808889766
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0033661909193870593,
+            "se": 0.0015828676605928735
+          }
+        },
+        "n4": {
+          "chiral_topological": {
+            "omega_lo": 0.375,
+            "omega_hi": 0.441,
+            "mean": 0.218959879214032,
+            "se": 0.0008776819012999371,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.2506014325052259
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.375,
+            "omega_hi": 0.441,
+            "mean": 0.22191607884590364,
+            "se": 0.0010598229221336288,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.2674272891310038
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0029561996318716536,
+            "se": 0.0013760736743913071
+          }
+        },
+        "n5": {
+          "chiral_topological": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.385,
+            "mean": 0.19594742795142184,
+            "se": 0.0007860562340929793,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.22437121500540677
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.385,
+            "mean": 0.19861282076636463,
+            "se": 0.0009497682986960536,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.23944275168966464
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.002665392814942765,
+            "se": 0.0012335034529173826
+          }
+        },
+        "n6": {
+          "chiral_topological": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.378,
+            "mean": 0.17895113567533147,
+            "se": 0.0007181916168160139,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.20497128309269563
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.378,
+            "mean": 0.181396978501149,
+            "se": 0.0008681159531624685,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.21874331778591466
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0024458428258175373,
+            "se": 0.0011276400652936213
+          }
+        }
+      },
+      "center_control_n1": {
+        "mean": 0.36787944117144217,
+        "max": 0.3678794411714426
+      },
+      "non_gaussianity": {
+        "chiral_topological": {
+          "mean": 0.20568675116794594,
+          "se": 0.0021418060161693185
+        },
+        "chiral_trivial": {
+          "mean": 0.20755719078364662,
+          "se": 0.0026561310222218623
+        },
+        "paired_topo_minus_trivial": {
+          "mean": -0.0018704396157006855,
+          "se": 0.0029092011782803884
+        }
+      },
+      "negativity_contrast": {
+        "mean": -0.0023148333925014793,
+        "se": 0.0005629562486996226
+      }
+    },
+    "4cells_d0.5_uniform_loss": {
+      "n": 500,
+      "witness": {
+        "n1": {
+          "chiral_topological": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.37709451640061625,
+            "se": 0.0015863813958083678,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.47531750541520446
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.37943574353058046,
+            "se": 0.0014616137797528038,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.4813428882798209
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0023412271299641744,
+            "se": 0.002102308207080582
+          }
+        },
+        "n2": {
+          "chiral_topological": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.27372099428739355,
+            "se": 0.0011986974028262484,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.34091102029739634
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.276081721361281,
+            "se": 0.001085800569261738,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.34408607100813365
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0023607270738874573,
+            "se": 0.001615824248459689
+          }
+        },
+        "n3": {
+          "chiral_topological": {
+            "omega_lo": 0.378,
+            "omega_hi": 0.427,
+            "mean": 0.2259299178469361,
+            "se": 0.0009905062155759784,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.2802708726346541
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.378,
+            "omega_hi": 0.427,
+            "mean": 0.22792849737909368,
+            "se": 0.000894967713844442,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.28265462699420807
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0019985795321575232,
+            "se": 0.0013392605520888127
+          }
+        },
+        "n4": {
+          "chiral_topological": {
+            "omega_lo": 0.375,
+            "omega_hi": 0.441,
+            "mean": 0.19675776618702315,
+            "se": 0.000862851416492783,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.2436256189209909
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.375,
+            "omega_hi": 0.441,
+            "mean": 0.1985166343232408,
+            "se": 0.0007787805544036467,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.2456081754959195
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0017588681362176275,
+            "se": 0.0011680842651328376
+          }
+        },
+        "n5": {
+          "chiral_topological": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.385,
+            "mean": 0.17658433794341635,
+            "se": 0.0007744734461190249,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.2184092746480035
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.385,
+            "mean": 0.1781720130407418,
+            "se": 0.0006985872034116663,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.22014034598995663
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0015876750973254537,
+            "se": 0.001049128452576675
+          }
+        },
+        "n6": {
+          "chiral_topological": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.378,
+            "mean": 0.16156674346848762,
+            "se": 0.0007086539667753315,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.19969291016503096
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.378,
+            "mean": 0.16302475566539298,
+            "se": 0.0006389645892163785,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.20124845572154293
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.001458012196905356,
+            "se": 0.0009603559510859659
+          }
+        }
+      },
+      "center_control_n1": {
+        "mean": 0.36787944117144217,
+        "max": 0.3678794411714426
+      },
+      "non_gaussianity": {
+        "chiral_topological": {
+          "mean": 0.035056778300131944,
+          "se": 0.001373560948711044
+        },
+        "chiral_trivial": {
+          "mean": 0.03150510562493629,
+          "se": 0.0012492817283941556
+        },
+        "paired_topo_minus_trivial": {
+          "mean": 0.003551672675195659,
+          "se": 0.0011775825452601978
+        }
+      },
+      "negativity_contrast": {
+        "mean": -1.129382782911588e-06,
+        "se": 2.74742015358557e-05
+      }
+    },
+    "4cells_d1_edge_low_loss": {
+      "n": 500,
+      "witness": {
+        "n1": {
+          "chiral_topological": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.4514730933937556,
+            "se": 0.0017535122643535643,
+            "certified": 54,
+            "certified_rate": 0.108,
+            "certified_wilson95": [
+              0.08372241545896647,
+              0.13825528546926177
+            ],
+            "max": 0.5042439391122718
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.456377783228,
+            "se": 0.0019650204750585017,
+            "certified": 78,
+            "certified_rate": 0.156,
+            "certified_wilson95": [
+              0.12683030337229503,
+              0.19041543417696646
+            ],
+            "max": 0.536356675259632
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.004904689834244418,
+            "se": 0.0023581764144038945
+          }
+        },
+        "n2": {
+          "chiral_topological": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.31241454436864613,
+            "se": 0.0012531995901301255,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.3536271144794076
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.3146640191018916,
+            "se": 0.0015564809428833125,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.3771693543770716
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0022494747332454652,
+            "se": 0.0018590363055761463
+          }
+        },
+        "n3": {
+          "chiral_topological": {
+            "omega_lo": 0.378,
+            "omega_hi": 0.427,
+            "mean": 0.2549961090360422,
+            "se": 0.0010216063413338514,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.28966862938172916
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.378,
+            "omega_hi": 0.427,
+            "mean": 0.25682469804715474,
+            "se": 0.0012871983445110137,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.30876374697945813
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0018285890111125673,
+            "se": 0.0015420744428873824
+          }
+        },
+        "n4": {
+          "chiral_topological": {
+            "omega_lo": 0.375,
+            "omega_hi": 0.441,
+            "mean": 0.2209529280464259,
+            "se": 0.0008843809385959187,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.2513800871514693
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.375,
+            "omega_hi": 0.441,
+            "mean": 0.22253999948368566,
+            "se": 0.001120794727790437,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.2678729676559085
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0015870714372597861,
+            "se": 0.001344580402880721
+          }
+        },
+        "n5": {
+          "chiral_topological": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.385,
+            "mean": 0.19772892364113626,
+            "se": 0.0007909401616742638,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.22514896518602884
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.385,
+            "mean": 0.19915160092561698,
+            "se": 0.00100553874337292,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.23987999896096918
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0014226772844806975,
+            "se": 0.0012072605064105926
+          }
+        },
+        "n6": {
+          "chiral_topological": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.378,
+            "mean": 0.18057673877282127,
+            "se": 0.0007220303551054899,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.205729387814305
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.378,
+            "mean": 0.1818777641396794,
+            "se": 0.0009197460279284772,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.21916551065340514
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0013010253668581438,
+            "se": 0.0011048155514744057
+          }
+        }
+      },
+      "center_control_n1": {
+        "mean": 0.36787944117144217,
+        "max": 0.3678794411714426
+      },
+      "non_gaussianity": {
+        "chiral_topological": {
+          "mean": 0.21194716372418748,
+          "se": 0.003109742135113501
+        },
+        "chiral_trivial": {
+          "mean": 0.21472458341381473,
+          "se": 0.003256193265489493
+        },
+        "paired_topo_minus_trivial": {
+          "mean": -0.002777419689627216,
+          "se": 0.0027835514302080493
+        }
+      },
+      "negativity_contrast": {
+        "mean": -0.0019818421935142772,
+        "se": 0.0005339659642110718
+      }
+    },
+    "4cells_d1_uniform_loss": {
+      "n": 500,
+      "witness": {
+        "n1": {
+          "chiral_topological": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.3932756324884881,
+            "se": 0.002042793510524713,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.49636762374054033
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.3939097770047515,
+            "se": 0.002063814387924781,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.4985651667380348
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0006341445162633858,
+            "se": 0.002011088577562559
+          }
+        },
+        "n2": {
+          "chiral_topological": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.2831156827301739,
+            "se": 0.0013011375246144506,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.34647231074130325
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.2833546319185856,
+            "se": 0.0013348599859416186,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.34797639201731745
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.00023894918841169143,
+            "se": 0.0015193821465875792
+          }
+        },
+        "n3": {
+          "chiral_topological": {
+            "omega_lo": 0.378,
+            "omega_hi": 0.427,
+            "mean": 0.23315903729548204,
+            "se": 0.0010414500426423434,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.28358592977803593
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.378,
+            "omega_hi": 0.427,
+            "mean": 0.23336854830027118,
+            "se": 0.001068835857297981,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.2849106340141151
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.00020951100478914625,
+            "se": 0.001254708782465221
+          }
+        },
+        "n4": {
+          "chiral_topological": {
+            "omega_lo": 0.375,
+            "omega_hi": 0.441,
+            "mean": 0.20284860263797855,
+            "se": 0.0008947397408897249,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.24603210167877934
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.375,
+            "omega_hi": 0.441,
+            "mean": 0.2030363744339729,
+            "se": 0.0009182003594238842,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.24720734807056494
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.00018777179599435302,
+            "se": 0.001092482924549512
+          }
+        },
+        "n5": {
+          "chiral_topological": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.385,
+            "mean": 0.18194629204022136,
+            "se": 0.000796880790899267,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.2204325638307331
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.385,
+            "mean": 0.18211760561035065,
+            "se": 0.0008176901610640636,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.22144361068977653
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.00017131357012927312,
+            "se": 0.0009802628625924918
+          }
+        },
+        "n6": {
+          "chiral_topological": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.378,
+            "mean": 0.16641111834997885,
+            "se": 0.0007255393997402774,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.20146325965176848
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.378,
+            "mean": 0.16656952885558887,
+            "se": 0.0007444181442892951,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.2023701559652212
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0001584105056100377,
+            "se": 0.0008967407803360206
+          }
+        }
+      },
+      "center_control_n1": {
+        "mean": 0.3678794411714422,
+        "max": 0.3678794411714426
+      },
+      "non_gaussianity": {
+        "chiral_topological": {
+          "mean": 0.06807885660221422,
+          "se": 0.0037377479507825057
+        },
+        "chiral_trivial": {
+          "mean": 0.06708852316545631,
+          "se": 0.0037095643800939
+        },
+        "paired_topo_minus_trivial": {
+          "mean": 0.0009903334367579062,
+          "se": 0.0014041967743550442
+        }
+      },
+      "negativity_contrast": {
+        "mean": -0.00018354674300656755,
+        "se": 0.00017502841159861723
+      }
+    },
+    "4cells_d1.5_edge_low_loss": {
+      "n": 500,
+      "witness": {
+        "n1": {
+          "chiral_topological": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.45305618358640115,
+            "se": 0.0018551463087089287,
+            "certified": 37,
+            "certified_rate": 0.074,
+            "certified_wilson95": [
+              0.05416087387750307,
+              0.10033530111082659
+            ],
+            "max": 0.504223355656841
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.45787358132718997,
+            "se": 0.002094382524879448,
+            "certified": 64,
+            "certified_rate": 0.128,
+            "certified_wilson95": [
+              0.10152638796079462,
+              0.1601463282261975
+            ],
+            "max": 0.5363818748955171
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.004817397740788835,
+            "se": 0.002197921985157883
+          }
+        },
+        "n2": {
+          "chiral_topological": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.31387035237490274,
+            "se": 0.0012611977071016113,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.35370569520948625
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.31638453966525243,
+            "se": 0.0015498953111954313,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.37667388273482527
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0025141872903496855,
+            "se": 0.0017470404752056993
+          }
+        },
+        "n3": {
+          "chiral_topological": {
+            "omega_lo": 0.378,
+            "omega_hi": 0.427,
+            "mean": 0.2562352503540432,
+            "se": 0.0010175307415039307,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.28969147052140376
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.378,
+            "omega_hi": 0.427,
+            "mean": 0.25830423697523563,
+            "se": 0.0012710361206057347,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.3081091151281493
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0020689866211924704,
+            "se": 0.001451203737439979
+          }
+        },
+        "n4": {
+          "chiral_topological": {
+            "omega_lo": 0.375,
+            "omega_hi": 0.441,
+            "mean": 0.22204578155944682,
+            "se": 0.0008768905863357271,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.2514188133596932
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.375,
+            "omega_hi": 0.441,
+            "mean": 0.22384894474232034,
+            "se": 0.0011030637581772933,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.26720870342401193
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0018031631828734978,
+            "se": 0.0012661688901897678
+          }
+        },
+        "n5": {
+          "chiral_topological": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.385,
+            "mean": 0.19871655006554448,
+            "se": 0.000782251138311436,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.22521765622092885
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.385,
+            "mean": 0.20033611055709122,
+            "se": 0.0009878892303420463,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.23923601505654946
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0016195604915467446,
+            "se": 0.0011372905066706937
+          }
+        },
+        "n6": {
+          "chiral_topological": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.378,
+            "mean": 0.18148442474269866,
+            "se": 0.0007129299664139476,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.20582071112733602
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.378,
+            "mean": 0.1829670833255646,
+            "se": 0.000902620104795518,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.2185479777692507
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0014826585828659317,
+            "se": 0.0010410482048558746
+          }
+        }
+      },
+      "center_control_n1": {
+        "mean": 0.36787944117144217,
+        "max": 0.3678794411714426
+      },
+      "non_gaussianity": {
+        "chiral_topological": {
+          "mean": 0.21358593595558859,
+          "se": 0.00389386622133454
+        },
+        "chiral_trivial": {
+          "mean": 0.21505115349735057,
+          "se": 0.0041140136494994504
+        },
+        "paired_topo_minus_trivial": {
+          "mean": -0.00146521754176202,
+          "se": 0.002648106712852979
+        }
+      },
+      "negativity_contrast": {
+        "mean": -0.0020145192070666093,
+        "se": 0.0004635190820291237
+      }
+    },
+    "4cells_d1.5_uniform_loss": {
+      "n": 500,
+      "witness": {
+        "n1": {
+          "chiral_topological": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.40194422741723124,
+            "se": 0.0024375527998675545,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.49641305571791705
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.4028048195124601,
+            "se": 0.002459716176873016,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.4985311231022467
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0008605920952289274,
+            "se": 0.0016233707964049759
+          }
+        },
+        "n2": {
+          "chiral_topological": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.2876169217705298,
+            "se": 0.0014460888503952224,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.34641827200139313
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.5,
+            "omega_hi": 0.5,
+            "mean": 0.28848858645850833,
+            "se": 0.0014568364084163723,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.34728815134729163
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0008716646879786134,
+            "se": 0.0012377615364021198
+          }
+        },
+        "n3": {
+          "chiral_topological": {
+            "omega_lo": 0.378,
+            "omega_hi": 0.427,
+            "mean": 0.23659163757581295,
+            "se": 0.0011328528737646155,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.28354770682718694
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.378,
+            "omega_hi": 0.427,
+            "mean": 0.2373439440522893,
+            "se": 0.0011422944954020385,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.28457308675553894
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0007523064764763634,
+            "se": 0.001023624593784667
+          }
+        },
+        "n4": {
+          "chiral_topological": {
+            "omega_lo": 0.375,
+            "omega_hi": 0.441,
+            "mean": 0.20573016964313856,
+            "se": 0.0009634207143862141,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.2461703884699013
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.375,
+            "omega_hi": 0.441,
+            "mean": 0.20639844250125577,
+            "se": 0.0009717016648760375,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.2470799345637578
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0006682728581172041,
+            "se": 0.0008917949530488579
+          }
+        },
+        "n5": {
+          "chiral_topological": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.385,
+            "mean": 0.1844779998951765,
+            "se": 0.0008529811888591097,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.22053514152449236
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.385,
+            "mean": 0.18508449751902184,
+            "se": 0.0008603998070711973,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.22136016626462998
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0006064976238454174,
+            "se": 0.0008004395702121803
+          }
+        },
+        "n6": {
+          "chiral_topological": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.378,
+            "mean": 0.16869564390672073,
+            "se": 0.0007736139914004933,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.20154438583707643
+          },
+          "chiral_trivial": {
+            "omega_lo": 0.314,
+            "omega_hi": 0.378,
+            "mean": 0.16925451508392142,
+            "se": 0.0007803758712745805,
+            "certified": 0,
+            "certified_rate": 0.0,
+            "certified_wilson95": [
+              0.0,
+              0.007624618530903363
+            ],
+            "max": 0.20230432549984567
+          },
+          "paired_topo_minus_trivial": {
+            "mean": -0.0005588711772007105,
+            "se": 0.0007323819846333828
+          }
+        }
+      },
+      "center_control_n1": {
+        "mean": 0.36787944117144217,
+        "max": 0.36787944117144245
+      },
+      "non_gaussianity": {
+        "chiral_topological": {
+          "mean": 0.09215844307856046,
+          "se": 0.005438125006111549
+        },
+        "chiral_trivial": {
+          "mean": 0.08951643052446852,
+          "se": 0.005401694459861482
+        },
+        "paired_topo_minus_trivial": {
+          "mean": 0.002642012554091922,
+          "se": 0.0011386126715547825
+        }
+      },
+      "negativity_contrast": {
+        "mean": -0.0003117910615686056,
+        "se": 0.00015112118239233427
+      }
+    }
+  }
+}

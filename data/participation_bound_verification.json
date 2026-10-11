@@ -1,0 +1,352 @@
+{
+  "status": "PARTICIPATION_BOUND_RECOMPUTED",
+  "scope": "empirical finite-time diagnostic; not an independently proved bound",
+  "definition": {
+    "delta_0": 0.19623,
+    "gamma_meas": "-ln[delta_-(T)/delta_-(0)]/T over T=2*pi; a realization with delta_-(T) <= 0 has an unbounded measured rate (Gamma_meas = +inf)",
+    "gamma_eff": "sum_j gamma_j |u_{e,j}|^2 with the record's own disorder-drawn rates and the clean topological edge-mode weights; rates are clamped at zero, so gamma_eff = 0 is possible at large disorder",
+    "mean_level_ratio": "valid-only condition-level ratio: Gamma_meas at the mean negativity over realizations with delta_-(T) > 0, divided by the mean Gamma_eff over those same realizations (tab:bound-verification instead uses the mean over all realizations)",
+    "compliance": "fraction of all finite-negativity realizations with Gamma_meas >= Gamma_eff, evaluated by the ordinary rule (fully decayed: +inf >= gamma_eff; zero-rate: Gamma_meas >= 0)",
+    "file_selection": "largest available N_MC per size (same rule as analyze_chiral_production)",
+    "sector": "chiral_topological records only"
+  },
+  "bound_verification": [
+    {
+      "n_cells": 2,
+      "n_modes": 4,
+      "n_records": 500,
+      "file": "data/chiral_production/chiral_floquet_2cells_NMC500.json",
+      "n_mc": 500,
+      "edge_weight_site0": 0.013425371149954802,
+      "gamma_eff": 0.19463253661424798,
+      "negativity_T_mean": 0.0236849081539015,
+      "negativity_0": 0.19623,
+      "gamma_meas": 0.3365250710772519,
+      "ratio": 1.7290278230521543
+    },
+    {
+      "n_cells": 3,
+      "n_modes": 6,
+      "n_records": 500,
+      "file": "data/chiral_production/chiral_floquet_3cells_NMC500.json",
+      "n_mc": 500,
+      "edge_weight_site0": 0.012206705209909855,
+      "gamma_eff": 0.19511975925707958,
+      "negativity_T_mean": 0.004778816053944193,
+      "negativity_0": 0.19623,
+      "gamma_meas": 0.5912756715979283,
+      "ratio": 3.0303218589917096
+    },
+    {
+      "n_cells": 4,
+      "n_modes": 8,
+      "n_records": 500,
+      "file": "data/chiral_production/chiral_floquet_4cells_NMC500.json",
+      "n_mc": 500,
+      "edge_weight_site0": 0.012203474519611013,
+      "gamma_eff": 0.19512105088703158,
+      "negativity_T_mean": 0.00477861928933829,
+      "negativity_0": 0.19623,
+      "gamma_meas": 0.5912822248328777,
+      "ratio": 3.030335384854041
+    }
+  ],
+  "extended_bound": {
+    "edge_low_loss/d=0": {
+      "per_size": {
+        "2": {
+          "n_records": 500,
+          "n_fully_decayed": 0,
+          "n_ratio_valid": 500,
+          "mean_negativity_T": 0.0236849081539015,
+          "mean_level_ratio": 1.7290278230521536,
+          "compliance": 1.0
+        },
+        "3": {
+          "n_records": 500,
+          "n_fully_decayed": 164,
+          "n_ratio_valid": 336,
+          "mean_negativity_T": 0.007111333413607429,
+          "mean_level_ratio": 2.7060922532330745,
+          "compliance": 1.0
+        },
+        "4": {
+          "n_records": 500,
+          "n_fully_decayed": 164,
+          "n_ratio_valid": 336,
+          "mean_negativity_T": 0.00711104060913436,
+          "mean_level_ratio": 2.7061079253767435,
+          "compliance": 1.0
+        }
+      },
+      "ratio_range": [
+        1.7290278230521536,
+        2.7061079253767435
+      ],
+      "compliance": {
+        "2": 1.0,
+        "3": 1.0,
+        "4": 1.0
+      }
+    },
+    "edge_low_loss/d=0.5": {
+      "per_size": {
+        "2": {
+          "n_records": 500,
+          "n_fully_decayed": 1,
+          "n_ratio_valid": 499,
+          "mean_negativity_T": 0.023286942357658286,
+          "mean_level_ratio": 1.7343030826475918,
+          "compliance": 1.0
+        },
+        "3": {
+          "n_records": 500,
+          "n_fully_decayed": 184,
+          "n_ratio_valid": 316,
+          "mean_negativity_T": 0.008128944596561188,
+          "mean_level_ratio": 2.804834577121376,
+          "compliance": 1.0
+        },
+        "4": {
+          "n_records": 500,
+          "n_fully_decayed": 183,
+          "n_ratio_valid": 317,
+          "mean_negativity_T": 0.008108935023195693,
+          "mean_level_ratio": 2.802745074901506,
+          "compliance": 1.0
+        }
+      },
+      "ratio_range": [
+        1.7343030826475918,
+        2.804834577121376
+      ],
+      "compliance": {
+        "2": 1.0,
+        "3": 1.0,
+        "4": 1.0
+      }
+    },
+    "edge_low_loss/d=1": {
+      "per_size": {
+        "2": {
+          "n_records": 500,
+          "n_fully_decayed": 1,
+          "n_ratio_valid": 499,
+          "mean_negativity_T": 0.023562648158013882,
+          "mean_level_ratio": 1.7219223929952254,
+          "compliance": 0.864
+        },
+        "3": {
+          "n_records": 500,
+          "n_fully_decayed": 166,
+          "n_ratio_valid": 334,
+          "mean_negativity_T": 0.010403611939083924,
+          "mean_level_ratio": 3.0403108369130165,
+          "compliance": 1.0
+        },
+        "4": {
+          "n_records": 500,
+          "n_fully_decayed": 166,
+          "n_ratio_valid": 334,
+          "mean_negativity_T": 0.010410390878862199,
+          "mean_level_ratio": 3.039616451050764,
+          "compliance": 1.0
+        }
+      },
+      "ratio_range": [
+        1.7219223929952254,
+        3.0403108369130165
+      ],
+      "compliance": {
+        "2": 0.864,
+        "3": 1.0,
+        "4": 1.0
+      }
+    },
+    "edge_low_loss/d=1.5": {
+      "per_size": {
+        "2": {
+          "n_records": 500,
+          "n_fully_decayed": 2,
+          "n_ratio_valid": 416,
+          "mean_negativity_T": 0.02382015598950049,
+          "mean_level_ratio": 1.3840651058928262,
+          "compliance": 0.774
+        },
+        "3": {
+          "n_records": 500,
+          "n_fully_decayed": 183,
+          "n_ratio_valid": 235,
+          "mean_negativity_T": 0.010255110876635665,
+          "mean_level_ratio": 2.7063011747799366,
+          "compliance": 0.994
+        },
+        "4": {
+          "n_records": 500,
+          "n_fully_decayed": 183,
+          "n_ratio_valid": 235,
+          "mean_negativity_T": 0.010262468897363888,
+          "mean_level_ratio": 2.7056256117582227,
+          "compliance": 0.994
+        }
+      },
+      "ratio_range": [
+        1.3840651058928262,
+        2.7063011747799366
+      ],
+      "compliance": {
+        "2": 0.774,
+        "3": 0.994,
+        "4": 0.994
+      }
+    },
+    "uniform_loss/d=0": {
+      "per_size": {
+        "2": {
+          "n_records": 500,
+          "n_fully_decayed": 486,
+          "n_ratio_valid": 14,
+          "mean_negativity_T": 0.0002642874790301868,
+          "mean_level_ratio": 5.260075065479967,
+          "compliance": 1.0
+        },
+        "3": {
+          "n_records": 500,
+          "n_fully_decayed": 486,
+          "n_ratio_valid": 14,
+          "mean_negativity_T": 0.0002643757563619488,
+          "mean_level_ratio": 5.259809305107335,
+          "compliance": 1.0
+        },
+        "4": {
+          "n_records": 500,
+          "n_fully_decayed": 486,
+          "n_ratio_valid": 14,
+          "mean_negativity_T": 0.0002644972279132238,
+          "mean_level_ratio": 5.259443758014831,
+          "compliance": 1.0
+        }
+      },
+      "ratio_range": [
+        5.259443758014831,
+        5.260075065479967
+      ],
+      "compliance": {
+        "2": 1.0,
+        "3": 1.0,
+        "4": 1.0
+      }
+    },
+    "uniform_loss/d=0.5": {
+      "per_size": {
+        "2": {
+          "n_records": 500,
+          "n_fully_decayed": 475,
+          "n_ratio_valid": 25,
+          "mean_negativity_T": 0.001068308501238976,
+          "mean_level_ratio": 5.4293141356589345,
+          "compliance": 1.0
+        },
+        "3": {
+          "n_records": 500,
+          "n_fully_decayed": 475,
+          "n_ratio_valid": 25,
+          "mean_negativity_T": 0.0010685328762770005,
+          "mean_level_ratio": 5.429095424002806,
+          "compliance": 1.0
+        },
+        "4": {
+          "n_records": 500,
+          "n_fully_decayed": 475,
+          "n_ratio_valid": 25,
+          "mean_negativity_T": 0.0010695906965291788,
+          "mean_level_ratio": 5.4280649221333706,
+          "compliance": 1.0
+        }
+      },
+      "ratio_range": [
+        5.4280649221333706,
+        5.4293141356589345
+      ],
+      "compliance": {
+        "2": 1.0,
+        "3": 1.0,
+        "4": 1.0
+      }
+    },
+    "uniform_loss/d=1": {
+      "per_size": {
+        "2": {
+          "n_records": 500,
+          "n_fully_decayed": 421,
+          "n_ratio_valid": 79,
+          "mean_negativity_T": 0.008843817546836887,
+          "mean_level_ratio": 8.408324465554564,
+          "compliance": 1.0
+        },
+        "3": {
+          "n_records": 500,
+          "n_fully_decayed": 421,
+          "n_ratio_valid": 79,
+          "mean_negativity_T": 0.008846063761672447,
+          "mean_level_ratio": 8.40763555228398,
+          "compliance": 1.0
+        },
+        "4": {
+          "n_records": 500,
+          "n_fully_decayed": 421,
+          "n_ratio_valid": 79,
+          "mean_negativity_T": 0.00885036229367125,
+          "mean_level_ratio": 8.406317681643527,
+          "compliance": 1.0
+        }
+      },
+      "ratio_range": [
+        8.406317681643527,
+        8.408324465554564
+      ],
+      "compliance": {
+        "2": 1.0,
+        "3": 1.0,
+        "4": 1.0
+      }
+    },
+    "uniform_loss/d=1.5": {
+      "per_size": {
+        "2": {
+          "n_records": 500,
+          "n_fully_decayed": 370,
+          "n_ratio_valid": 61,
+          "mean_negativity_T": 0.008196194250503828,
+          "mean_level_ratio": 6.842401373755641,
+          "compliance": 1.0
+        },
+        "3": {
+          "n_records": 500,
+          "n_fully_decayed": 370,
+          "n_ratio_valid": 61,
+          "mean_negativity_T": 0.008197998903875929,
+          "mean_level_ratio": 6.841927007152813,
+          "compliance": 1.0
+        },
+        "4": {
+          "n_records": 500,
+          "n_fully_decayed": 370,
+          "n_ratio_valid": 61,
+          "mean_negativity_T": 0.008203381687666352,
+          "mean_level_ratio": 6.840512722270819,
+          "compliance": 1.0
+        }
+      },
+      "ratio_range": [
+        6.840512722270819,
+        6.842401373755641
+      ],
+      "compliance": {
+        "2": 1.0,
+        "3": 1.0,
+        "4": 1.0
+      }
+    }
+  }
+}

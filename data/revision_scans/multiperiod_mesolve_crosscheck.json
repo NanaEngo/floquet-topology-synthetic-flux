@@ -1,0 +1,61 @@
+{
+  "status": "MULTIPERIOD_MESOLVE_CROSSCHECK",
+  "claim_scope": "physicality check of the four-period revival; exact Lindblad vs Monte Carlo on one realization",
+  "design": {
+    "n_cells": 2,
+    "n_max": 2,
+    "edge_site": true,
+    "kerr": 0.5,
+    "gamma_edge": 0.0001,
+    "gamma_bulk": 0.2,
+    "periods": 4,
+    "ntraj": 200,
+    "wigner_grid": 31,
+    "seed": 20260817
+  },
+  "records": [
+    {
+      "n_cells": 2,
+      "n_modes": 4,
+      "n_max": 2,
+      "sector": "chiral_topological",
+      "periods": 4,
+      "ntraj": 200,
+      "draw_seed": 20260817,
+      "trajectory_seed": 20260917,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 0,
+      "wigner_grid": 31,
+      "kerr": 0.5,
+      "negativity_mesolve": 0.07541927277709067,
+      "negativity_mcsolve_ntraj200": 0.08222145533088487,
+      "diff": 0.006802182553794209,
+      "edge_population_mesolve": 0.7185737838668436
+    },
+    {
+      "n_cells": 2,
+      "n_modes": 4,
+      "n_max": 2,
+      "sector": "chiral_trivial",
+      "periods": 4,
+      "ntraj": 200,
+      "draw_seed": 20260817,
+      "trajectory_seed": 20260918,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 0,
+      "wigner_grid": 31,
+      "kerr": 0.5,
+      "negativity_mesolve": 0.0,
+      "negativity_mcsolve_ntraj200": 0.0,
+      "diff": 0.0,
+      "edge_population_mesolve": 0.07537570180192521
+    }
+  ],
+  "software": {
+    "numpy": "1.26.4",
+    "qutip": "5.3.1"
+  },
+  "elapsed_seconds": 9.4
+}

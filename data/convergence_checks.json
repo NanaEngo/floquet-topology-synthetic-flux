@@ -1,0 +1,2462 @@
+{
+  "status": "CONVERGENCE_CHECKS_COMPLETED",
+  "claim_scope": "reviewer-requested descriptive convergence diagnostics only",
+  "software": {
+    "qutip": "5.3.1",
+    "numpy": "1.26.4"
+  },
+  "design": {
+    "n_cells": 2,
+    "kerr": 0.5,
+    "gamma_edge": 0.0001,
+    "gamma_bulk": 0.2,
+    "period": 6.283185307179586,
+    "n_mc": 20,
+    "ntraj_production": 10,
+    "wigner_grid_production": 31,
+    "disorder_levels_tested": [
+      0.0
+    ],
+    "independent_unit": "disorder realization; trajectories nested"
+  },
+  "records": [
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 0,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.026652521497219885,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 0,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.024263245226420607,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 1,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.026652521497219885,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 1,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 2,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.010519180727142693,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 2,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.007252515530163457,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 3,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.010534570851784832,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 3,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.007252520521306571,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 4,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.026652521497219885,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 4,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0028191627228693907,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 5,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.026652521497219885,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 5,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 6,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.026652521497219885,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 6,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0072524887600753036,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 7,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.026652521497219885,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 7,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.006955074515479309,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 8,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.010560581027797286,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 8,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 9,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.026652521497219885,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 9,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 10,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.002752921786430516,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 10,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 11,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.026652521497219885,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 11,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 12,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.026652521497219885,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 12,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 13,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.026652521497219885,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 13,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.01756450155237533,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 14,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.026652521497219885,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 14,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 15,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.026652521497219885,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 15,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.017000683734229805,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 16,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.026652521497219885,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 16,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.03832050897049225,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 17,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.026652521497219885,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 17,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 18,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.010560503406827607,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 18,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0072525036537160765,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 19,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.026652521497219885,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 19,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0009617888259470624,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 0,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 0,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 1,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 1,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 2,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 2,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 3,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 3,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 4,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 4,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 5,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 5,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 6,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 6,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.00015934273047486707,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 7,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.0001370551481011833,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 7,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 8,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 8,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 9,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 9,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 10,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 10,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 11,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 11,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 12,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 12,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 13,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 13,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 14,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 14,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 15,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 15,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 16,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 16,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 17,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 17,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 18,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 18,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 19,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 2,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 19,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 0,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.004724769228628923,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 0,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0012714789669548126,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 1,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.01838018843996033,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 1,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.005009848591546494,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 2,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.01838018843996033,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 2,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0045401298710226355,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 3,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.004724743880567919,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 3,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 4,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.004724334155159249,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 4,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 5,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.01838018843996033,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 5,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0051591637648480465,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 6,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.01838018843996033,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 6,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 7,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.01838018843996033,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 7,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 8,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.004674169407214011,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 8,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.00497196627930762,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 9,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.01838018843996033,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 9,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.004549608455029901,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 10,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.01838018843996033,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 10,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.001271447945525843,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 11,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.01838018843996033,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 11,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 12,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.01838018843996033,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 12,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.021847365323396276,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 13,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.01838018843996033,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 13,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 14,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.004724374689044794,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 14,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 15,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.0047244001136690205,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 15,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.012695111875420832,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 16,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.01838018843996033,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 16,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 17,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.01838018843996033,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 17,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.005396674844860309,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 18,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.01838018843996033,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 18,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 19,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.01838018843996033,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 19,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 0,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 0,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 1,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 1,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 2,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 2,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 3,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 3,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 4,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 4,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 5,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 5,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 6,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 6,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 7,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 7,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 8,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 8,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 9,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 9,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 10,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 10,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 11,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 11,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 12,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 12,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 13,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 13,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 14,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 14,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 15,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 15,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 16,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 16,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 17,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 17,
+      "sector": "chiral_trivial",
+      "negativity_edge": 1.908347126902261e-05,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 18,
+      "sector": "chiral_topological",
+      "negativity_edge": 1.5932818599923326e-05,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 18,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 19,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 3,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 19,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 0,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.04237767647960456,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 0,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.00041693157460428163,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 1,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.04237767647960456,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 1,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0011328740120962791,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 2,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.04237767647960456,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 2,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.03573035571676715,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 3,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.04237767647960456,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 3,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 4,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.04237767647960456,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 4,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.024070511870090475,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 5,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.04237767647960456,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 5,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.027451781883889904,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 6,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.04237767647960456,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 6,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.01209290178729557,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 7,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.04237767647960456,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 7,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0049748483741695,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 8,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.018207819301528528,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 8,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.012937269002575186,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 9,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.04237767647960456,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 9,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.012003428364891232,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 10,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.04237767647960456,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 10,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.025646664712518554,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 11,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.04237767647960456,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 11,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.02745178718469846,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 12,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.04237767647960456,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 12,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0014151634360076838,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 13,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.04237767647960456,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 13,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.04435614107956472,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 14,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.04237767647960456,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 14,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.001240489235424426,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 15,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.04237767647960456,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 15,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.002794375278683301,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 16,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.04237767647960456,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 16,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.017536179018819053,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 17,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.04237767647960456,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 17,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.04435614107956472,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 18,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.04237767647960456,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 18,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.02275983203045918,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 19,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.04237767647960456,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "edge_low_loss",
+      "disorder_level": 0.0,
+      "sample": 19,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.007391238577771635,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 0,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 0,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 1,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 1,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 2,
+      "sector": "chiral_topological",
+      "negativity_edge": 8.627669747002149e-05,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 2,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 3,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 3,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 4,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 4,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 5,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 5,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 6,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 6,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 7,
+      "sector": "chiral_topological",
+      "negativity_edge": 1.0316692818733802e-05,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 7,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 8,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 8,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 9,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 9,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 10,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 10,
+      "sector": "chiral_trivial",
+      "negativity_edge": 2.1242340245483095e-05,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 11,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.0006681121864661392,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 11,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 12,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 12,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 13,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 13,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 14,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 14,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 15,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 15,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 16,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 16,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 17,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 17,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 18,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 18,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 19,
+      "sector": "chiral_topological",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    },
+    {
+      "n_max": 4,
+      "n_modes": 4,
+      "loss_profile": "uniform_loss",
+      "disorder_level": 0.0,
+      "sample": 19,
+      "sector": "chiral_trivial",
+      "negativity_edge": 0.0,
+      "ntraj": 10
+    }
+  ],
+  "grid_convergence": [
+    {
+      "grid_points": 21,
+      "negativity_edge": 0.026946954621979286
+    },
+    {
+      "grid_points": 31,
+      "negativity_edge": 0.02564601594914103
+    },
+    {
+      "grid_points": 41,
+      "negativity_edge": 0.026797086182361814
+    },
+    {
+      "grid_points": 51,
+      "negativity_edge": 0.026103784200832345
+    },
+    {
+      "grid_points": 61,
+      "negativity_edge": 0.02621335260417171
+    }
+  ],
+  "grid_reference_negativity": 0.02621335260417171,
+  "trajectory_count_sensitivity": [
+    {
+      "ntraj": 10,
+      "negativity_edge": 0.026652521497219885
+    },
+    {
+      "ntraj": 50,
+      "negativity_edge": 0.026652521497219663
+    },
+    {
+      "ntraj": 200,
+      "negativity_edge": 0.02564601594914103
+    }
+  ],
+  "elapsed_seconds": 30.909948110580444
+}

@@ -1,0 +1,242 @@
+{
+ "manifest_status": "RUN_MANIFEST_TRACK_A_2608 (21 runs; current production provenance)",
+ "date": "2026-08-14",
+ "scope": "Track A V2608 \u2014 seeds, commands and provenance for every generated output",
+ "model": "Two-step chiral Floquet SSH chain (independent of the archived FL_QOM labels)",
+ "period": "T = 2*pi, half-period steps A (intracell J_A) and B (intercell J_B)",
+ "candidates": {
+  "chiral_topological": {
+   "intra_A": 0.1,
+   "inter_B": 1.2,
+   "nu_0": -1,
+   "nu_pi": 0
+  },
+  "chiral_trivial": {
+   "intra_A": 1.2,
+   "inter_B": 0.1,
+   "nu_0": 0,
+   "nu_pi": 0
+  }
+ },
+ "disorder_levels": [
+  0.0,
+  0.5,
+  1.0,
+  1.5
+ ],
+ "base_seed": 20260814,
+ "seed_scheme": {
+  "disorder_draw": "base_seed + profile_index*1e6 + disorder_index*1e4 + sample",
+  "trajectory": "draw_seed + 100 + sector_index",
+  "independent_unit": "disorder realization; quantum trajectories nested within",
+  "paired_design": "same disorder draw used across sectors"
+ },
+ "runs": [
+  {
+   "id": "bootstrap_contrast_cis",
+   "script": "local bootstrap (10^4 resamples, seeded)",
+   "output": "data/bootstrap_contrast_cis.json",
+   "job": "local",
+   "design": "percentile bootstrap over independent disorder realizations, zero-disorder conditions",
+   "status": "COMPLETED",
+   "role": "4-mode +0.01673 [0.01565,0.01778] (n=500); 6-mode -0.00210 [-0.00322,-0.00103] (n=500); 8-mode -0.00141 [-0.00392,+0.00097] (n=100)"
+  },
+  {
+   "id": "chiral_phase_audit",
+   "script": "scripts/scan_floquet_phase_audit.py",
+   "output": "data/chiral_floquet_phase_audit.json",
+   "jobs": "local",
+   "resolution": "20x20 and 40x40 momentum ladder",
+   "status": "COMPLETED",
+   "role": "coherent bulk invariant and finite-chain edge diagnostic selection"
+  },
+  {
+   "id": "chiral_pilot",
+   "job": 15336,
+   "sbatch": "scripts/trackA_chiral_floquet_pilot.sbatch",
+   "script": "scripts/run_chiral_floquet_dynamics.py",
+   "output": "data/chiral_pilot_analysis.json",
+   "design": "2 cells/4 modes and 3 cells/6 modes, edge_site cat, n_mc=2, ntraj=5",
+   "status": "COMPLETED",
+   "role": "fail-closed mechanistic pilot (edge-site Wigner persistence not robust)"
+  },
+  {
+   "id": "chiral_production",
+   "job": 15338,
+   "sbatch": "scripts/trackA_chiral_floquet_production.sbatch",
+   "script": "scripts/run_chiral_floquet_dynamics.py",
+   "output": "data/chiral_production_analysis.json",
+   "design": "2 cells/4 modes n_mc=500; 3 cells/6 modes n_mc=500; 4 cells/8 modes n_mc=300; ntraj=10; 4 disorder levels; edge_low_loss + uniform_loss; n_max=2; wigner 31x31; kerr 0.5; gamma_edge 1e-4; gamma_bulk 0.2; t_stop=T; n_time=9; historical nested 4-cell comparison n_mc=100",
+   "status": "COMPLETED",
+   "role": "primary finite-time contrast (positive at 2 cells, negative at 3-4; current 4-cell N_MC=300 superset is primary)"
+  },
+  {
+   "id": "convergence_checks",
+   "script": "scripts/run_convergence_checks.py",
+   "output": "data/convergence_checks.json",
+   "job": "local (setsid, 31 s)",
+   "design": "local negativity vs cutoff (n_max=2,3,4), Wigner grid 21-61, trajectories 10 vs 200",
+   "status": "COMPLETED",
+   "role": "reviewer-requested convergence diagnostics (SI S9)"
+  },
+  {
+   "id": "cross_solver_benchmark",
+   "script": "scripts/run_cross_solver_benchmark.py",
+   "output": "data/cross_solver_benchmark.json",
+   "job": "local (background)",
+   "design": "QuTiP mesolve (exact Lindblad) vs mcsolve (Monte Carlo), 2 cells/4 modes, n_max=2, ntraj=200, 8 conditions (2 sectors x 2 profiles x 2 disorder levels 0.0/0.5)",
+   "status": "COMPLETED",
+   "role": "independent-solver cross-check: mean Uhlmann fidelity 0.99957, max trace distance 1.93e-2, max occupation RMSE 6.7e-3"
+  },
+  {
+   "id": "edge_mode_convergence",
+   "job": 15344,
+   "sbatch": "scripts/trackA_edge_mode_convergence.sbatch",
+   "script": "scripts/analyze_edge_mode_convergence.py",
+   "output": "data/edge_mode_convergence_analysis.json",
+   "design": "n_max = 2, 3, 4 cutoff panel",
+   "status": "COMPLETED",
+   "role": "cutoff panel; residuals 0.03883 / 0.02821 / 0.03557 (non-monotone)"
+  },
+  {
+   "id": "edge_mode_covariant",
+   "job": 15353,
+   "sbatch": "scripts/trackA_edge_mode_covariant.sbatch",
+   "script": "scripts/run_chiral_edge_mode_pilot.py",
+   "output": "data/edge_mode_covariant_analysis.json",
+   "design": "micromotion-covariant edge observable, common-site vs mode-resolved passive reference",
+   "status": "COMPLETED",
+   "role": "corrected covariant pilot; common-site passive contrast 0.000388, max passive residuals 0.03956/0.38257"
+  },
+  {
+   "id": "edge_mode_pilot",
+   "job": 15343,
+   "sbatch": "scripts/trackA_edge_mode_pilot.sbatch",
+   "script": "scripts/run_chiral_edge_mode_pilot.py",
+   "output": "data/edge_mode_pilot_analysis.json",
+   "design": "common edge-site vs edge-mode preparation, Kerr-free vs Kerr, 4 conditions",
+   "status": "COMPLETED",
+   "role": "collective edge-mode diagnostic; passive-reference residuals non-monotone"
+  },
+  {
+   "id": "observable_validation",
+   "script": "scripts/run_observable_validation.py",
+   "output": "data/observable_validation.json",
+   "job": "local",
+   "design": "G5 items 2/4/7/8: normalization/positivity, integrator-budget convergence, Gaussian negative control (cutoff scan), known non-Gaussian cat benchmark",
+   "status": "COMPLETED",
+   "role": "trace=1, min eigenvalue +0.083, Wigner integral 0.999998; coherent negativity 0.0973->1.6e-13 as cutoff 2->20 (truncation artefact); Kerr adds genuine negativity 0.087 vs 0.046 Kerr-free; cat benchmark 0.1053 vs 0.1043 (0.9%); nsteps not binding (fidelity 0.99999999996)"
+  },
+  {
+   "id": "passive_single_particle",
+   "job": 15358,
+   "sbatch": "scripts/trackA_passive_single_particle.sbatch",
+   "script": "scripts/run_passive_single_particle_benchmark.py",
+   "output": "data/passive_single_particle_benchmark.json",
+   "design": "single-particle passive reference with loss, 4/6/8/12 modes",
+   "status": "COMPLETED",
+   "role": "uniform-loss residual <=1.94e-15; edge-selective residual 9.79e-4 (4 modes), 1.94e-4 (6-12 modes)"
+  },
+  {
+   "id": "unitary_covariance",
+   "job": 15357,
+   "sbatch": "scripts/trackA_covariant_unitary_benchmark.sbatch",
+   "script": "scripts/run_covariant_unitary_benchmark.py",
+   "output": "data/edge_mode_unitary_benchmark.json",
+   "design": "deterministic Floquet-periodic edge-mode projector, 4/6/8/12 modes",
+   "status": "COMPLETED",
+   "role": "max covariant population error 1.33e-15, edge-bulk overlap 1.42e-31"
+  },
+  {
+   "id": "R13",
+   "job": null,
+   "sbatch": null,
+   "script": "scripts/run_spectral_localizer.py",
+   "output": "data/spectral_localizer_audit.json; figures/spectral_localizer.pdf",
+   "design": "spectral-localizer certification of the symmetric-frame sectors (G2): half-signature nu=1/2 sig[(kappa(X-x)-i H_eff)S] per Cerjan-Loring Eqs 27-28 on H_eff=-i ln U_A/B of frames U_A=bab, U_B=aba; points topo(0.1,1.2)/trivial(1.2,0.1); sizes 4/6/8/10; disorder 0..0.5 x 20 seeds (6 cells); cross-check vs offdiag_winding; localizer gap profile + disorder protection sweep | v2: markers computed on DISORDERED frame unitaries; protection-bound lemma sigma_L^bulk(d) >= sigma_L^bulk(0) - d + O(d^2) verified (bound holds all levels, gap never closes <= 0.5, d* = 0.138/0.102); frame-marker fluctuation at d>0 = broken-chiral-symmetry artifact, not a flip; SI S9G Eq. S17 + Fig S3 (N=6/8/10)",
+   "status": "COMPLETED 2026-08-15 v4 (PASS) \u2014 closed-form lemma verified, finite-size stable N=6/8/10",
+   "role": "G2 independent sector certification; G7 numeric protection bound"
+  },
+  {
+   "id": "R14",
+   "job": null,
+   "sbatch": null,
+   "script": "scripts/run_collective_wigner.py; scripts/verify_collective_wigner_resolution.py; scripts/plot_collective_vs_local_wigner.py",
+   "output": "data/collective_wigner_validation.json; data/collective_wigner_dynamics.json; data/collective_wigner_analysis.json; data/collective_wigner_resolution_check.json; figures/collective_vs_local_wigner.pdf; data/collective_wigner_dynamics_nmax3.json; data/collective_wigner_analysis_nmax3.json; data/collective_wigner_dynamics_nc3.json; data/collective_wigner_analysis_nc3.json; data/collective_wigner_dynamics_nc3_nmax3.json; data/collective_wigner_analysis_nc3_nmax3.json",
+   "design": "Collective-mode Wigner transform (closes the DAR gate 'collective-mode Wigner negativity remains gated until a validated bosonic mode transform is implemented'): edge vector c of the sector Floquet operator -> collective edge mode b_0 = sum c_j a_j; deterministic unitary completion; exact many-body rotation via rotated creation operators on vacuum (SI Eq. S14). Validation: single-particle unitarity 3e-15; sector-pinned many-body unitarity (total excitation <= N_max) 1.0e-14/2.3e-14/4.4e-14 at N_max 2/3/4; Gaussian control reproduces single-mode truncation values 0.0973/0.0546/0.0234; cat benchmark rel. dev. 3e-15; identity rotation exact. Dynamics: 2 cells/4 modes, N_max=2, both sectors x edge-selective/uniform loss x d=0/0.35, 10 matched realizations x 10 traj = 80 records.",
+   "result": "NULL RESULT: collective edge-mode Wigner negativity is not resolved above the tested numerical floor in all 160 records (N_max=2 and N_max=3 dynamics pilots at 2 cells/4 modes, 80 each) and in all 80 records of the 3 cells/6 modes N_max=2 pilot (240/240 total); edge-mode Wigner positive semidefinite (min +2.3e-13 N_max=2, +1.5e-13 N_max=3, grid-stable 31/61/91); local site-0 negativity positive under edge-selective loss at both truncations at 2 cells (paired contrast +0.0175 +/- 0.0040 at N_max=2, 90% positive; +0.0105 +/- 0.0033 at N_max=3, 70% positive), ~0 at 3 cells (+0.0003 +/- 0.0041 at d=0 N_max=2; -0.0017 +/- 0.0033 at d=0 N_max=3, Fig.5 size-sensitivity), zero under uniform loss; identity consistency max diff 0.0. 3-cell/6-mode N_max=3 truncation-stability extension (SLURM job 15360, completed 2026-08-15): 0/80 collective, identity exact, local -0.0017 +/- 0.0033 at d=0. Total: 320/320 records. Interpretation: finite-time non-Gaussianity is a site-basis feature, truncation-stable and size-stable; no collective-mode negativity to protect.",
+   "status": "COMPLETED 2026-08-15 (PASS validation; measured null result, truncation-stable N_max=2/3, size-stable 2/3 cells) \u2014 SI S9 + main limitation + DAR + CEM updated"
+  },
+  {
+   "id": "power_analysis",
+   "script": "scripts/compute_power_analysis.py",
+   "output": "data/power_analysis.json",
+   "job": "local",
+   "design": "detectable paired contrast, two-sided t, alpha=0.05, power=0.80, from production zero-disorder edge_low_loss contrasts",
+   "status": "COMPLETED",
+   "role": "8-mode n=100 resolves |contrast| >= 0.0035; observed mean -0.0014 = 0.4x; n=500 would give 0.0016"
+  },
+  {
+   "id": "revision_gamma_ratio",
+   "script": "scripts/run_revision_scans.py gamma",
+   "output": "data/revision_scans/gamma_ratio_*_2cells.json",
+   "job": "local (6 parallel nohup)",
+   "design": "2 cells, N_max=2, N_MC=200, d=0/0.5, gamma_edge/gamma_bulk in 5e-4..1.0",
+   "status": "COMPLETED",
+   "role": "positive 4-mode contrast monotone in loss ratio: +0.0174 (5e-4) -> ~0 (5e-1..1.0)"
+  },
+  {
+   "id": "revision_multiperiod",
+   "script": "scripts/run_revision_scans.py multiperiod",
+   "output": "data/revision_scans/multiperiod_*T_*cells.json",
+   "job": "local (parallel nohup)",
+   "design": "2 cells N_MC=200, 3 cells N_MC=100, d=0/0.5, 2T/4T/8T, N_max=2",
+   "status": "COMPLETED",
+   "role": "no sign inversion to 8T; 2-cell revival at 4T +0.0765, 3-cell stays null; exact mesolve cross-check diff 6.8e-3 (0.0754 vs 0.0822, ntraj=200); ntraj=10 gives 0.053 -> weaker MC convergence at 4T"
+  },
+  {
+   "id": "revision_nmax_panel",
+   "script": "scripts/run_revision_scans.py nmax",
+   "output": "data/revision_scans/nmax_*_*cells.json",
+   "job": "SLURM 15376 + local parallel",
+   "design": "2 cells N_MC=100 (N_max 3,4), 3 cells N_MC=100 (N_max=3) and 50 (N_max=4), d=0/0.35",
+   "status": "COMPLETED 2026-08-17 (SLURM 15376; 3c N_max=4 = -0.0014, se 0.0029, n=50)",
+   "role": "sign pattern stable at 2 cells (positive, non-monotone magnitude) and 3 cells (negative) under higher cutoffs"
+  },
+  {
+   "id": "revision_collective_mode_resolved",
+   "script": "scripts/run_collective_wigner.py (--initial-state-mode topological_zero_mode)",
+   "output": "data/revision_scans/collective_wigner_*_mode_resolved*.json",
+   "job": "local",
+   "design": "2c N_max=2/3, 3c N_max=2, 10 MC, d=0/0.35, both profiles",
+   "status": "COMPLETED",
+   "role": "mode-resolved preparation: local and collective edge-mode negativity is not resolved above the tested floor (<=1.2e-5 at 2c N_max=3); 240 records, total collective null 560 records"
+  },
+  {
+   "id": "revision_4cells_nmc300",
+   "script": "scripts/run_revision_scans.py gamma (seed 20260814)",
+   "output": "data/chiral_production/chiral_floquet_4cells_NMC300.json",
+   "job": "SLURM 15377",
+   "design": "4 cells/8 modes, N_MC=300, N_max=2, d=0/0.5/1.0/1.5, superset of NMC100",
+   "status": "COMPLETED",
+   "role": "current primary 8-mode output; samples 0..99 reproduce NMC100 exactly"
+  },
+  {
+   "id": "revision_multiperiod_mesolve_crosscheck",
+   "script": "scripts/verify_multiperiod_mesolve.py",
+   "output": "data/revision_scans/multiperiod_mesolve_crosscheck.json",
+   "job": "local",
+   "design": "2 cells N_max=2, 4 periods, edge_low_loss d=0 sample 0, mesolve exact vs mcsolve ntraj=200, seed 20260817",
+   "status": "COMPLETED",
+   "role": "4T revival exact-solver confirmed: mesolve 0.0754 vs mcsolve(200) 0.0822, diff 6.8e-3; edge population 0.719 vs 0.075"
+  }
+ ],
+ "software": {
+  "qutip": "5.3.1",
+  "numpy": "1.26.4",
+  "scipy": "1.13.1",
+  "matplotlib": "3.11.1",
+  "environment_lock": "data/qom_environment_lock.txt and data/qom_pip_lock.txt"
+ },
+ "claim_boundary": "All runs above are bounded numerical studies in normalized model coordinates. None supports a topological-protection theorem, an open-system invariant, metrological gain, or experimental validation."
+}

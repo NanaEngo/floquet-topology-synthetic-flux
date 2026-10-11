@@ -1,0 +1,160 @@
+{
+  "status": "SOLVER_CONTRAST_CHECK_COMPLETE",
+  "claim_scope": "finite-time master-equation vs Monte-Carlo agreement for the production configuration; solver validation only",
+  "not_supported": [
+    "topological protection theorem",
+    "experimental validation",
+    "metrological gain"
+  ],
+  "design": {
+    "n_cells": 2,
+    "n_modes": 4,
+    "n_max": 2,
+    "initial_state_mode": "edge_site",
+    "kerr": 0.5,
+    "n_mc": 200,
+    "ntraj": 50,
+    "monte_carlo_from_archive": false,
+    "loss_profile": "edge_low_loss",
+    "disorder_level": 0.0,
+    "gamma_edge": 0.0001,
+    "gamma_bulk": 0.2,
+    "t_stop": 25.132741228718345,
+    "n_periods": 4,
+    "n_time_points": 33,
+    "wigner_grid": 31,
+    "production_seed": 20260814,
+    "draw_seed": "seed + profile_index*1e6 + disorder_index*1e4 + sample",
+    "trajectory_seed": "draw_seed + 100 + sector_index",
+    "paired_sectors": true
+  },
+  "exact_master_equation": {
+    "me_contrast": 0.07541927277709067,
+    "me": {
+      "chiral_topological": {
+        "negativity_edge": 0.07541927277709067,
+        "negativity_center": 0.0,
+        "edge_population": 0.7185737838668436,
+        "bulk_population": 0.01874328612334144
+      },
+      "chiral_trivial": {
+        "negativity_edge": 0.0,
+        "negativity_center": 0.0,
+        "edge_population": 0.07537570180192521,
+        "bulk_population": 0.029520780715224553
+      }
+    },
+    "me_occupations": {
+      "chiral_topological": [
+        0.6095792096821341,
+        0.015969338046461223,
+        0.002773948076880215,
+        0.10899457418470944
+      ],
+      "chiral_trivial": [
+        0.06270400217915165,
+        0.02256024987482362,
+        0.0069605308404009315,
+        0.01267169962277356
+      ]
+    }
+  },
+  "monte_carlo": {
+    "contrast": {
+      "n": 200,
+      "mean": 0.07331007794677469,
+      "sd": 0.01823491091593802,
+      "se": 0.0012894029162992373,
+      "ci95_low": 0.07078284823082819,
+      "ci95_high": 0.07583730766272119
+    },
+    "by_sector": {
+      "chiral_topological": {
+        "negativity_edge": {
+          "n": 200,
+          "mean": 0.07331036409666586,
+          "sd": 0.018234922862886645,
+          "se": 0.0012894037610760758,
+          "ci95_low": 0.07078313272495675,
+          "ci95_high": 0.07583759546837497
+        },
+        "negativity_center": {
+          "n": 200,
+          "mean": 0.0,
+          "sd": 0.0,
+          "se": 0.0,
+          "ci95_low": 0.0,
+          "ci95_high": 0.0
+        },
+        "edge_population": {
+          "n": 200,
+          "mean": 0.7218045238270789,
+          "sd": 0.017489107590456795,
+          "se": 0.001236666657411312,
+          "ci95_low": 0.7193806571785528,
+          "ci95_high": 0.724228390475605
+        },
+        "bulk_population": {
+          "n": 200,
+          "mean": 0.018797383215128742,
+          "sd": 0.0009200161430034162,
+          "se": 6.505496535188081e-05,
+          "ci95_low": 0.018669875483039056,
+          "ci95_high": 0.01892489094721843
+        }
+      },
+      "chiral_trivial": {
+        "negativity_edge": {
+          "n": 200,
+          "mean": 2.861498911821983e-07,
+          "sd": 4.046770569814502e-06,
+          "se": 2.861498911821983e-07,
+          "ci95_low": -2.7470389553491034e-07,
+          "ci95_high": 8.47003677899307e-07
+        },
+        "negativity_center": {
+          "n": 200,
+          "mean": 0.0,
+          "sd": 0.0,
+          "se": 0.0,
+          "ci95_low": 0.0,
+          "ci95_high": 0.0
+        },
+        "edge_population": {
+          "n": 200,
+          "mean": 0.07841961816072426,
+          "sd": 0.024422338875726642,
+          "se": 0.0017269201431462152,
+          "ci95_low": 0.07503485468015768,
+          "ci95_high": 0.08180438164129085
+        },
+        "bulk_population": {
+          "n": 200,
+          "mean": 0.029752731924276837,
+          "sd": 0.013698732080051311,
+          "se": 0.0009686466347461981,
+          "ci95_low": 0.02785418452017429,
+          "ci95_high": 0.031651279328379384
+        }
+      }
+    }
+  },
+  "delta_mc_minus_me": {
+    "difference": -0.0021091948303159774,
+    "mc_se": 0.0012894029162992373,
+    "z": -1.6357918875890674
+  },
+  "crosscheck": {
+    "available": false,
+    "note": "cross-check only defined for the production ntraj=10, one-period configuration (ran ntraj=50, periods=4)"
+  },
+  "gates": {
+    "production_crosscheck_zero": true,
+    "solver_agreement_within_3se": true
+  },
+  "software": {
+    "qutip": "5.3.1",
+    "numpy": "1.26.4"
+  },
+  "elapsed_seconds": 336.81263184547424
+}

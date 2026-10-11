@@ -1,0 +1,1069 @@
+{
+  "status": "PRODUCTION_OUTPUTS_AUDITED",
+  "inputs": [
+    "data/chiral_production/chiral_floquet_2cells_NMC500.json",
+    "data/chiral_production/chiral_floquet_3cells_NMC500.json",
+    "data/chiral_production/chiral_floquet_4cells_NMC2000.json"
+  ],
+  "files": [
+    {
+      "input": "data/chiral_production/chiral_floquet_2cells_NMC500.json",
+      "n_cells": 2,
+      "n_records": 8000,
+      "n_paired_units": 4000,
+      "design": {
+        "n_cells": 2,
+        "n_modes": 4,
+        "n_max": 2,
+        "initial_state_mode": "edge_site",
+        "kerr": 0.5,
+        "n_mc": 500,
+        "ntraj": 10,
+        "wigner_grid": 31,
+        "gamma_edge": 0.0001,
+        "gamma_bulk": 0.2,
+        "t_stop": 6.283185307179586,
+        "n_time_points": 9,
+        "period": 6.283185307179586,
+        "paired_disorder": true,
+        "independent_unit": "disorder realization; trajectories nested",
+        "disorder_levels": [
+          0.0,
+          0.5,
+          1.0,
+          1.5
+        ]
+      },
+      "summaries": [
+        {
+          "n": 500,
+          "mean": 0.016730854021193817,
+          "sd": 0.012291321625005628,
+          "se": 0.0005496846137365152,
+          "ci95_low": 0.015653472178270247,
+          "ci95_high": 0.017808235864117387,
+          "positive_fraction": 0.908,
+          "n_cells": 2,
+          "loss_profile": "edge_low_loss",
+          "disorder_level": 0.0,
+          "observable": "negativity_edge_topological_minus_trivial",
+          "center_negativity": {
+            "n": 500,
+            "mean": 0.0,
+            "sd": 0.0,
+            "se": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0,
+            "positive_fraction": 0.0
+          },
+          "edge_population": {
+            "n": 500,
+            "mean": 0.4073383160718259,
+            "sd": 0.05593796389097611,
+            "se": 0.0025016217956630245,
+            "ci95_low": 0.4024351373523264,
+            "ci95_high": 0.41224149479132544,
+            "positive_fraction": 1.0
+          },
+          "bulk_population": {
+            "n": 500,
+            "mean": -0.10861628689268055,
+            "sd": 0.022665497621614017,
+            "se": 0.001013631868515775,
+            "ci95_low": -0.11060300535497146,
+            "ci95_high": -0.10662956843038963,
+            "positive_fraction": 0.0
+          }
+        },
+        {
+          "n": 500,
+          "mean": 0.01575214961955194,
+          "sd": 0.012760550634049277,
+          "se": 0.0005706691729612445,
+          "ci95_low": 0.014633638040547903,
+          "ci95_high": 0.01687066119855598,
+          "positive_fraction": 0.882,
+          "n_cells": 2,
+          "loss_profile": "edge_low_loss",
+          "disorder_level": 0.5,
+          "observable": "negativity_edge_topological_minus_trivial",
+          "center_negativity": {
+            "n": 500,
+            "mean": 0.0,
+            "sd": 0.0,
+            "se": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0,
+            "positive_fraction": 0.0
+          },
+          "edge_population": {
+            "n": 500,
+            "mean": 0.40605575042969533,
+            "sd": 0.06343324223981069,
+            "se": 0.002836820833628554,
+            "ci95_low": 0.40049558159578336,
+            "ci95_high": 0.4116159192636073,
+            "positive_fraction": 1.0
+          },
+          "bulk_population": {
+            "n": 500,
+            "mean": -0.11196289551579063,
+            "sd": 0.03710041880832126,
+            "se": 0.0016591811689823615,
+            "ci95_low": -0.11521489060699605,
+            "ci95_high": -0.1087109004245852,
+            "positive_fraction": 0.0
+          }
+        },
+        {
+          "n": 500,
+          "mean": 0.01473392326946071,
+          "sd": 0.01256254434388992,
+          "se": 0.0005618140624658671,
+          "ci95_low": 0.01363276770702761,
+          "ci95_high": 0.01583507883189381,
+          "positive_fraction": 0.836,
+          "n_cells": 2,
+          "loss_profile": "edge_low_loss",
+          "disorder_level": 1.0,
+          "observable": "negativity_edge_topological_minus_trivial",
+          "center_negativity": {
+            "n": 500,
+            "mean": 0.0,
+            "sd": 0.0,
+            "se": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0,
+            "positive_fraction": 0.0
+          },
+          "edge_population": {
+            "n": 500,
+            "mean": 0.4012304867618619,
+            "sd": 0.08758843962979886,
+            "se": 0.003917074101107335,
+            "ci95_low": 0.39355302152369154,
+            "ci95_high": 0.40890795200003227,
+            "positive_fraction": 1.0
+          },
+          "bulk_population": {
+            "n": 500,
+            "mean": -0.12601953622851852,
+            "sd": 0.07054000598353896,
+            "se": 0.0031546449702487002,
+            "ci95_low": -0.132202640370206,
+            "ci95_high": -0.11983643208683108,
+            "positive_fraction": 0.0
+          }
+        },
+        {
+          "n": 500,
+          "mean": 0.013063842822207726,
+          "sd": 0.013541563388519053,
+          "se": 0.0006055971251670199,
+          "ci95_low": 0.011876872456880367,
+          "ci95_high": 0.014250813187535086,
+          "positive_fraction": 0.698,
+          "n_cells": 2,
+          "loss_profile": "edge_low_loss",
+          "disorder_level": 1.5,
+          "observable": "negativity_edge_topological_minus_trivial",
+          "center_negativity": {
+            "n": 500,
+            "mean": 0.0,
+            "sd": 0.0,
+            "se": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0,
+            "positive_fraction": 0.0
+          },
+          "edge_population": {
+            "n": 500,
+            "mean": 0.40809327457209327,
+            "sd": 0.10941887956077032,
+            "se": 0.0048933610543948946,
+            "ci95_low": 0.3985022869054793,
+            "ci95_high": 0.41768426223870725,
+            "positive_fraction": 1.0
+          },
+          "bulk_population": {
+            "n": 500,
+            "mean": -0.13461641125934246,
+            "sd": 0.09217492434003487,
+            "se": 0.004122187932904358,
+            "ci95_low": -0.142695899607835,
+            "ci95_high": -0.12653692291084992,
+            "positive_fraction": 0.0
+          }
+        },
+        {
+          "n": 500,
+          "mean": -8.115478363489057e-07,
+          "sd": 8.878381831499939e-05,
+          "se": 3.9705330610865895e-06,
+          "ci95_low": -8.59379263607862e-06,
+          "ci95_high": 6.970696963380809e-06,
+          "positive_fraction": 0.028,
+          "n_cells": 2,
+          "loss_profile": "uniform_loss",
+          "disorder_level": 0.0,
+          "observable": "negativity_edge_topological_minus_trivial",
+          "center_negativity": {
+            "n": 500,
+            "mean": 0.0,
+            "sd": 0.0,
+            "se": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0,
+            "positive_fraction": 0.0
+          },
+          "edge_population": {
+            "n": 500,
+            "mean": 0.07638197201764362,
+            "sd": 0.12691875369409958,
+            "se": 0.005675979217591184,
+            "ci95_low": 0.06525705275116489,
+            "ci95_high": 0.08750689128412234,
+            "positive_fraction": 0.73
+          },
+          "bulk_population": {
+            "n": 500,
+            "mean": -0.07620619906997313,
+            "sd": 0.04228311510835686,
+            "se": 0.0018909583936546864,
+            "ci95_low": -0.07991247752153631,
+            "ci95_high": -0.07249992061840994,
+            "positive_fraction": 0.004
+          }
+        },
+        {
+          "n": 500,
+          "mean": -1.1762252325930936e-06,
+          "sd": 0.0006144295575654298,
+          "se": 2.7478125162028423e-05,
+          "ci95_low": -5.50333505501688e-05,
+          "ci95_high": 5.268090008498262e-05,
+          "positive_fraction": 0.048,
+          "n_cells": 2,
+          "loss_profile": "uniform_loss",
+          "disorder_level": 0.5,
+          "observable": "negativity_edge_topological_minus_trivial",
+          "center_negativity": {
+            "n": 500,
+            "mean": 0.0,
+            "sd": 0.0,
+            "se": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0,
+            "positive_fraction": 0.0
+          },
+          "edge_population": {
+            "n": 500,
+            "mean": 0.08558109572359009,
+            "sd": 0.12984142502012916,
+            "se": 0.005806685052809016,
+            "ci95_low": 0.07419999302008441,
+            "ci95_high": 0.09696219842709576,
+            "positive_fraction": 0.748
+          },
+          "bulk_population": {
+            "n": 500,
+            "mean": -0.07849649192835086,
+            "sd": 0.05251188124898922,
+            "se": 0.002348402721982729,
+            "ci95_low": -0.083099361263437,
+            "ci95_high": -0.07389362259326471,
+            "positive_fraction": 0.034
+          }
+        },
+        {
+          "n": 500,
+          "mean": -0.00018368906533572645,
+          "sd": 0.0039140217564017634,
+          "se": 0.0001750403742545493,
+          "ci95_low": -0.0005267681988746431,
+          "ci95_high": 0.00015939006820319022,
+          "positive_fraction": 0.098,
+          "n_cells": 2,
+          "loss_profile": "uniform_loss",
+          "disorder_level": 1.0,
+          "observable": "negativity_edge_topological_minus_trivial",
+          "center_negativity": {
+            "n": 500,
+            "mean": 0.0,
+            "sd": 0.0,
+            "se": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0,
+            "positive_fraction": 0.0
+          },
+          "edge_population": {
+            "n": 500,
+            "mean": 0.09722703067838198,
+            "sd": 0.13153965547756527,
+            "se": 0.00588263222769477,
+            "ci95_low": 0.08569707151210024,
+            "ci95_high": 0.10875698984466373,
+            "positive_fraction": 0.758
+          },
+          "bulk_population": {
+            "n": 500,
+            "mean": -0.10470366843659265,
+            "sd": 0.08060668865409412,
+            "se": 0.0036048407054343097,
+            "ci95_low": -0.1117691562192439,
+            "ci95_high": -0.0976381806539414,
+            "positive_fraction": 0.06
+          }
+        },
+        {
+          "n": 500,
+          "mean": -0.000299687637298961,
+          "sd": 0.0033756454818858485,
+          "se": 0.00015096345530873583,
+          "ci95_low": -0.0005955760097040832,
+          "ci95_high": -3.7992648938387657e-06,
+          "positive_fraction": 0.076,
+          "n_cells": 2,
+          "loss_profile": "uniform_loss",
+          "disorder_level": 1.5,
+          "observable": "negativity_edge_topological_minus_trivial",
+          "center_negativity": {
+            "n": 500,
+            "mean": 0.0,
+            "sd": 0.0,
+            "se": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0,
+            "positive_fraction": 0.0
+          },
+          "edge_population": {
+            "n": 500,
+            "mean": 0.11005588890330045,
+            "sd": 0.13389459348194313,
+            "se": 0.005987948256906502,
+            "ci95_low": 0.09831951031976371,
+            "ci95_high": 0.12179226748683719,
+            "positive_fraction": 0.784
+          },
+          "bulk_population": {
+            "n": 500,
+            "mean": -0.10932031588750109,
+            "sd": 0.10305061934445092,
+            "se": 0.004608563799552942,
+            "ci95_low": -0.11835310093462485,
+            "ci95_high": -0.10028753084037732,
+            "positive_fraction": 0.104
+          }
+        }
+      ]
+    },
+    {
+      "input": "data/chiral_production/chiral_floquet_3cells_NMC500.json",
+      "n_cells": 3,
+      "n_records": 8000,
+      "n_paired_units": 4000,
+      "design": {
+        "n_cells": 3,
+        "n_modes": 6,
+        "n_max": 2,
+        "initial_state_mode": "edge_site",
+        "kerr": 0.5,
+        "n_mc": 500,
+        "ntraj": 10,
+        "wigner_grid": 31,
+        "gamma_edge": 0.0001,
+        "gamma_bulk": 0.2,
+        "t_stop": 6.283185307179586,
+        "n_time_points": 9,
+        "period": 6.283185307179586,
+        "paired_disorder": true,
+        "independent_unit": "disorder realization; trajectories nested",
+        "disorder_levels": [
+          0.0,
+          0.5,
+          1.0,
+          1.5
+        ]
+      },
+      "summaries": [
+        {
+          "n": 500,
+          "mean": -0.002104060748312782,
+          "sd": 0.012463810064339201,
+          "se": 0.0005573985312501696,
+          "ci95_low": -0.0031965618695631143,
+          "ci95_high": -0.0010115596270624497,
+          "positive_fraction": 0.424,
+          "n_cells": 3,
+          "loss_profile": "edge_low_loss",
+          "disorder_level": 0.0,
+          "observable": "negativity_edge_topological_minus_trivial",
+          "center_negativity": {
+            "n": 500,
+            "mean": 0.0,
+            "sd": 0.0,
+            "se": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0,
+            "positive_fraction": 0.0
+          },
+          "edge_population": {
+            "n": 500,
+            "mean": 0.011192672640351503,
+            "sd": 0.060073063323749135,
+            "se": 0.0026865490641710503,
+            "ci95_low": 0.005927036474576245,
+            "ci95_high": 0.01645830880612676,
+            "positive_fraction": 0.586
+          },
+          "bulk_population": {
+            "n": 500,
+            "mean": 0.09143482449893782,
+            "sd": 0.037372972824958786,
+            "se": 0.0016713701551572039,
+            "ci95_low": 0.0881589389948297,
+            "ci95_high": 0.09471071000304594,
+            "positive_fraction": 0.99
+          }
+        },
+        {
+          "n": 500,
+          "mean": -0.0023156480723267544,
+          "sd": 0.012584146494959337,
+          "se": 0.0005627801400308958,
+          "ci95_low": -0.00341869714678731,
+          "ci95_high": -0.0012125989978661988,
+          "positive_fraction": 0.394,
+          "n_cells": 3,
+          "loss_profile": "edge_low_loss",
+          "disorder_level": 0.5,
+          "observable": "negativity_edge_topological_minus_trivial",
+          "center_negativity": {
+            "n": 500,
+            "mean": 0.0,
+            "sd": 0.0,
+            "se": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0,
+            "positive_fraction": 0.0
+          },
+          "edge_population": {
+            "n": 500,
+            "mean": 0.01259162005908091,
+            "sd": 0.05860593914892397,
+            "se": 0.0026209372764442033,
+            "ci95_low": 0.0074545829972502715,
+            "ci95_high": 0.017728657120911546,
+            "positive_fraction": 0.576
+          },
+          "bulk_population": {
+            "n": 500,
+            "mean": 0.0904053220977542,
+            "sd": 0.03879539634099538,
+            "se": 0.0017349828686502456,
+            "ci95_low": 0.08700475567519972,
+            "ci95_high": 0.09380588852030869,
+            "positive_fraction": 0.992
+          }
+        },
+        {
+          "n": 500,
+          "mean": -0.0019814983150641613,
+          "sd": 0.011935880520073732,
+          "se": 0.0005337888042840081,
+          "ci95_low": -0.0030277243714608173,
+          "ci95_high": -0.0009352722586675054,
+          "positive_fraction": 0.36,
+          "n_cells": 3,
+          "loss_profile": "edge_low_loss",
+          "disorder_level": 1.0,
+          "observable": "negativity_edge_topological_minus_trivial",
+          "center_negativity": {
+            "n": 500,
+            "mean": 0.0,
+            "sd": 0.0,
+            "se": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0,
+            "positive_fraction": 0.0
+          },
+          "edge_population": {
+            "n": 500,
+            "mean": 0.008359399584153581,
+            "sd": 0.06545508750693275,
+            "se": 0.002927240502773977,
+            "ci95_low": 0.002622008198716586,
+            "ci95_high": 0.014096790969590576,
+            "positive_fraction": 0.618
+          },
+          "bulk_population": {
+            "n": 500,
+            "mean": 0.07659067053967517,
+            "sd": 0.048133889491402126,
+            "se": 0.0021526129784847584,
+            "ci95_low": 0.07237154910184504,
+            "ci95_high": 0.08080979197750529,
+            "positive_fraction": 0.936
+          }
+        },
+        {
+          "n": 500,
+          "mean": -0.001997523602503625,
+          "sd": 0.010363288183107456,
+          "se": 0.0004634603369569712,
+          "ci95_low": -0.0029059058629392885,
+          "ci95_high": -0.0010891413420679613,
+          "positive_fraction": 0.274,
+          "n_cells": 3,
+          "loss_profile": "edge_low_loss",
+          "disorder_level": 1.5,
+          "observable": "negativity_edge_topological_minus_trivial",
+          "center_negativity": {
+            "n": 500,
+            "mean": 0.0,
+            "sd": 0.0,
+            "se": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0,
+            "positive_fraction": 0.0
+          },
+          "edge_population": {
+            "n": 500,
+            "mean": 0.011286950836377325,
+            "sd": 0.06787667282324734,
+            "se": 0.0030355370903858724,
+            "ci95_low": 0.005337298139221016,
+            "ci95_high": 0.017236603533533637,
+            "positive_fraction": 0.686
+          },
+          "bulk_population": {
+            "n": 500,
+            "mean": 0.06746716949890685,
+            "sd": 0.05355147708052857,
+            "se": 0.002394894860951677,
+            "ci95_low": 0.06277317557144156,
+            "ci95_high": 0.07216116342637215,
+            "positive_fraction": 0.808
+          }
+        },
+        {
+          "n": 500,
+          "mean": -8.041454189779636e-07,
+          "sd": 8.876958403417247e-05,
+          "se": 3.969896484695793e-06,
+          "ci95_low": -8.585142528981718e-06,
+          "ci95_high": 6.976851691025791e-06,
+          "positive_fraction": 0.028,
+          "n_cells": 3,
+          "loss_profile": "uniform_loss",
+          "disorder_level": 0.0,
+          "observable": "negativity_edge_topological_minus_trivial",
+          "center_negativity": {
+            "n": 500,
+            "mean": 0.0,
+            "sd": 0.0,
+            "se": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0,
+            "positive_fraction": 0.0
+          },
+          "edge_population": {
+            "n": 500,
+            "mean": 0.005427923969050784,
+            "sd": 0.09447928013580661,
+            "se": 0.004225241856978183,
+            "ci95_low": -0.002853550070626455,
+            "ci95_high": 0.013709398008728023,
+            "positive_fraction": 0.544
+          },
+          "bulk_population": {
+            "n": 500,
+            "mean": -0.005252170909544558,
+            "sd": 0.0648834813452865,
+            "se": 0.002901677498098002,
+            "ci95_low": -0.010939458805816642,
+            "ci95_high": 0.0004351169867275262,
+            "positive_fraction": 0.474
+          }
+        },
+        {
+          "n": 500,
+          "mean": -1.17291508556645e-06,
+          "sd": 0.0006144639104628832,
+          "se": 2.747966147030702e-05,
+          "ci95_low": -5.5033051567368214e-05,
+          "ci95_high": 5.268722139623531e-05,
+          "positive_fraction": 0.048,
+          "n_cells": 3,
+          "loss_profile": "uniform_loss",
+          "disorder_level": 0.5,
+          "observable": "negativity_edge_topological_minus_trivial",
+          "center_negativity": {
+            "n": 500,
+            "mean": 0.0,
+            "sd": 0.0,
+            "se": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0,
+            "positive_fraction": 0.0
+          },
+          "edge_population": {
+            "n": 500,
+            "mean": 0.009827376450014393,
+            "sd": 0.09415303186725833,
+            "se": 0.0042106515908578715,
+            "ci95_low": 0.0015744993319329655,
+            "ci95_high": 0.018080253568095818,
+            "positive_fraction": 0.53
+          },
+          "bulk_population": {
+            "n": 500,
+            "mean": -0.0027427790999843007,
+            "sd": 0.06437132479121026,
+            "se": 0.0028787731606972717,
+            "ci95_low": -0.008385174494950954,
+            "ci95_high": 0.002899616294982352,
+            "positive_fraction": 0.438
+          }
+        },
+        {
+          "n": 500,
+          "mean": -0.00018354614962190615,
+          "sd": 0.003914242772022639,
+          "se": 0.00017505025837359663,
+          "ci95_low": -0.0005266446560341555,
+          "ci95_high": 0.00015955235679034323,
+          "positive_fraction": 0.096,
+          "n_cells": 3,
+          "loss_profile": "uniform_loss",
+          "disorder_level": 1.0,
+          "observable": "negativity_edge_topological_minus_trivial",
+          "center_negativity": {
+            "n": 500,
+            "mean": 0.0,
+            "sd": 0.0,
+            "se": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0,
+            "positive_fraction": 0.0
+          },
+          "edge_population": {
+            "n": 500,
+            "mean": 0.0016054527177517194,
+            "sd": 0.08146423424683866,
+            "se": 0.003643191310217952,
+            "ci95_low": -0.0055352022502754665,
+            "ci95_high": 0.008746107685778905,
+            "positive_fraction": 0.538
+          },
+          "bulk_population": {
+            "n": 500,
+            "mean": -0.008882094499925323,
+            "sd": 0.0572791325347192,
+            "se": 0.0025616006807970392,
+            "ci95_low": -0.01390283183428752,
+            "ci95_high": -0.0038613571655631267,
+            "positive_fraction": 0.388
+          }
+        },
+        {
+          "n": 500,
+          "mean": -0.0002978253998912445,
+          "sd": 0.003376190781160899,
+          "se": 0.00015098784183367771,
+          "ci95_low": -0.0005937615698852529,
+          "ci95_high": -1.889229897236212e-06,
+          "positive_fraction": 0.076,
+          "n_cells": 3,
+          "loss_profile": "uniform_loss",
+          "disorder_level": 1.5,
+          "observable": "negativity_edge_topological_minus_trivial",
+          "center_negativity": {
+            "n": 500,
+            "mean": 0.0,
+            "sd": 0.0,
+            "se": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0,
+            "positive_fraction": 0.0
+          },
+          "edge_population": {
+            "n": 500,
+            "mean": 0.006173150846602523,
+            "sd": 0.06904719243954731,
+            "se": 0.0030878843190067463,
+            "ci95_low": 0.00012089758134930031,
+            "ci95_high": 0.012225404111855746,
+            "positive_fraction": 0.622
+          },
+          "bulk_population": {
+            "n": 500,
+            "mean": -0.005436811947753406,
+            "sd": 0.04826708648171653,
+            "se": 0.0021585697289795863,
+            "ci95_low": -0.009667608616553395,
+            "ci95_high": -0.0012060152789534172,
+            "positive_fraction": 0.388
+          }
+        }
+      ]
+    },
+    {
+      "input": "data/chiral_production/chiral_floquet_4cells_NMC2000.json",
+      "n_cells": 4,
+      "n_records": 32000,
+      "n_paired_units": 16000,
+      "design": {
+        "n_cells": 4,
+        "n_modes": 8,
+        "n_max": 2,
+        "initial_state_mode": "edge_site",
+        "kerr": 0.5,
+        "n_mc": 2000,
+        "ntraj": 10,
+        "wigner_grid": 31,
+        "gamma_edge": 0.0001,
+        "gamma_bulk": 0.2,
+        "t_stop": 6.283185307179586,
+        "n_time_points": 9,
+        "period": 6.283185307179586,
+        "paired_disorder": true,
+        "independent_unit": "disorder realization; trajectories nested",
+        "disorder_levels": [
+          0.0,
+          0.5,
+          1.0,
+          1.5
+        ],
+        "n_workers": 16
+      },
+      "summaries": [
+        {
+          "n": 2000,
+          "mean": -0.0020091404986108236,
+          "sd": 0.012226267920822428,
+          "se": 0.00027338766182083966,
+          "ci95_low": -0.0025449803157796694,
+          "ci95_high": -0.0014733006814419778,
+          "positive_fraction": 0.423,
+          "n_cells": 4,
+          "loss_profile": "edge_low_loss",
+          "disorder_level": 0.0,
+          "observable": "negativity_edge_topological_minus_trivial",
+          "center_negativity": {
+            "n": 2000,
+            "mean": 0.0,
+            "sd": 0.0,
+            "se": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0,
+            "positive_fraction": 0.0
+          },
+          "edge_population": {
+            "n": 2000,
+            "mean": 0.00998849433115633,
+            "sd": 0.06016830705144959,
+            "se": 0.0013454042465812122,
+            "ci95_low": 0.007351502007857154,
+            "ci95_high": 0.012625486654455505,
+            "positive_fraction": 0.5715
+          },
+          "bulk_population": {
+            "n": 2000,
+            "mean": 0.09099417914460943,
+            "sd": 0.03881541939957334,
+            "se": 0.0008679391635261005,
+            "ci95_low": 0.08929301838409827,
+            "ci95_high": 0.09269533990512059,
+            "positive_fraction": 0.989
+          }
+        },
+        {
+          "n": 2000,
+          "mean": -0.002091928474880512,
+          "sd": 0.012843004000789074,
+          "se": 0.0002871782998106613,
+          "ci95_low": -0.002654797942509408,
+          "ci95_high": -0.0015290590072516157,
+          "positive_fraction": 0.4055,
+          "n_cells": 4,
+          "loss_profile": "edge_low_loss",
+          "disorder_level": 0.5,
+          "observable": "negativity_edge_topological_minus_trivial",
+          "center_negativity": {
+            "n": 2000,
+            "mean": 0.0,
+            "sd": 0.0,
+            "se": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0,
+            "positive_fraction": 0.0
+          },
+          "edge_population": {
+            "n": 2000,
+            "mean": 0.010969364936847442,
+            "sd": 0.06043877933972066,
+            "se": 0.0013514521908072523,
+            "ci95_low": 0.008320518642865227,
+            "ci95_high": 0.013618211230829657,
+            "positive_fraction": 0.5745
+          },
+          "bulk_population": {
+            "n": 2000,
+            "mean": 0.08842117849969781,
+            "sd": 0.04017814141289756,
+            "se": 0.0008984105540883838,
+            "ci95_low": 0.08666029381368458,
+            "ci95_high": 0.09018206318571105,
+            "positive_fraction": 0.986
+          }
+        },
+        {
+          "n": 2000,
+          "mean": -0.0018543635896865402,
+          "sd": 0.011415640312352954,
+          "se": 0.00025526147745108134,
+          "ci95_low": -0.0023546760854906597,
+          "ci95_high": -0.0013540510938824207,
+          "positive_fraction": 0.359,
+          "n_cells": 4,
+          "loss_profile": "edge_low_loss",
+          "disorder_level": 1.0,
+          "observable": "negativity_edge_topological_minus_trivial",
+          "center_negativity": {
+            "n": 2000,
+            "mean": 0.0,
+            "sd": 0.0,
+            "se": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0,
+            "positive_fraction": 0.0
+          },
+          "edge_population": {
+            "n": 2000,
+            "mean": 0.0075676235143289534,
+            "sd": 0.06521456951956851,
+            "se": 0.0014582421056914098,
+            "ci95_low": 0.00470946898717379,
+            "ci95_high": 0.010425778041484117,
+            "positive_fraction": 0.622
+          },
+          "bulk_population": {
+            "n": 2000,
+            "mean": 0.07708863519049637,
+            "sd": 0.048333995656098125,
+            "se": 0.0010807809991121495,
+            "ci95_low": 0.07497030443223655,
+            "ci95_high": 0.07920696594875619,
+            "positive_fraction": 0.9465
+          }
+        },
+        {
+          "n": 2000,
+          "mean": -0.0017612661172750675,
+          "sd": 0.010291849148802993,
+          "se": 0.0002301327431089684,
+          "ci95_low": -0.0022123262937686454,
+          "ci95_high": -0.0013102059407814894,
+          "positive_fraction": 0.2655,
+          "n_cells": 4,
+          "loss_profile": "edge_low_loss",
+          "disorder_level": 1.5,
+          "observable": "negativity_edge_topological_minus_trivial",
+          "center_negativity": {
+            "n": 2000,
+            "mean": 0.0,
+            "sd": 0.0,
+            "se": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0,
+            "positive_fraction": 0.0
+          },
+          "edge_population": {
+            "n": 2000,
+            "mean": 0.010545699350659882,
+            "sd": 0.06826754892453366,
+            "se": 0.001526508800525499,
+            "ci95_low": 0.007553742101629904,
+            "ci95_high": 0.013537656599689859,
+            "positive_fraction": 0.687
+          },
+          "bulk_population": {
+            "n": 2000,
+            "mean": 0.06782033940406379,
+            "sd": 0.05539027939485463,
+            "se": 0.0012385643001960086,
+            "ci95_low": 0.06539275337567961,
+            "ci95_high": 0.07024792543244797,
+            "positive_fraction": 0.8065
+          }
+        },
+        {
+          "n": 2000,
+          "mean": -7.383121064184325e-07,
+          "sd": 7.138504513469005e-05,
+          "se": 1.5962181349805757e-06,
+          "ci95_low": -3.8668996509803614e-06,
+          "ci95_high": 2.390275438143496e-06,
+          "positive_fraction": 0.0275,
+          "n_cells": 4,
+          "loss_profile": "uniform_loss",
+          "disorder_level": 0.0,
+          "observable": "negativity_edge_topological_minus_trivial",
+          "center_negativity": {
+            "n": 2000,
+            "mean": 0.0,
+            "sd": 0.0,
+            "se": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0,
+            "positive_fraction": 0.0
+          },
+          "edge_population": {
+            "n": 2000,
+            "mean": 0.0054048450166650904,
+            "sd": 0.09616215283325744,
+            "se": 0.002150251105978876,
+            "ci95_low": 0.0011903528489464934,
+            "ci95_high": 0.009619337184383688,
+            "positive_fraction": 0.538
+          },
+          "bulk_population": {
+            "n": 2000,
+            "mean": -0.005424652445176429,
+            "sd": 0.06647724967761463,
+            "se": 0.001486476492363723,
+            "ci95_low": -0.008338146370209326,
+            "ci95_high": -0.002511158520143532,
+            "positive_fraction": 0.474
+          }
+        },
+        {
+          "n": 2000,
+          "mean": 6.309327473496331e-06,
+          "sd": 0.0005493625269609165,
+          "se": 1.2284119545756701e-05,
+          "ci95_low": -1.7767546836186804e-05,
+          "ci95_high": 3.0386201783179467e-05,
+          "positive_fraction": 0.048,
+          "n_cells": 4,
+          "loss_profile": "uniform_loss",
+          "disorder_level": 0.5,
+          "observable": "negativity_edge_topological_minus_trivial",
+          "center_negativity": {
+            "n": 2000,
+            "mean": 0.0,
+            "sd": 0.0,
+            "se": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0,
+            "positive_fraction": 0.0
+          },
+          "edge_population": {
+            "n": 2000,
+            "mean": 0.006159609669164153,
+            "sd": 0.09284588614171675,
+            "se": 0.0020760971284408433,
+            "ci95_low": 0.0020904592974201,
+            "ci95_high": 0.010228760040908206,
+            "positive_fraction": 0.52
+          },
+          "bulk_population": {
+            "n": 2000,
+            "mean": -0.005491037451196885,
+            "sd": 0.0646051099962942,
+            "se": 0.0014446141764556499,
+            "ci95_low": -0.00832248123704996,
+            "ci95_high": -0.0026595936653438113,
+            "positive_fraction": 0.44
+          }
+        },
+        {
+          "n": 2000,
+          "mean": -0.00023429905465748003,
+          "sd": 0.003689537745697295,
+          "se": 8.250057204930483e-05,
+          "ci95_low": -0.0003960001758741175,
+          "ci95_high": -7.259793344084256e-05,
+          "positive_fraction": 0.0835,
+          "n_cells": 4,
+          "loss_profile": "uniform_loss",
+          "disorder_level": 1.0,
+          "observable": "negativity_edge_topological_minus_trivial",
+          "center_negativity": {
+            "n": 2000,
+            "mean": 0.0,
+            "sd": 0.0,
+            "se": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0,
+            "positive_fraction": 0.0
+          },
+          "edge_population": {
+            "n": 2000,
+            "mean": 0.0036765447913434546,
+            "sd": 0.07965211489744724,
+            "se": 0.0017810754346231571,
+            "ci95_low": 0.00018563693948206667,
+            "ci95_high": 0.007167452643204843,
+            "positive_fraction": 0.547
+          },
+          "bulk_population": {
+            "n": 2000,
+            "mean": -0.007192753224158978,
+            "sd": 0.05525095494484542,
+            "se": 0.001235448910784525,
+            "ci95_low": -0.009614233089296646,
+            "ci95_high": -0.0047712733590213096,
+            "positive_fraction": 0.4065
+          }
+        },
+        {
+          "n": 2000,
+          "mean": -0.0004187255515581871,
+          "sd": 0.0033071104369834983,
+          "se": 7.394923746194137e-05,
+          "ci95_low": -0.0005636660569835921,
+          "ci95_high": -0.000273785046132782,
+          "positive_fraction": 0.059,
+          "n_cells": 4,
+          "loss_profile": "uniform_loss",
+          "disorder_level": 1.5,
+          "observable": "negativity_edge_topological_minus_trivial",
+          "center_negativity": {
+            "n": 2000,
+            "mean": 0.0,
+            "sd": 0.0,
+            "se": 0.0,
+            "ci95_low": 0.0,
+            "ci95_high": 0.0,
+            "positive_fraction": 0.0
+          },
+          "edge_population": {
+            "n": 2000,
+            "mean": 0.008117487222573052,
+            "sd": 0.06859490355359033,
+            "se": 0.0015338286725586985,
+            "ci95_low": 0.005111183024358003,
+            "ci95_high": 0.0111237914207881,
+            "positive_fraction": 0.638
+          },
+          "bulk_population": {
+            "n": 2000,
+            "mean": -0.004145755354586367,
+            "sd": 0.047497531717251525,
+            "se": 0.0010620770968322673,
+            "ci95_low": -0.006227426464377611,
+            "ci95_high": -0.0020640842447951233,
+            "positive_fraction": 0.38
+          }
+        }
+      ]
+    }
+  ],
+  "claim_boundary": [
+    "descriptive matched dynamics only",
+    "no topological protection claim",
+    "no experimental or metrological claim"
+  ]
+}

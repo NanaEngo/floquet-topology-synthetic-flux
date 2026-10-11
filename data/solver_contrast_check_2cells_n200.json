@@ -1,0 +1,161 @@
+{
+  "status": "SOLVER_CONTRAST_CHECK_FAILED",
+  "claim_scope": "finite-time master-equation vs Monte-Carlo agreement for the production configuration; solver validation only",
+  "not_supported": [
+    "topological protection theorem",
+    "experimental validation",
+    "metrological gain"
+  ],
+  "design": {
+    "n_cells": 2,
+    "n_modes": 4,
+    "n_max": 2,
+    "initial_state_mode": "edge_site",
+    "kerr": 0.5,
+    "n_mc": 100,
+    "ntraj": 200,
+    "loss_profile": "edge_low_loss",
+    "disorder_level": 0.0,
+    "gamma_edge": 0.0001,
+    "gamma_bulk": 0.2,
+    "t_stop": 6.283185307179586,
+    "n_time_points": 9,
+    "wigner_grid": 31,
+    "production_seed": 20260814,
+    "draw_seed": "seed + profile_index*1e6 + disorder_index*1e4 + sample",
+    "trajectory_seed": "draw_seed + 100 + sector_index",
+    "paired_sectors": true
+  },
+  "exact_master_equation": {
+    "me_contrast": 0.02232824649343462,
+    "me": {
+      "chiral_topological": {
+        "negativity_edge": 0.0228537722117721,
+        "negativity_center": 0.0,
+        "edge_population": 0.8507878865248739,
+        "bulk_population": 0.013999408016784292
+      },
+      "chiral_trivial": {
+        "negativity_edge": 0.0005255257183374824,
+        "negativity_center": 0.0,
+        "edge_population": 0.4449593653070367,
+        "bulk_population": 0.12365531209417491
+      }
+    },
+    "me_occupations": {
+      "chiral_topological": [
+        0.5462142111085837,
+        0.013999405430118413,
+        2.586665880363726e-09,
+        0.3045736754162902
+      ],
+      "chiral_trivial": [
+        0.41622907989202484,
+        0.12365526749744045,
+        4.4596734452915565e-08,
+        0.02873028541501186
+      ]
+    }
+  },
+  "monte_carlo": {
+    "contrast": {
+      "n": 100,
+      "mean": 0.02177109549676683,
+      "sd": 0.002105861066637389,
+      "se": 0.0002105861066637389,
+      "ci95_low": 0.021358346727705903,
+      "ci95_high": 0.022183844265827757
+    },
+    "by_sector": {
+      "chiral_topological": {
+        "negativity_edge": {
+          "n": 100,
+          "mean": 0.022779977150716762,
+          "sd": 0.0017194259424950442,
+          "se": 0.0001719425942495044,
+          "ci95_low": 0.022442969665987734,
+          "ci95_high": 0.02311698463544579
+        },
+        "negativity_center": {
+          "n": 100,
+          "mean": 0.0,
+          "sd": 0.0,
+          "se": 0.0,
+          "ci95_low": 0.0,
+          "ci95_high": 0.0
+        },
+        "edge_population": {
+          "n": 100,
+          "mean": 0.8511209058009443,
+          "sd": 0.0015003239846782814,
+          "se": 0.00015003239846782815,
+          "ci95_low": 0.8508268422999474,
+          "ci95_high": 0.8514149693019413
+        },
+        "bulk_population": {
+          "n": 100,
+          "mean": 0.014001714772819529,
+          "sd": 0.00034950829641530403,
+          "se": 3.4950829641530405e-05,
+          "ci95_low": 0.01393321114672213,
+          "ci95_high": 0.014070218398916928
+        }
+      },
+      "chiral_trivial": {
+        "negativity_edge": {
+          "n": 100,
+          "mean": 0.0010088816539499323,
+          "sd": 0.0012408281974379087,
+          "se": 0.00012408281974379088,
+          "ci95_low": 0.0007656793272521022,
+          "ci95_high": 0.0012520839806477624
+        },
+        "negativity_center": {
+          "n": 100,
+          "mean": 0.0,
+          "sd": 0.0,
+          "se": 0.0,
+          "ci95_low": 0.0,
+          "ci95_high": 0.0
+        },
+        "edge_population": {
+          "n": 100,
+          "mean": 0.4453003690041922,
+          "sd": 0.011166435059354073,
+          "se": 0.0011166435059354073,
+          "ci95_low": 0.4431117477325588,
+          "ci95_high": 0.44748899027582556
+        },
+        "bulk_population": {
+          "n": 100,
+          "mean": 0.12325028559407392,
+          "sd": 0.004388163140595969,
+          "se": 0.0004388163140595969,
+          "ci95_low": 0.1223902056185171,
+          "ci95_high": 0.12411036556963073
+        }
+      }
+    }
+  },
+  "delta_mc_minus_me": {
+    "difference": -0.0005571509966677893,
+    "mc_se": 0.0002105861066637389,
+    "z": -2.6457158332740374
+  },
+  "crosscheck": {
+    "available": true,
+    "production_file": "data/chiral_production/chiral_floquet_2cells_NMC500.json",
+    "production_status": "COMPLETED_CHIRAL_FLOQUET_DYNAMICS_PILOT",
+    "records_compared": 1600,
+    "max_abs_diff": 0.15322800435826578
+  },
+  "gates": {
+    "production_crosscheck_zero": false,
+    "solver_agreement_within_3se": true
+  },
+  "software": {
+    "qutip": "5.3.1",
+    "numpy": "1.26.4"
+  },
+  "elapsed_seconds": 344.0245862007141
+}

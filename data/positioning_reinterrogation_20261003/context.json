@@ -1,0 +1,10 @@
+{
+  "research_question": "Is the manuscript's core novelty claim still defensible as of 2026-10: a documented failure / boundary condition for the inference 'bulk Floquet invariant constrains a protected non-Gaussian (Wigner-negativity) resource' in an open chiral Floquet SSH chain with Kerr nonlinearity? What prior or concurrent work (2019-2026) reports the absence, loss, or non-tracking of non-Gaussian resources / Wigner negativity under topology, and what work claims protection that could contradict us?",
+  "study_type": "numerical open-quantum-systems study (stochastic master equation trajectories, matched paired design, out-of-sample frozen prediction, resource-theoretic witness certification)",
+  "population": "two-step chiral Floquet SSH chains of 4 to 10 modes with local Kerr nonlinearity and edge-selective Lindblad loss",
+  "comparator": "topological vs trivial sectors under identical dissipation, disorder (multiplicative loss noise), and initial cat state",
+  "outcomes": "local Wigner-negativity contrast between sectors (sign change with size); grid-free displaced-Fock witness certification; dependence on dimerization, symmetry of the dissipator, and sub-period micromotion phase",
+  "field": "open quantum systems, Floquet topological photonics/mechanics, non-Gaussian resource theory, Wigner negativity",
+  "date_range": "2019-2026",
+  "target_journal": "Physical Review A"
+}

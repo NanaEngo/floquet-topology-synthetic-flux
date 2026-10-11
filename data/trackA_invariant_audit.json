@@ -1,0 +1,45 @@
+{
+  "status": "COMPLETED",
+  "method": "FL_QOM TopologicalAnalyzer.compute_floquet_winding_number",
+  "grid": {
+    "n_k": 40,
+    "n_t": 40
+  },
+  "software": {
+    "numpy": "1.26.4"
+  },
+  "interpretation": "The archived +/-1/2 labels use identical available J1/J2 parameters, so this audit cannot verify them as distinct invariant sectors.",
+  "archived_nonzero_labels_distinct_in_available_mapping": false,
+  "results": {
+    "archived_W_plus_half_label": {
+      "J1": 0.15,
+      "J2": 1.0,
+      "declared_label": "+1/2",
+      "recomputed_winding": 1
+    },
+    "archived_W_minus_half_label": {
+      "J1": 0.15,
+      "J2": 1.0,
+      "declared_label": "-1/2",
+      "recomputed_winding": 1
+    },
+    "archived_W_zero_label": {
+      "J1": 0.8,
+      "J2": 0.5,
+      "declared_label": "0",
+      "recomputed_winding": 0
+    },
+    "n6_topological_source_control": {
+      "J1": 0.1,
+      "J2": 1.0,
+      "declared_label": "topological",
+      "recomputed_winding": 1
+    },
+    "n6_trivial_source_control": {
+      "J1": 1.0,
+      "J2": 1.0,
+      "declared_label": "trivial",
+      "recomputed_winding": 1
+    }
+  }
+}

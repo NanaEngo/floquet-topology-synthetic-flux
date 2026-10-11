@@ -1,0 +1,132 @@
+{
+  "status": "SOLVER_CONTRAST_CHECK_COMPLETE",
+  "claim_scope": "finite-time master-equation vs Monte-Carlo agreement for the production configuration; solver validation only",
+  "not_supported": [
+    "topological protection theorem",
+    "experimental validation",
+    "metrological gain"
+  ],
+  "design": {
+    "n_cells": 4,
+    "n_modes": 8,
+    "n_max": 2,
+    "initial_state_mode": "edge_site",
+    "kerr": 0.5,
+    "n_mc": 50,
+    "ntraj": 50,
+    "monte_carlo_from_archive": false,
+    "loss_profile": "edge_low_loss",
+    "disorder_level": 0.0,
+    "gamma_edge": 0.0001,
+    "gamma_bulk": 0.2,
+    "t_stop": 6.283185307179586,
+    "n_time_points": 9,
+    "wigner_grid": 31,
+    "production_seed": 20260814,
+    "draw_seed": "seed + profile_index*1e6 + disorder_index*1e4 + sample",
+    "trajectory_seed": "draw_seed + 100 + sector_index",
+    "paired_sectors": true
+  },
+  "exact_master_equation": {
+    "me_contrast": null,
+    "note": "density-matrix master equation infeasible beyond three cells; use the 1/N trajectory extrapolation"
+  },
+  "monte_carlo": {
+    "contrast": {
+      "n": 50,
+      "mean": -0.00031458109170316825,
+      "sd": 0.004422497690670615,
+      "se": 0.0006254356213710077,
+      "ci95_low": -0.0015404349095903434,
+      "ci95_high": 0.0009112727261840069
+    },
+    "by_sector": {
+      "chiral_topological": {
+        "negativity_edge": {
+          "n": 50,
+          "mean": 0.0012180761995864986,
+          "sd": 0.002631628797510645,
+          "se": 0.00037216851365711536,
+          "ci95_low": 0.0004886259128185525,
+          "ci95_high": 0.0019475264863544448
+        },
+        "negativity_center": {
+          "n": 50,
+          "mean": 0.0,
+          "sd": 0.0,
+          "se": 0.0,
+          "ci95_low": 0.0,
+          "ci95_high": 0.0
+        },
+        "edge_population": {
+          "n": 50,
+          "mean": 0.43016356368097175,
+          "sd": 0.014815021021287667,
+          "se": 0.002095160365514752,
+          "ci95_low": 0.42605704936456285,
+          "ci95_high": 0.43427007799738065
+        },
+        "bulk_population": {
+          "n": 50,
+          "mean": 0.23686837452931833,
+          "sd": 0.01105866369015401,
+          "se": 0.00156393121723387,
+          "ci95_low": 0.23380306934353995,
+          "ci95_high": 0.23993367971509671
+        }
+      },
+      "chiral_trivial": {
+        "negativity_edge": {
+          "n": 50,
+          "mean": 0.0015326572912896666,
+          "sd": 0.003373726863374503,
+          "se": 0.00047711702859266637,
+          "ci95_low": 0.0005975079152480406,
+          "ci95_high": 0.0024678066673312926
+        },
+        "negativity_center": {
+          "n": 50,
+          "mean": 0.0,
+          "sd": 0.0,
+          "se": 0.0,
+          "ci95_low": 0.0,
+          "ci95_high": 0.0
+        },
+        "edge_population": {
+          "n": 50,
+          "mean": 0.4193433546328327,
+          "sd": 0.023128285649118462,
+          "se": 0.003270833523942235,
+          "ci95_low": 0.4129325209259059,
+          "ci95_high": 0.4257541883397595
+        },
+        "bulk_population": {
+          "n": 50,
+          "mean": 0.14469212931311573,
+          "sd": 0.011905224554177274,
+          "se": 0.0016836530027614684,
+          "ci95_low": 0.14139216942770325,
+          "ci95_high": 0.14799208919852821
+        }
+      }
+    }
+  },
+  "delta_mc_minus_me": {
+    "difference": null,
+    "mc_se": 0.0006254356213710077,
+    "note": "density-matrix master equation infeasible beyond three cells; use the 1/N trajectory extrapolation"
+  },
+  "crosscheck": {
+    "available": false,
+    "note": "cross-check only defined for the production ntraj=10 configuration (ran ntraj=50)"
+  },
+  "gates": {
+    "production_crosscheck_zero": true,
+    "solver_agreement_within_3se": true
+  },
+  "software": {
+    "qutip": "5.3.1",
+    "numpy": "1.26.4"
+  },
+  "elapsed_seconds": 888.6120853424072
+}

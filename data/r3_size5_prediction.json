@@ -1,0 +1,279 @@
+{
+  "status": "FROZEN_BEFORE_R3_RUN",
+  "purpose": "L3 out-of-sample prediction of the 5-cell edge contrast",
+  "source": "data/chiral_production_summary.csv (N_MC=500 production)",
+  "audit_ref": "AUDIT_RESEARCH_REFINEMENTS_20261001.md (line 155, L3)",
+  "target_size_cells": 5,
+  "target_n_modes": 10,
+  "pre_registered_models": [
+    "M1_exponential",
+    "M2_inverse_N"
+  ],
+  "predictions": {
+    "disorder_0.0_edge_low_loss": {
+      "disorder_level": 0.0,
+      "loss_profile": "edge_low_loss",
+      "observed_means": {
+        "2": 0.016730854021193817,
+        "3": -0.002104060748312782,
+        "4": -0.0021097919092412107
+      },
+      "models": {
+        "M1_exponential": {
+          "pred": -0.002116356062647727,
+          "Delta_inf": -0.002116356081494931,
+          "a": 0.018847203557363697,
+          "xi_cells": 0.14476482730108395,
+          "max_residual": 6.5518703752150825e-06
+        },
+        "M2_inverse_N": {
+          "pred": -0.008835892194244611,
+          "Delta_inf": -0.024984034792744046,
+          "a": 0.08074071299249717
+        }
+      },
+      "ensemble_prediction": {
+        "mean": -0.005476124128446169,
+        "ci95_low": -0.010239986826786625,
+        "ci95_high": -0.0007122614301057146,
+        "se_target": 0.000716374812521435
+      },
+      "sign_prediction": "negative"
+    },
+    "disorder_0.0_uniform_loss": {
+      "disorder_level": 0.0,
+      "loss_profile": "uniform_loss",
+      "observed_means": {
+        "2": -8.115478363489057e-07,
+        "3": -8.041454189779636e-07,
+        "4": -8.173351075779583e-07
+      },
+      "models": {
+        "M1_exponential": {
+          "pred": -8.107431598109058e-07,
+          "Delta_inf": -8.107431598101077e-07,
+          "a": -7.980845918283636e-10,
+          "xi_cells": 0.14476482730108395,
+          "max_residual": 6.598538916735987e-09
+        },
+        "M2_inverse_N": {
+          "pred": -8.1318399410548e-07,
+          "Delta_inf": -8.158834228275259e-07,
+          "a": 1.3497143610229527e-08
+        }
+      },
+      "ensemble_prediction": {
+        "mean": -8.119635769581929e-07,
+        "ci95_low": -1.0862995299895719e-05,
+        "ci95_high": 9.239068145979334e-06,
+        "se_target": 5.127454747852163e-06
+      },
+      "sign_prediction": "unresolved"
+    },
+    "disorder_0.5_edge_low_loss": {
+      "disorder_level": 0.5,
+      "loss_profile": "edge_low_loss",
+      "observed_means": {
+        "2": 0.01575214961955194,
+        "3": -0.0023156480723267544,
+        "4": -0.0023148333925014793
+      },
+      "models": {
+        "M1_exponential": {
+          "pred": -0.002324283248377759,
+          "Delta_inf": -0.0023242832664541824,
+          "a": 0.018076423454208592,
+          "xi_cells": 0.14476482730108395,
+          "max_residual": 9.441229326780445e-06
+        },
+        "M2_inverse_N": {
+          "pred": -0.008767711388723912,
+          "Delta_inf": -0.02425383648702546,
+          "a": 0.07743062549150774
+        }
+      },
+      "ensemble_prediction": {
+        "mean": -0.0055459973185508354,
+        "ci95_low": -0.010198544161850339,
+        "ci95_high": -0.0008934504752513323,
+        "se_target": 0.0007300167209828707
+      },
+      "sign_prediction": "negative"
+    },
+    "disorder_0.5_uniform_loss": {
+      "disorder_level": 0.5,
+      "loss_profile": "uniform_loss",
+      "observed_means": {
+        "2": -1.1762252325930936e-06,
+        "3": -1.17291508556645e-06,
+        "4": -1.129382782911588e-06
+      },
+      "models": {
+        "M1_exponential": {
+          "pred": -1.1127109875058884e-06,
+          "Delta_inf": 2.2246654681672325e-05,
+          "a": -2.34295841563243e-05,
+          "xi_cells": 999.4999166249727,
+          "max_residual": 1.3415195070796824e-08
+        },
+        "M2_inverse_N": {
+          "pred": -1.1331757078483428e-06,
+          "Delta_inf": -1.1004877171478857e-06,
+          "a": -1.6343995350228527e-07
+        }
+      },
+      "ensemble_prediction": {
+        "mean": -1.1229433476771157e-06,
+        "ci95_low": -7.066041193513007e-05,
+        "ci95_high": 6.841452523977584e-05,
+        "se_target": 3.54730797077968e-05
+      },
+      "sign_prediction": "unresolved"
+    },
+    "disorder_1.0_edge_low_loss": {
+      "disorder_level": 1.0,
+      "loss_profile": "edge_low_loss",
+      "observed_means": {
+        "2": 0.01473392326946071,
+        "3": -0.0019814983150641613,
+        "4": -0.0019818421935142772
+      },
+      "models": {
+        "M1_exponential": {
+          "pred": -0.001990036486545733,
+          "Delta_inf": -0.0019900365032696848,
+          "a": 0.016723951595144587,
+          "xi_cells": 0.14476482730108395,
+          "max_residual": 8.185763389621011e-06
+        },
+        "M2_inverse_N": {
+          "pred": -0.007951596316164579,
+          "Delta_inf": -0.022279336333837402,
+          "a": 0.07163870008836412
+        }
+      },
+      "ensemble_prediction": {
+        "mean": -0.004970816401355156,
+        "ci95_low": -0.009326055668372185,
+        "ci95_high": -0.000615577134338127,
+        "se_target": 0.000701254771534493
+      },
+      "sign_prediction": "negative"
+    },
+    "disorder_1.0_uniform_loss": {
+      "disorder_level": 1.0,
+      "loss_profile": "uniform_loss",
+      "observed_means": {
+        "2": -0.00018368906533572645,
+        "3": -0.00018354614962190615,
+        "4": -0.00018354674300656755
+      },
+      "models": {
+        "M1_exponential": {
+          "pred": -0.0001835463750819826,
+          "Delta_inf": -0.00018354637508183992,
+          "a": -1.426898861045188e-07,
+          "xi_cells": 0.14476482730108395,
+          "max_residual": 3.681498198741112e-10
+        },
+        "M2_inverse_N": {
+          "pred": -0.00018349563386481336,
+          "Delta_inf": -0.00018337354157387805,
+          "a": -6.104614546764795e-07
+        }
+      },
+      "ensemble_prediction": {
+        "mean": -0.00018352100447339796,
+        "ci95_low": -0.0006264578788164887,
+        "ci95_high": 0.0002594158698696928,
+        "se_target": 0.0002259752570074011
+      },
+      "sign_prediction": "unresolved"
+    },
+    "disorder_1.5_edge_low_loss": {
+      "disorder_level": 1.5,
+      "loss_profile": "edge_low_loss",
+      "observed_means": {
+        "2": 0.013063842822207726,
+        "3": -0.001997523602503625,
+        "4": -0.0020145192070666093
+      },
+      "models": {
+        "M1_exponential": {
+          "pred": -0.002013568117450084,
+          "Delta_inf": -0.002013568132527496,
+          "a": 0.01507741192088717,
+          "xi_cells": 0.14476482730108395,
+          "max_residual": 9.671181029837113e-07
+        },
+        "M2_inverse_N": {
+          "pred": -0.007391636289656327,
+          "Delta_inf": -0.0203130330682521,
+          "a": 0.06460698389297886
+        }
+      },
+      "ensemble_prediction": {
+        "mean": -0.004702602203553206,
+        "ci95_low": -0.008684287526022386,
+        "ci95_high": -0.0007209168810840246,
+        "se_target": 0.0006595159369214588
+      },
+      "sign_prediction": "negative"
+    },
+    "disorder_1.5_uniform_loss": {
+      "disorder_level": 1.5,
+      "loss_profile": "uniform_loss",
+      "observed_means": {
+        "2": -0.000299687637298961,
+        "3": -0.0002978253998912445,
+        "4": -0.0003117910615686056
+      },
+      "models": {
+        "M1_exponential": {
+          "pred": -0.00031519206723261417,
+          "Delta_inf": -0.006350468653417181,
+          "a": 0.00605341868804606,
+          "xi_cells": 999.4999166249727,
+          "max_residual": 5.277984167922651e-06
+        },
+        "M2_inverse_N": {
+          "pred": -0.00030952990115986565,
+          "Delta_inf": -0.00031751015138915627,
+          "a": 3.9901251146452996e-05
+        }
+      },
+      "ensemble_prediction": {
+        "mean": -0.00031236098419623994,
+        "ci95_low": -0.0006973359171227741,
+        "ci95_high": 7.261394873029421e-05,
+        "se_target": 0.00019497135198477545
+      },
+      "sign_prediction": "unresolved"
+    }
+  },
+  "edge_mode_diagnostics": {
+    "2": {
+      "ipr": 0.473870220062146,
+      "gamma_e_exposure": 0.19463253661424798,
+      "gamma_bulk_over_edge": 2000.0
+    },
+    "3": {
+      "ipr": 0.47361308182360173,
+      "gamma_e_exposure": 0.19511975925707958,
+      "gamma_bulk_over_edge": 2000.0
+    },
+    "4": {
+      "ipr": 0.47361187762062945,
+      "gamma_e_exposure": 0.19512105088703158,
+      "gamma_bulk_over_edge": 2000.0
+    },
+    "5": {
+      "ipr": 0.47361187304451974,
+      "gamma_e_exposure": 0.19512105431260474,
+      "gamma_bulk_over_edge": 2000.0
+    }
+  },
+  "created_unix": 1790886194.209335,
+  "created_iso": "2026-10-01T20:23:14",
+  "scoring_rule": "data/r3_size5_analysis.json must score the measured 5-cell mean against ensemble_prediction and sign_prediction without rewriting this file"
+}

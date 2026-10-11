@@ -1,0 +1,117 @@
+{
+  "status": "NMAX4_CUTOFF_COMPLETE",
+  "claim_scope": "Fock-truncation convergence of the four-cell production ensemble (N_max=4, exact Q<=4 subspace, paired seeds, first 100 draws per stratum)",
+  "not_supported": [
+    "topological protection theorem",
+    "experimental validation",
+    "metrological gain"
+  ],
+  "design": {
+    "n_cells": 4,
+    "n_max_new": 4,
+    "n_max_prod": 2,
+    "subspace_dim_new": 495,
+    "subspace_dim_prod": 45,
+    "n_mc": 500,
+    "ntraj": 10,
+    "floor": 0.002
+  },
+  "gates": {
+    "all_paired": true,
+    "shift_upper95_below_floor": true
+  },
+  "per_record": {
+    "negativity_edge": {
+      "mean": 0.004862229460894276,
+      "se": 8.125023414352329e-05,
+      "max_abs": 0.045357176809186446
+    },
+    "negativity_center": {
+      "mean": 0.0,
+      "se": 0.0,
+      "max_abs": 0.0
+    },
+    "edge_population": {
+      "mean": -0.03345573833367382,
+      "se": 0.0005426595550766824,
+      "max_abs": 0.29402705552669983
+    }
+  },
+  "strata": {
+    "edge_low_loss_d0": {
+      "n": 500,
+      "contrast_nmax4": -0.0017153440810520116,
+      "contrast_nmax2": -0.0021097919092412107,
+      "shift_mean": 0.0003944478281891994,
+      "shift_se": 0.0005292217555745447,
+      "shift_sigma": 0.7453356254430068,
+      "shift_upper95": 0.001431722469115307
+    },
+    "edge_low_loss_d0.5": {
+      "n": 500,
+      "contrast_nmax4": -0.002429172034723,
+      "contrast_nmax2": -0.0023148333925014793,
+      "shift_mean": -0.00011433864222152049,
+      "shift_se": 0.0004916098744610266,
+      "shift_sigma": -0.23258003584015666,
+      "shift_upper95": 0.0010778939961651327
+    },
+    "edge_low_loss_d1": {
+      "n": 500,
+      "contrast_nmax4": -0.0017402524881289306,
+      "contrast_nmax2": -0.0019818421935142772,
+      "shift_mean": 0.0002415897053853468,
+      "shift_se": 0.0004557078469842433,
+      "shift_sigma": 0.5301416400532161,
+      "shift_upper95": 0.0011347770854744637
+    },
+    "edge_low_loss_d1.5": {
+      "n": 500,
+      "contrast_nmax4": -0.0025209631267894554,
+      "contrast_nmax2": -0.0020145192070666093,
+      "shift_mean": -0.000506443919722846,
+      "shift_se": 0.00041358267273617516,
+      "shift_sigma": -1.2245288623247212,
+      "shift_upper95": 0.0013170659582857494
+    },
+    "uniform_loss_d0": {
+      "n": 500,
+      "contrast_nmax4": -7.910045648192629e-06,
+      "contrast_nmax2": -8.173351075779583e-07,
+      "shift_mean": -7.092710540614672e-06,
+      "shift_se": 6.410094034222232e-06,
+      "shift_sigma": -1.1064908724814464,
+      "shift_upper95": 1.9656494847690246e-05
+    },
+    "uniform_loss_d0.5": {
+      "n": 500,
+      "contrast_nmax4": 5.172149878984808e-05,
+      "contrast_nmax2": -1.129382782911588e-06,
+      "shift_mean": 5.285088157275967e-05,
+      "shift_se": 4.558358711043654e-05,
+      "shift_sigma": 1.1594278757552903,
+      "shift_upper95": 0.0001421947123092153
+    },
+    "uniform_loss_d1": {
+      "n": 500,
+      "contrast_nmax4": -0.0006007703032924701,
+      "contrast_nmax2": -0.00018354674300656755,
+      "shift_mean": -0.00041722356028590246,
+      "shift_se": 0.0001418980994208013,
+      "shift_sigma": -2.9403040772844933,
+      "shift_upper95": 0.000695343835150673
+    },
+    "uniform_loss_d1.5": {
+      "n": 500,
+      "contrast_nmax4": -0.0007459082567560038,
+      "contrast_nmax2": -0.0003117910615686056,
+      "shift_mean": -0.00043411719518739823,
+      "shift_se": 0.00010956593650627655,
+      "shift_sigma": -3.9621547447141983,
+      "shift_upper95": 0.0006488664307397003
+    }
+  },
+  "software": {
+    "numpy": "1.26.4"
+  }
+}

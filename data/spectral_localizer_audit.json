@@ -1,0 +1,947 @@
+{
+  "status": "COMPLETED_SPECTRAL_LOCALIZER_CERTIFICATION",
+  "method": {
+    "localizer": "L_(x,E) = kappa (X-xI)(x)tau_x + (H_eff-EI)(x)tau_y",
+    "winding_markers": "W_0=(nu_a+nu_b)/2, W_pi=(nu_a-nu_b)/2 with nu_{a,b}=sig[(X+iH_eff^{a,b})S]",
+    "reference": "Ghosh, Arouca & Black-Schaffer, PRB 110, 245306 (2024); arXiv:2408.08548",
+    "protection_bound_reference": "Wong, Cerjan & Cole, arXiv:2410.24176",
+    "model": "two-step chiral Floquet SSH (identical to validate_chiral_floquet_model.py)",
+    "quasienergy_grid": "E in {0, pi/T} with T=2pi -> {0, 0.5}"
+  },
+  "points": {
+    "topological": {
+      "4": {
+        "ja": 0.1,
+        "jb": 1.2,
+        "n_cells": 4,
+        "kappa": 0.4328972342632195,
+        "profile_E0.0": {
+          "e": 0.0,
+          "sigma_L_by_cell": [
+            0.001088859201099047,
+            0.21494681994924267,
+            0.21494681994924308,
+            0.0010888592010990206
+          ],
+          "min_sigma_L": 0.0010888592010990206,
+          "min_sigma_L_cell": 3,
+          "bulk_sigma_L": 0.21494681994924286,
+          "boundary_sigma_L_left": 0.001088859201099047,
+          "boundary_sigma_L_right": 0.0010888592010990206
+        },
+        "profile_E0.5": {
+          "e": 0.5,
+          "sigma_L_by_cell": [
+            0.24428051769516365,
+            0.235374513467114,
+            0.23537451346711405,
+            0.2442805176951637
+          ],
+          "min_sigma_L": 0.235374513467114,
+          "min_sigma_L_cell": 1,
+          "bulk_sigma_L": 0.23537451346711402,
+          "boundary_sigma_L_left": 0.24428051769516365,
+          "boundary_sigma_L_right": 0.2442805176951637
+        },
+        "winding_markers": {
+          "nu_A": 1.0,
+          "nu_B": 1.0,
+          "W_0": 1.0,
+          "W_pi": 0.0,
+          "x_bulk": 2.0
+        },
+        "n_edge_localized": 4
+      },
+      "6": {
+        "ja": 0.1,
+        "jb": 1.2,
+        "n_cells": 6,
+        "kappa": 0.2205420727084102,
+        "profile_E0.0": {
+          "e": 0.0,
+          "sigma_L_by_cell": [
+            0.0005692616595061304,
+            0.21905389660686558,
+            0.2977886759959324,
+            0.2977886759959332,
+            0.2190538966068649,
+            0.0005692616595059443
+          ],
+          "min_sigma_L": 0.0005692616595059443,
+          "min_sigma_L_cell": 5,
+          "bulk_sigma_L": 0.258421286301399,
+          "boundary_sigma_L_left": 0.0005692616595061304,
+          "boundary_sigma_L_right": 0.0005692616595059443
+        },
+        "profile_E0.5": {
+          "e": 0.5,
+          "sigma_L_by_cell": [
+            0.15777606126118263,
+            0.13777625031894566,
+            0.14050747304926145,
+            0.14050747304926228,
+            0.13777625031894594,
+            0.15777606126118263
+          ],
+          "min_sigma_L": 0.13777625031894566,
+          "min_sigma_L_cell": 1,
+          "bulk_sigma_L": 0.1391418616841037,
+          "boundary_sigma_L_left": 0.15777606126118263,
+          "boundary_sigma_L_right": 0.15777606126118263
+        },
+        "winding_markers": {
+          "nu_A": 1.0,
+          "nu_B": 1.0,
+          "W_0": 1.0,
+          "W_pi": 0.0,
+          "x_bulk": 3.0
+        },
+        "n_edge_localized": 2
+      },
+      "8": {
+        "ja": 0.1,
+        "jb": 1.2,
+        "n_cells": 8,
+        "kappa": 0.14817420827701558,
+        "profile_E0.0": {
+          "e": 0.0,
+          "sigma_L_by_cell": [
+            0.0003872022542280984,
+            0.14763179962740802,
+            0.2953584437711318,
+            0.31637339942395504,
+            0.3163733994239549,
+            0.2953584437711316,
+            0.14763179962740766,
+            0.0003872022542278681
+          ],
+          "min_sigma_L": 0.0003872022542278681,
+          "min_sigma_L_cell": 7,
+          "bulk_sigma_L": 0.2953584437711317,
+          "boundary_sigma_L_left": 0.0003872022542280984,
+          "boundary_sigma_L_right": 0.0003872022542278681
+        },
+        "profile_E0.5": {
+          "e": 0.5,
+          "sigma_L_by_cell": [
+            0.12974323379164848,
+            0.10838929286837089,
+            0.1103011073997231,
+            0.11058649067266714,
+            0.11058649067266635,
+            0.11030110739972265,
+            0.10838929286837103,
+            0.1297432337916481
+          ],
+          "min_sigma_L": 0.10838929286837089,
+          "min_sigma_L_cell": 1,
+          "bulk_sigma_L": 0.11030110739972288,
+          "boundary_sigma_L_left": 0.12974323379164848,
+          "boundary_sigma_L_right": 0.1297432337916481
+        },
+        "winding_markers": {
+          "nu_A": 1.0,
+          "nu_B": 1.0,
+          "W_0": 1.0,
+          "W_pi": 0.0,
+          "x_bulk": 4.0
+        },
+        "n_edge_localized": 2
+      }
+    },
+    "trivial": {
+      "4": {
+        "ja": 1.2,
+        "jb": 0.1,
+        "n_cells": 4,
+        "kappa": 0.43761666725630294,
+        "profile_E0.0": {
+          "e": 0.0,
+          "sigma_L_by_cell": [
+            0.37170241545006,
+            0.35161381783550066,
+            0.3516138178355004,
+            0.37170241545005916
+          ],
+          "min_sigma_L": 0.3516138178355004,
+          "min_sigma_L_cell": 2,
+          "bulk_sigma_L": 0.3516138178355005,
+          "boundary_sigma_L_left": 0.37170241545006,
+          "boundary_sigma_L_right": 0.37170241545005916
+        },
+        "profile_E0.5": {
+          "e": 0.5,
+          "sigma_L_by_cell": [
+            0.10561390339105624,
+            0.10977889535937849,
+            0.10977889535937822,
+            0.10561390339105739
+          ],
+          "min_sigma_L": 0.10561390339105624,
+          "min_sigma_L_cell": 0,
+          "bulk_sigma_L": 0.10977889535937835,
+          "boundary_sigma_L_left": 0.10561390339105624,
+          "boundary_sigma_L_right": 0.10561390339105739
+        },
+        "winding_markers": {
+          "nu_A": 0.0,
+          "nu_B": 0.0,
+          "W_0": 0.0,
+          "W_pi": 0.0,
+          "x_bulk": 2.0
+        },
+        "n_edge_localized": 6
+      },
+      "6": {
+        "ja": 1.2,
+        "jb": 0.1,
+        "n_cells": 6,
+        "kappa": 0.22147658577964463,
+        "profile_E0.0": {
+          "e": 0.0,
+          "sigma_L_by_cell": [
+            0.36502494598123814,
+            0.3482606996546403,
+            0.34774606777266437,
+            0.3477460677726645,
+            0.34826069965463946,
+            0.3650249459812373
+          ],
+          "min_sigma_L": 0.34774606777266437,
+          "min_sigma_L_cell": 2,
+          "bulk_sigma_L": 0.34800338371365197,
+          "boundary_sigma_L_left": 0.36502494598123814,
+          "boundary_sigma_L_right": 0.3650249459812373
+        },
+        "profile_E0.5": {
+          "e": 0.5,
+          "sigma_L_by_cell": [
+            0.10171872537038393,
+            0.10207955018110686,
+            0.10267346072804194,
+            0.10267346072804112,
+            0.10207955018110773,
+            0.10171872537038389
+          ],
+          "min_sigma_L": 0.10171872537038389,
+          "min_sigma_L_cell": 5,
+          "bulk_sigma_L": 0.10237650545457443,
+          "boundary_sigma_L_left": 0.10171872537038393,
+          "boundary_sigma_L_right": 0.10171872537038389
+        },
+        "winding_markers": {
+          "nu_A": 0.0,
+          "nu_B": 0.0,
+          "W_0": 0.0,
+          "W_pi": 0.0,
+          "x_bulk": 3.0
+        },
+        "n_edge_localized": 8
+      },
+      "8": {
+        "ja": 1.2,
+        "jb": 0.1,
+        "n_cells": 8,
+        "kappa": 0.14848441559194075,
+        "profile_E0.0": {
+          "e": 0.0,
+          "sigma_L_by_cell": [
+            0.36185166305474337,
+            0.3484121878003864,
+            0.3473486855205055,
+            0.34734066720508516,
+            0.3473406672050851,
+            0.3473486855205053,
+            0.3484121878003869,
+            0.3618516630547432
+          ],
+          "min_sigma_L": 0.3473406672050851,
+          "min_sigma_L_cell": 4,
+          "bulk_sigma_L": 0.3473486855205054,
+          "boundary_sigma_L_left": 0.36185166305474337,
+          "boundary_sigma_L_right": 0.3618516630547432
+        },
+        "profile_E0.5": {
+          "e": 0.5,
+          "sigma_L_by_cell": [
+            0.09855384223735296,
+            0.0957781044406682,
+            0.09650691410460743,
+            0.096606189152622,
+            0.09660618915262154,
+            0.09650691410460807,
+            0.09577810444066734,
+            0.09855384223735282
+          ],
+          "min_sigma_L": 0.09577810444066734,
+          "min_sigma_L_cell": 6,
+          "bulk_sigma_L": 0.09650691410460775,
+          "boundary_sigma_L_left": 0.09855384223735296,
+          "boundary_sigma_L_right": 0.09855384223735282
+        },
+        "winding_markers": {
+          "nu_A": 0.0,
+          "nu_B": 0.0,
+          "W_0": 0.0,
+          "W_pi": 0.0,
+          "x_bulk": 4.0
+        },
+        "n_edge_localized": 8
+      }
+    }
+  },
+  "disorder_sweeps": {
+    "topological_N6": [
+      {
+        "disorder": 0.0,
+        "mean_bulk_min_sigma_L": 0.13777625031894566,
+        "std_bulk_min_sigma_L": 0.0,
+        "min_bulk_min_sigma_L": 0.13777625031894566,
+        "mean_full_min_sigma_L": 0.0005692616595059443,
+        "min_full_min_sigma_L": 0.0005692616595059443,
+        "frame_marker_flip_fraction": 0.0,
+        "note": "frame-marker fluctuation is a broken-chiral-symmetry artifact at d>0, not a sector transition",
+        "gap_open": true,
+        "sector_transition_possible": false,
+        "linear_floor": 0.13777625031894566,
+        "min_margin_to_floor": 0.0,
+        "bound_holds": true
+      },
+      {
+        "disorder": 0.05,
+        "mean_bulk_min_sigma_L": 0.12928983527882712,
+        "std_bulk_min_sigma_L": 0.003069256712720109,
+        "min_bulk_min_sigma_L": 0.12305413072601505,
+        "mean_full_min_sigma_L": 0.01104074275093716,
+        "min_full_min_sigma_L": 0.0011361180563299743,
+        "frame_marker_flip_fraction": 0.0,
+        "note": "frame-marker fluctuation is a broken-chiral-symmetry artifact at d>0, not a sector transition",
+        "gap_open": true,
+        "sector_transition_possible": false,
+        "linear_floor": 0.08777625031894566,
+        "min_margin_to_floor": 0.03527788040706939,
+        "bound_holds": true
+      },
+      {
+        "disorder": 0.1,
+        "mean_bulk_min_sigma_L": 0.12061483242158295,
+        "std_bulk_min_sigma_L": 0.006305150208452934,
+        "min_bulk_min_sigma_L": 0.10984915803894686,
+        "mean_full_min_sigma_L": 0.022020950020074957,
+        "min_full_min_sigma_L": 0.002040774078220702,
+        "frame_marker_flip_fraction": 0.0,
+        "note": "frame-marker fluctuation is a broken-chiral-symmetry artifact at d>0, not a sector transition",
+        "gap_open": true,
+        "sector_transition_possible": false,
+        "linear_floor": 0.03777625031894566,
+        "min_margin_to_floor": 0.0720729077200012,
+        "bound_holds": true
+      },
+      {
+        "disorder": 0.2,
+        "mean_bulk_min_sigma_L": 0.11261483439052637,
+        "std_bulk_min_sigma_L": 0.01930450778958747,
+        "min_bulk_min_sigma_L": 0.08627403303718388,
+        "mean_full_min_sigma_L": 0.04394182832026116,
+        "min_full_min_sigma_L": 0.003946939847615667,
+        "frame_marker_flip_fraction": 0.05,
+        "note": "frame-marker fluctuation is a broken-chiral-symmetry artifact at d>0, not a sector transition",
+        "gap_open": true,
+        "sector_transition_possible": false,
+        "linear_floor": -0.06222374968105435,
+        "min_margin_to_floor": 0.1484977827182382,
+        "bound_holds": true
+      },
+      {
+        "disorder": 0.35,
+        "mean_bulk_min_sigma_L": 0.10096395511811285,
+        "std_bulk_min_sigma_L": 0.033695594160114584,
+        "min_bulk_min_sigma_L": 0.05568303802106869,
+        "mean_full_min_sigma_L": 0.07615539134042647,
+        "min_full_min_sigma_L": 0.0068556016082488855,
+        "frame_marker_flip_fraction": 0.35,
+        "note": "frame-marker fluctuation is a broken-chiral-symmetry artifact at d>0, not a sector transition",
+        "gap_open": true,
+        "sector_transition_possible": false,
+        "linear_floor": -0.2122237496810543,
+        "min_margin_to_floor": 0.267906787702123,
+        "bound_holds": true
+      },
+      {
+        "disorder": 0.5,
+        "mean_bulk_min_sigma_L": 0.09029835707823715,
+        "std_bulk_min_sigma_L": 0.03420412280296645,
+        "min_bulk_min_sigma_L": 0.036313098015515015,
+        "mean_full_min_sigma_L": 0.084882868854101,
+        "min_full_min_sigma_L": 0.009759487132226121,
+        "frame_marker_flip_fraction": 0.35,
+        "note": "frame-marker fluctuation is a broken-chiral-symmetry artifact at d>0, not a sector transition",
+        "gap_open": true,
+        "sector_transition_possible": false,
+        "linear_floor": -0.3622237496810543,
+        "min_margin_to_floor": 0.39853684769656933,
+        "bound_holds": true
+      }
+    ],
+    "topological_N8": [
+      {
+        "disorder": 0.0,
+        "mean_bulk_min_sigma_L": 0.10838929286837089,
+        "std_bulk_min_sigma_L": 0.0,
+        "min_bulk_min_sigma_L": 0.10838929286837089,
+        "mean_full_min_sigma_L": 0.00038720225422786815,
+        "min_full_min_sigma_L": 0.0003872022542278681,
+        "frame_marker_flip_fraction": 0.0,
+        "note": "frame-marker fluctuation is a broken-chiral-symmetry artifact at d>0, not a sector transition",
+        "gap_open": true,
+        "sector_transition_possible": false,
+        "linear_floor": 0.10838929286837089,
+        "min_margin_to_floor": 0.0,
+        "bound_holds": true
+      },
+      {
+        "disorder": 0.05,
+        "mean_bulk_min_sigma_L": 0.10045008125759192,
+        "std_bulk_min_sigma_L": 0.004274038572637985,
+        "min_bulk_min_sigma_L": 0.09253446604003748,
+        "mean_full_min_sigma_L": 0.00686879782824337,
+        "min_full_min_sigma_L": 0.0003979070517914982,
+        "frame_marker_flip_fraction": 0.0,
+        "note": "frame-marker fluctuation is a broken-chiral-symmetry artifact at d>0, not a sector transition",
+        "gap_open": true,
+        "sector_transition_possible": false,
+        "linear_floor": 0.058389292868370885,
+        "min_margin_to_floor": 0.0341451731716666,
+        "bound_holds": true
+      },
+      {
+        "disorder": 0.1,
+        "mean_bulk_min_sigma_L": 0.09061277443497241,
+        "std_bulk_min_sigma_L": 0.008055661224715127,
+        "min_bulk_min_sigma_L": 0.07866877942197952,
+        "mean_full_min_sigma_L": 0.01367056569321878,
+        "min_full_min_sigma_L": 0.0004187330259685745,
+        "frame_marker_flip_fraction": 0.0,
+        "note": "frame-marker fluctuation is a broken-chiral-symmetry artifact at d>0, not a sector transition",
+        "gap_open": true,
+        "sector_transition_possible": false,
+        "linear_floor": 0.008389292868370882,
+        "min_margin_to_floor": 0.07027948655360863,
+        "bound_holds": true
+      },
+      {
+        "disorder": 0.2,
+        "mean_bulk_min_sigma_L": 0.0685867007579121,
+        "std_bulk_min_sigma_L": 0.017126078183954466,
+        "min_bulk_min_sigma_L": 0.03565062746430347,
+        "mean_full_min_sigma_L": 0.027276257220224403,
+        "min_full_min_sigma_L": 0.00048478950390296505,
+        "frame_marker_flip_fraction": 0.1,
+        "note": "frame-marker fluctuation is a broken-chiral-symmetry artifact at d>0, not a sector transition",
+        "gap_open": true,
+        "sector_transition_possible": false,
+        "linear_floor": -0.09161070713162912,
+        "min_margin_to_floor": 0.12726133459593258,
+        "bound_holds": true
+      },
+      {
+        "disorder": 0.35,
+        "mean_bulk_min_sigma_L": 0.06641659821978305,
+        "std_bulk_min_sigma_L": 0.016592469448758942,
+        "min_bulk_min_sigma_L": 0.028703159864753643,
+        "mean_full_min_sigma_L": 0.047564297172040144,
+        "min_full_min_sigma_L": 0.0006220632941102068,
+        "frame_marker_flip_fraction": 0.25,
+        "note": "frame-marker fluctuation is a broken-chiral-symmetry artifact at d>0, not a sector transition",
+        "gap_open": true,
+        "sector_transition_possible": false,
+        "linear_floor": -0.24161070713162908,
+        "min_margin_to_floor": 0.2703138669963827,
+        "bound_holds": true
+      },
+      {
+        "disorder": 0.5,
+        "mean_bulk_min_sigma_L": 0.06061956760046685,
+        "std_bulk_min_sigma_L": 0.018683962574512308,
+        "min_bulk_min_sigma_L": 0.031161126374387425,
+        "mean_full_min_sigma_L": 0.05046426776848704,
+        "min_full_min_sigma_L": 0.0008560817726968562,
+        "frame_marker_flip_fraction": 0.3,
+        "note": "frame-marker fluctuation is a broken-chiral-symmetry artifact at d>0, not a sector transition",
+        "gap_open": true,
+        "sector_transition_possible": false,
+        "linear_floor": -0.3916107071316291,
+        "min_margin_to_floor": 0.42277183350601655,
+        "bound_holds": true
+      }
+    ],
+    "topological_N10": [
+      {
+        "disorder": 0.0,
+        "mean_bulk_min_sigma_L": 0.09561725424832676,
+        "std_bulk_min_sigma_L": 2.7755575615628914e-17,
+        "min_bulk_min_sigma_L": 0.09561725424832679,
+        "mean_full_min_sigma_L": 0.00029332368481215117,
+        "min_full_min_sigma_L": 0.0002933236848121511,
+        "frame_marker_flip_fraction": 0.0,
+        "note": "frame-marker fluctuation is a broken-chiral-symmetry artifact at d>0, not a sector transition",
+        "gap_open": true,
+        "sector_transition_possible": false,
+        "linear_floor": 0.09561725424832679,
+        "min_margin_to_floor": 0.0,
+        "bound_holds": true
+      },
+      {
+        "disorder": 0.05,
+        "mean_bulk_min_sigma_L": 0.08605732554481062,
+        "std_bulk_min_sigma_L": 0.005436551649652262,
+        "min_bulk_min_sigma_L": 0.07770786004806099,
+        "mean_full_min_sigma_L": 0.011089601171482593,
+        "min_full_min_sigma_L": 0.001342946733746732,
+        "frame_marker_flip_fraction": 0.0,
+        "note": "frame-marker fluctuation is a broken-chiral-symmetry artifact at d>0, not a sector transition",
+        "gap_open": true,
+        "sector_transition_possible": false,
+        "linear_floor": 0.045617254248326786,
+        "min_margin_to_floor": 0.032090605799734204,
+        "bound_holds": true
+      },
+      {
+        "disorder": 0.1,
+        "mean_bulk_min_sigma_L": 0.07607651630601002,
+        "std_bulk_min_sigma_L": 0.009561707916479966,
+        "min_bulk_min_sigma_L": 0.061082210417540014,
+        "mean_full_min_sigma_L": 0.02215993930609653,
+        "min_full_min_sigma_L": 0.0026366149232412285,
+        "frame_marker_flip_fraction": 0.0,
+        "note": "frame-marker fluctuation is a broken-chiral-symmetry artifact at d>0, not a sector transition",
+        "gap_open": true,
+        "sector_transition_possible": false,
+        "linear_floor": -0.004382745751673217,
+        "min_margin_to_floor": 0.06546495616921323,
+        "bound_holds": true
+      },
+      {
+        "disorder": 0.2,
+        "mean_bulk_min_sigma_L": 0.053912508113480695,
+        "std_bulk_min_sigma_L": 0.01139556834183447,
+        "min_bulk_min_sigma_L": 0.041298522001563115,
+        "mean_full_min_sigma_L": 0.0442574332462192,
+        "min_full_min_sigma_L": 0.005242100218796538,
+        "frame_marker_flip_fraction": 0.05,
+        "note": "frame-marker fluctuation is a broken-chiral-symmetry artifact at d>0, not a sector transition",
+        "gap_open": true,
+        "sector_transition_possible": false,
+        "linear_floor": -0.10438274575167322,
+        "min_margin_to_floor": 0.14568126775323634,
+        "bound_holds": true
+      },
+      {
+        "disorder": 0.35,
+        "mean_bulk_min_sigma_L": 0.0540826584272201,
+        "std_bulk_min_sigma_L": 0.02303139360540352,
+        "min_bulk_min_sigma_L": 0.023825044930694567,
+        "mean_full_min_sigma_L": 0.07661011784443578,
+        "min_full_min_sigma_L": 0.00913325958455225,
+        "frame_marker_flip_fraction": 0.2,
+        "note": "frame-marker fluctuation is a broken-chiral-symmetry artifact at d>0, not a sector transition",
+        "gap_open": true,
+        "sector_transition_possible": false,
+        "linear_floor": -0.2543827457516732,
+        "min_margin_to_floor": 0.2782077906823678,
+        "bound_holds": true
+      },
+      {
+        "disorder": 0.5,
+        "mean_bulk_min_sigma_L": 0.04825810944722197,
+        "std_bulk_min_sigma_L": 0.02273100947614868,
+        "min_bulk_min_sigma_L": 0.01683263054780164,
+        "mean_full_min_sigma_L": 0.08019872045906765,
+        "min_full_min_sigma_L": 0.012982681118845112,
+        "frame_marker_flip_fraction": 0.25,
+        "note": "frame-marker fluctuation is a broken-chiral-symmetry artifact at d>0, not a sector transition",
+        "gap_open": true,
+        "sector_transition_possible": false,
+        "linear_floor": -0.4043827457516732,
+        "min_margin_to_floor": 0.42121537629947486,
+        "bound_holds": true
+      }
+    ],
+    "trivial_N6": [
+      {
+        "disorder": 0.0,
+        "mean_bulk_min_sigma_L": 0.10207955018110686,
+        "std_bulk_min_sigma_L": 0.0,
+        "min_bulk_min_sigma_L": 0.10207955018110686,
+        "mean_full_min_sigma_L": 0.3477460677726644,
+        "min_full_min_sigma_L": 0.34774606777266437,
+        "frame_marker_flip_fraction": 0.0,
+        "note": "frame-marker fluctuation is a broken-chiral-symmetry artifact at d>0, not a sector transition",
+        "gap_open": true,
+        "sector_transition_possible": false,
+        "linear_floor": 0.10207955018110686,
+        "min_margin_to_floor": 0.0,
+        "bound_holds": true
+      },
+      {
+        "disorder": 0.05,
+        "mean_bulk_min_sigma_L": 0.09062332823915584,
+        "std_bulk_min_sigma_L": 0.01034604667676189,
+        "min_bulk_min_sigma_L": 0.07171548770894598,
+        "mean_full_min_sigma_L": 0.3410682188689123,
+        "min_full_min_sigma_L": 0.3344839104209865,
+        "frame_marker_flip_fraction": 0.0,
+        "note": "frame-marker fluctuation is a broken-chiral-symmetry artifact at d>0, not a sector transition",
+        "gap_open": true,
+        "sector_transition_possible": false,
+        "linear_floor": 0.052079550181106854,
+        "min_margin_to_floor": 0.019635937527839126,
+        "bound_holds": true
+      },
+      {
+        "disorder": 0.1,
+        "mean_bulk_min_sigma_L": 0.08012387431744913,
+        "std_bulk_min_sigma_L": 0.02052498250285242,
+        "min_bulk_min_sigma_L": 0.04226936025893563,
+        "mean_full_min_sigma_L": 0.32447970917713165,
+        "min_full_min_sigma_L": 0.3069917060781459,
+        "frame_marker_flip_fraction": 0.0,
+        "note": "frame-marker fluctuation is a broken-chiral-symmetry artifact at d>0, not a sector transition",
+        "gap_open": true,
+        "sector_transition_possible": false,
+        "linear_floor": 0.002079550181106851,
+        "min_margin_to_floor": 0.04018981007782878,
+        "bound_holds": true
+      },
+      {
+        "disorder": 0.2,
+        "mean_bulk_min_sigma_L": 0.06663269296828496,
+        "std_bulk_min_sigma_L": 0.026240690129867142,
+        "min_bulk_min_sigma_L": 0.0173709219563486,
+        "mean_full_min_sigma_L": 0.27835627749531866,
+        "min_full_min_sigma_L": 0.24108603003112994,
+        "frame_marker_flip_fraction": 0.0,
+        "note": "frame-marker fluctuation is a broken-chiral-symmetry artifact at d>0, not a sector transition",
+        "gap_open": true,
+        "sector_transition_possible": false,
+        "linear_floor": -0.09792044981889315,
+        "min_margin_to_floor": 0.11529137177524175,
+        "bound_holds": true
+      },
+      {
+        "disorder": 0.35,
+        "mean_bulk_min_sigma_L": 0.05683636085154982,
+        "std_bulk_min_sigma_L": 0.02433738799699818,
+        "min_bulk_min_sigma_L": 0.021864035311591867,
+        "mean_full_min_sigma_L": 0.19777473118068709,
+        "min_full_min_sigma_L": 0.1257921862050858,
+        "frame_marker_flip_fraction": 0.1,
+        "note": "frame-marker fluctuation is a broken-chiral-symmetry artifact at d>0, not a sector transition",
+        "gap_open": true,
+        "sector_transition_possible": false,
+        "linear_floor": -0.2479204498188931,
+        "min_margin_to_floor": 0.269784485130485,
+        "bound_holds": true
+      },
+      {
+        "disorder": 0.5,
+        "mean_bulk_min_sigma_L": 0.0503650059872995,
+        "std_bulk_min_sigma_L": 0.022600647371497577,
+        "min_bulk_min_sigma_L": 0.004924774430451863,
+        "mean_full_min_sigma_L": 0.11087765674734493,
+        "min_full_min_sigma_L": 0.004924774430451863,
+        "frame_marker_flip_fraction": 0.05,
+        "note": "frame-marker fluctuation is a broken-chiral-symmetry artifact at d>0, not a sector transition",
+        "gap_open": true,
+        "sector_transition_possible": false,
+        "linear_floor": -0.39792044981889313,
+        "min_margin_to_floor": 0.402845224249345,
+        "bound_holds": true
+      }
+    ],
+    "trivial_N8": [
+      {
+        "disorder": 0.0,
+        "mean_bulk_min_sigma_L": 0.09577810444066734,
+        "std_bulk_min_sigma_L": 0.0,
+        "min_bulk_min_sigma_L": 0.09577810444066734,
+        "mean_full_min_sigma_L": 0.34734066720508505,
+        "min_full_min_sigma_L": 0.3473406672050851,
+        "frame_marker_flip_fraction": 0.0,
+        "note": "frame-marker fluctuation is a broken-chiral-symmetry artifact at d>0, not a sector transition",
+        "gap_open": true,
+        "sector_transition_possible": false,
+        "linear_floor": 0.09577810444066734,
+        "min_margin_to_floor": 0.0,
+        "bound_holds": true
+      },
+      {
+        "disorder": 0.05,
+        "mean_bulk_min_sigma_L": 0.08210121237237032,
+        "std_bulk_min_sigma_L": 0.008434485730474643,
+        "min_bulk_min_sigma_L": 0.0684555158493394,
+        "mean_full_min_sigma_L": 0.3410254977422197,
+        "min_full_min_sigma_L": 0.33480909354911154,
+        "frame_marker_flip_fraction": 0.0,
+        "note": "frame-marker fluctuation is a broken-chiral-symmetry artifact at d>0, not a sector transition",
+        "gap_open": true,
+        "sector_transition_possible": false,
+        "linear_floor": 0.045778104440667336,
+        "min_margin_to_floor": 0.022677411408672063,
+        "bound_holds": true
+      },
+      {
+        "disorder": 0.1,
+        "mean_bulk_min_sigma_L": 0.06885630456913501,
+        "std_bulk_min_sigma_L": 0.017199702835365576,
+        "min_bulk_min_sigma_L": 0.03997096268894791,
+        "mean_full_min_sigma_L": 0.32548605974215306,
+        "min_full_min_sigma_L": 0.3078828842249827,
+        "frame_marker_flip_fraction": 0.0,
+        "note": "frame-marker fluctuation is a broken-chiral-symmetry artifact at d>0, not a sector transition",
+        "gap_open": true,
+        "sector_transition_possible": false,
+        "linear_floor": -0.004221895559332667,
+        "min_margin_to_floor": 0.04419285824828058,
+        "bound_holds": true
+      },
+      {
+        "disorder": 0.2,
+        "mean_bulk_min_sigma_L": 0.05900064177851526,
+        "std_bulk_min_sigma_L": 0.02237521165358465,
+        "min_bulk_min_sigma_L": 0.02043679379670539,
+        "mean_full_min_sigma_L": 0.2814587623315478,
+        "min_full_min_sigma_L": 0.24192916455693808,
+        "frame_marker_flip_fraction": 0.0,
+        "note": "frame-marker fluctuation is a broken-chiral-symmetry artifact at d>0, not a sector transition",
+        "gap_open": true,
+        "sector_transition_possible": false,
+        "linear_floor": -0.10422189555933267,
+        "min_margin_to_floor": 0.12465868935603806,
+        "bound_holds": true
+      },
+      {
+        "disorder": 0.35,
+        "mean_bulk_min_sigma_L": 0.04302223319252858,
+        "std_bulk_min_sigma_L": 0.01887258668827862,
+        "min_bulk_min_sigma_L": 0.016595383884496842,
+        "mean_full_min_sigma_L": 0.20358271712555762,
+        "min_full_min_sigma_L": 0.13644419517237594,
+        "frame_marker_flip_fraction": 0.05,
+        "note": "frame-marker fluctuation is a broken-chiral-symmetry artifact at d>0, not a sector transition",
+        "gap_open": true,
+        "sector_transition_possible": false,
+        "linear_floor": -0.2542218955593326,
+        "min_margin_to_floor": 0.27081727944382944,
+        "bound_holds": true
+      },
+      {
+        "disorder": 0.5,
+        "mean_bulk_min_sigma_L": 0.05036861737478806,
+        "std_bulk_min_sigma_L": 0.021874700313116256,
+        "min_bulk_min_sigma_L": 0.018849639377770285,
+        "mean_full_min_sigma_L": 0.11925744628840289,
+        "min_full_min_sigma_L": 0.0277470876631287,
+        "frame_marker_flip_fraction": 0.05,
+        "note": "frame-marker fluctuation is a broken-chiral-symmetry artifact at d>0, not a sector transition",
+        "gap_open": true,
+        "sector_transition_possible": false,
+        "linear_floor": -0.40422189555933263,
+        "min_margin_to_floor": 0.4230715349371029,
+        "bound_holds": true
+      }
+    ],
+    "trivial_N10": [
+      {
+        "disorder": 0.0,
+        "mean_bulk_min_sigma_L": 0.08984427300185671,
+        "std_bulk_min_sigma_L": 0.0,
+        "min_bulk_min_sigma_L": 0.08984427300185671,
+        "mean_full_min_sigma_L": 0.3475552573291737,
+        "min_full_min_sigma_L": 0.3475552573291737,
+        "frame_marker_flip_fraction": 0.0,
+        "note": "frame-marker fluctuation is a broken-chiral-symmetry artifact at d>0, not a sector transition",
+        "gap_open": true,
+        "sector_transition_possible": false,
+        "linear_floor": 0.08984427300185671,
+        "min_margin_to_floor": 0.0,
+        "bound_holds": true
+      },
+      {
+        "disorder": 0.05,
+        "mean_bulk_min_sigma_L": 0.0727367949656519,
+        "std_bulk_min_sigma_L": 0.005628727978958801,
+        "min_bulk_min_sigma_L": 0.06334648973011102,
+        "mean_full_min_sigma_L": 0.3395956429789509,
+        "min_full_min_sigma_L": 0.33149499113789893,
+        "frame_marker_flip_fraction": 0.0,
+        "note": "frame-marker fluctuation is a broken-chiral-symmetry artifact at d>0, not a sector transition",
+        "gap_open": true,
+        "sector_transition_possible": false,
+        "linear_floor": 0.03984427300185671,
+        "min_margin_to_floor": 0.02350221672825431,
+        "bound_holds": true
+      },
+      {
+        "disorder": 0.1,
+        "mean_bulk_min_sigma_L": 0.054833598560788566,
+        "std_bulk_min_sigma_L": 0.011673795805993932,
+        "min_bulk_min_sigma_L": 0.034828920918773355,
+        "mean_full_min_sigma_L": 0.3204359432148408,
+        "min_full_min_sigma_L": 0.30066865591936354,
+        "frame_marker_flip_fraction": 0.0,
+        "note": "frame-marker fluctuation is a broken-chiral-symmetry artifact at d>0, not a sector transition",
+        "gap_open": true,
+        "sector_transition_possible": false,
+        "linear_floor": -0.010155726998143294,
+        "min_margin_to_floor": 0.04498464791691665,
+        "bound_holds": true
+      },
+      {
+        "disorder": 0.2,
+        "mean_bulk_min_sigma_L": 0.046351202974950545,
+        "std_bulk_min_sigma_L": 0.013633743160710044,
+        "min_bulk_min_sigma_L": 0.022715105262400958,
+        "mean_full_min_sigma_L": 0.26784755404718896,
+        "min_full_min_sigma_L": 0.22820152648362227,
+        "frame_marker_flip_fraction": 0.0,
+        "note": "frame-marker fluctuation is a broken-chiral-symmetry artifact at d>0, not a sector transition",
+        "gap_open": true,
+        "sector_transition_possible": false,
+        "linear_floor": -0.1101557269981433,
+        "min_margin_to_floor": 0.13287083226054425,
+        "bound_holds": true
+      },
+      {
+        "disorder": 0.35,
+        "mean_bulk_min_sigma_L": 0.039373314803205973,
+        "std_bulk_min_sigma_L": 0.017685051253657404,
+        "min_bulk_min_sigma_L": 0.015289348357539596,
+        "mean_full_min_sigma_L": 0.18096599250847129,
+        "min_full_min_sigma_L": 0.11115378417472029,
+        "frame_marker_flip_fraction": 0.2,
+        "note": "frame-marker fluctuation is a broken-chiral-symmetry artifact at d>0, not a sector transition",
+        "gap_open": true,
+        "sector_transition_possible": false,
+        "linear_floor": -0.26015572699814327,
+        "min_margin_to_floor": 0.27544507535568286,
+        "bound_holds": true
+      },
+      {
+        "disorder": 0.5,
+        "mean_bulk_min_sigma_L": 0.035982535403912275,
+        "std_bulk_min_sigma_L": 0.019328973093829926,
+        "min_bulk_min_sigma_L": 0.0036674539801326684,
+        "mean_full_min_sigma_L": 0.0884456959741931,
+        "min_full_min_sigma_L": 0.010027751197306476,
+        "frame_marker_flip_fraction": 0.2,
+        "note": "frame-marker fluctuation is a broken-chiral-symmetry artifact at d>0, not a sector transition",
+        "gap_open": true,
+        "sector_transition_possible": false,
+        "linear_floor": -0.4101557269981433,
+        "min_margin_to_floor": 0.413823180978276,
+        "bound_holds": true
+      }
+    ]
+  },
+  "cross_checks": {
+    "topological": {
+      "frame_windings": {
+        "w_A": -1,
+        "w_B": -1
+      },
+      "nu_0": -1.0,
+      "nu_pi": 0.0,
+      "localizer_W_0": 1.0,
+      "localizer_W_pi": 0.0,
+      "localizer_nu_A": 1.0,
+      "localizer_nu_B": 1.0,
+      "agrees_at_E0": true,
+      "agrees_at_Epi": true,
+      "sign_convention_note": "frame windings and localizer markers may differ in overall sign (k-orientation); classification compared by magnitude"
+    },
+    "trivial": {
+      "frame_windings": {
+        "w_A": 0,
+        "w_B": 0
+      },
+      "nu_0": 0.0,
+      "nu_pi": 0.0,
+      "localizer_W_0": 0.0,
+      "localizer_W_pi": 0.0,
+      "localizer_nu_A": 0.0,
+      "localizer_nu_B": 0.0,
+      "agrees_at_E0": true,
+      "agrees_at_Epi": true,
+      "sign_convention_note": "frame windings and localizer markers may differ in overall sign (k-orientation); classification compared by magnitude"
+    }
+  },
+  "protection_bound_verification": {
+    "topological_N6": {
+      "n_cells": 6,
+      "clean_bulk_floor_sigma_L": 0.13777625031894566,
+      "predicted_crossing_d_star": 0.13777625031894566,
+      "bound_holds_all_levels": true,
+      "bound_holds_excluding_d0": true,
+      "gap_never_closes": true,
+      "sector_transitions_observed": false,
+      "frame_marker_flip_fraction_max": 0.35,
+      "flip_detection_note": "sector criterion is gap-based (homotopy pinning); frame-marker fluctuation at d>0 is a chiral-symmetry-breaking artifact and is not interpreted as a flip"
+    },
+    "topological_N8": {
+      "n_cells": 8,
+      "clean_bulk_floor_sigma_L": 0.10838929286837089,
+      "predicted_crossing_d_star": 0.10838929286837089,
+      "bound_holds_all_levels": true,
+      "bound_holds_excluding_d0": true,
+      "gap_never_closes": true,
+      "sector_transitions_observed": false,
+      "frame_marker_flip_fraction_max": 0.3,
+      "flip_detection_note": "sector criterion is gap-based (homotopy pinning); frame-marker fluctuation at d>0 is a chiral-symmetry-breaking artifact and is not interpreted as a flip"
+    },
+    "topological_N10": {
+      "n_cells": 10,
+      "clean_bulk_floor_sigma_L": 0.09561725424832679,
+      "predicted_crossing_d_star": 0.09561725424832679,
+      "bound_holds_all_levels": true,
+      "bound_holds_excluding_d0": true,
+      "gap_never_closes": true,
+      "sector_transitions_observed": false,
+      "frame_marker_flip_fraction_max": 0.25,
+      "flip_detection_note": "sector criterion is gap-based (homotopy pinning); frame-marker fluctuation at d>0 is a chiral-symmetry-breaking artifact and is not interpreted as a flip"
+    },
+    "trivial_N6": {
+      "n_cells": 6,
+      "clean_bulk_floor_sigma_L": 0.10207955018110686,
+      "predicted_crossing_d_star": 0.10207955018110686,
+      "bound_holds_all_levels": true,
+      "bound_holds_excluding_d0": true,
+      "gap_never_closes": true,
+      "sector_transitions_observed": false,
+      "frame_marker_flip_fraction_max": 0.1,
+      "flip_detection_note": "sector criterion is gap-based (homotopy pinning); frame-marker fluctuation at d>0 is a chiral-symmetry-breaking artifact and is not interpreted as a flip"
+    },
+    "trivial_N8": {
+      "n_cells": 8,
+      "clean_bulk_floor_sigma_L": 0.09577810444066734,
+      "predicted_crossing_d_star": 0.09577810444066734,
+      "bound_holds_all_levels": true,
+      "bound_holds_excluding_d0": true,
+      "gap_never_closes": true,
+      "sector_transitions_observed": false,
+      "frame_marker_flip_fraction_max": 0.05,
+      "flip_detection_note": "sector criterion is gap-based (homotopy pinning); frame-marker fluctuation at d>0 is a chiral-symmetry-breaking artifact and is not interpreted as a flip"
+    },
+    "trivial_N10": {
+      "n_cells": 10,
+      "clean_bulk_floor_sigma_L": 0.08984427300185671,
+      "predicted_crossing_d_star": 0.08984427300185671,
+      "bound_holds_all_levels": true,
+      "bound_holds_excluding_d0": true,
+      "gap_never_closes": true,
+      "sector_transitions_observed": false,
+      "frame_marker_flip_fraction_max": 0.2,
+      "flip_detection_note": "sector criterion is gap-based (homotopy pinning); frame-marker fluctuation at d>0 is a chiral-symmetry-breaking artifact and is not interpreted as a flip"
+    }
+  }
+}

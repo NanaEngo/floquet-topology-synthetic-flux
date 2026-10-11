@@ -1,0 +1,88 @@
+{
+  "normalization_positivity": {
+    "wigner_total_integral": 0.9999983995668679,
+    "wigner_negativity": 0.023562609344261038,
+    "trace": 1.0,
+    "min_eigenvalue": 0.08341941684115747,
+    "n_negative_eigenvalues": 0,
+    "note": "expected: trace=1, min eigenvalue>=0, Wigner integral=1 up to grid error"
+  },
+  "gaussian_negative_control": {
+    "single_mode_coherent_scan": [
+      {
+        "local_cutoff": 2,
+        "negative_volume": 0.09730024124232002
+      },
+      {
+        "local_cutoff": 3,
+        "negative_volume": 0.05458647058751176
+      },
+      {
+        "local_cutoff": 4,
+        "negative_volume": 0.023412078016169752
+      },
+      {
+        "local_cutoff": 6,
+        "negative_volume": 0.002887737123357818
+      },
+      {
+        "local_cutoff": 8,
+        "negative_volume": 0.0002566844304476684
+      },
+      {
+        "local_cutoff": 12,
+        "negative_volume": 7.557172150591093e-07
+      },
+      {
+        "local_cutoff": 20,
+        "negative_volume": 1.5622395249961725e-13
+      }
+    ],
+    "kerr_free_chain_production_truncation": 0.04620604742334409,
+    "with_kerr_chain_production_truncation": 0.08674075209871918,
+    "passed": true,
+    "note": "Exact coherent states have zero negativity; the residual at low cutoff is a Fock-truncation artefact that decays with local cutoff. The Kerr-free chain residual at production truncation is the same artefact, not physical non-Gaussianity; the Kerr term adds genuine negativity on top."
+  },
+  "known_nongaussian_benchmark": {
+    "state": "single-mode even cat |alpha>+|-alpha>, alpha=1, dim=60",
+    "negative_volume_61x61": 0.10428195440112055,
+    "negative_volume_production_grid": 0.10525234282929849,
+    "relative_deviation": 0.009305430011844052,
+    "passed": true,
+    "note": "single-mode even cat is exactly non-Gaussian with analytically known negativity"
+  },
+  "timestep_convergence": {
+    "rows": [
+      {
+        "nsteps": 1000,
+        "fidelity_vs_finest": 0.9999999999605582
+      },
+      {
+        "nsteps": 10000,
+        "fidelity_vs_finest": 0.9999999999605582
+      },
+      {
+        "nsteps": 100000,
+        "fidelity_vs_finest": 0.9999999999605582
+      }
+    ],
+    "max_shift": 3.944178317283331e-11,
+    "note": "fidelity of final state at each integrator budget vs the finest (1e5) budget; the adaptive integrator does not exhaust the coarsest budget, so all agree"
+  },
+  "design": {
+    "n_cells": 2,
+    "n_modes": 4,
+    "n_max": 2,
+    "wigner_grid": 31,
+    "kerr": 0.5,
+    "gamma_edge": 0.0001,
+    "gamma_bulk": 0.2,
+    "period": 6.283185307179586,
+    "seed": 20260814
+  },
+  "software": {
+    "qutip": "5.3.1",
+    "numpy": "1.26.4"
+  },
+  "elapsed_seconds": 1.1540000438690186
+}

@@ -1,0 +1,136 @@
+{
+  "status": "SOLVER_CONTRAST_CHECK_FAILED",
+  "claim_scope": "finite-time master-equation vs Monte-Carlo agreement for the production configuration; solver validation only",
+  "not_supported": [
+    "topological protection theorem",
+    "experimental validation",
+    "metrological gain"
+  ],
+  "design": {
+    "n_cells": 4,
+    "n_modes": 8,
+    "n_max": 2,
+    "initial_state_mode": "edge_site",
+    "kerr": 0.0,
+    "n_mc": 500,
+    "ntraj": 10,
+    "monte_carlo_from_archive": false,
+    "loss_profile": "edge_low_loss",
+    "disorder_level": 0.0,
+    "gamma_edge": 0.0001,
+    "gamma_bulk": 0.2,
+    "t_stop": 6.283185307179586,
+    "n_periods": 1,
+    "n_time_points": 9,
+    "wigner_grid": 31,
+    "production_seed": 20260814,
+    "draw_seed": "seed + profile_index*1e6 + disorder_index*1e4 + sample",
+    "trajectory_seed": "draw_seed + 100 + sector_index",
+    "paired_sectors": true
+  },
+  "exact_master_equation": {
+    "me_contrast": null,
+    "note": "density-matrix master equation infeasible beyond three cells; use the 1/N trajectory extrapolation"
+  },
+  "monte_carlo": {
+    "contrast": {
+      "n": 500,
+      "mean": -0.0013050469477481703,
+      "sd": 0.0071883987582554145,
+      "se": 0.00032147496545668365,
+      "ci95_low": -0.0019351378800432704,
+      "ci95_high": -0.0006749560154530703
+    },
+    "by_sector": {
+      "chiral_topological": {
+        "negativity_edge": {
+          "n": 500,
+          "mean": 0.0016918536550768284,
+          "sd": 0.0035890166813936602,
+          "se": 0.00016050570543953857,
+          "ci95_low": 0.0013772624724153327,
+          "ci95_high": 0.002006444837738324
+        },
+        "negativity_center": {
+          "n": 500,
+          "mean": 0.0,
+          "sd": 0.0,
+          "se": 0.0,
+          "ci95_low": 0.0,
+          "ci95_high": 0.0
+        },
+        "edge_population": {
+          "n": 500,
+          "mean": 0.41208273673307044,
+          "sd": 0.039136575280705174,
+          "se": 0.0017502408546838937,
+          "ci95_low": 0.40865226465789,
+          "ci95_high": 0.4155132088082509
+        },
+        "bulk_population": {
+          "n": 500,
+          "mean": 0.23573758102254816,
+          "sd": 0.0223733532774583,
+          "se": 0.0010005667762602894,
+          "ci95_low": 0.233776470141078,
+          "ci95_high": 0.23769869190401832
+        }
+      },
+      "chiral_trivial": {
+        "negativity_edge": {
+          "n": 500,
+          "mean": 0.002996900602824999,
+          "sd": 0.006311182608679651,
+          "se": 0.00028224466662844306,
+          "ci95_low": 0.0024437010562332506,
+          "ci95_high": 0.0035501001494167472
+        },
+        "negativity_center": {
+          "n": 500,
+          "mean": 0.0,
+          "sd": 0.0,
+          "se": 0.0,
+          "ci95_low": 0.0,
+          "ci95_high": 0.0
+        },
+        "edge_population": {
+          "n": 500,
+          "mean": 0.40947337703578546,
+          "sd": 0.05796889759946454,
+          "se": 0.0025924479122625414,
+          "ci95_low": 0.4043921791277509,
+          "ci95_high": 0.41455457494382003
+        },
+        "bulk_population": {
+          "n": 500,
+          "mean": 0.1489497416881956,
+          "sd": 0.021104191363566893,
+          "se": 0.000943808129981991,
+          "ci95_low": 0.14709987775343092,
+          "ci95_high": 0.1507996056229603
+        }
+      }
+    }
+  },
+  "delta_mc_minus_me": {
+    "difference": null,
+    "mc_se": 0.00032147496545668365,
+    "note": "density-matrix master equation infeasible beyond three cells; use the 1/N trajectory extrapolation"
+  },
+  "crosscheck": {
+    "available": true,
+    "production_file": "data/chiral_production/chiral_floquet_4cells_NMC500.json",
+    "production_status": "COMPLETED_CHIRAL_FLOQUET_DYNAMICS_PILOT",
+    "records_compared": 12000,
+    "max_abs_diff": 0.13493396235150934
+  },
+  "gates": {
+    "production_crosscheck_zero": false,
+    "solver_agreement_within_3se": true
+  },
+  "software": {
+    "qutip": "5.3.1",
+    "numpy": "1.26.4"
+  },
+  "elapsed_seconds": 518.7661292552948
+}

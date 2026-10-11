@@ -1,0 +1,29 @@
+{
+  "N_sites": 3,
+  "n_max": 2,
+  "gamma_edge": 0.0001,
+  "gamma_bulk": 1.0,
+  "method": "HEOM on edge site 0 + Lindblad bulk, depth=1",
+  "HEOM_params": {
+    "T_bath": 0.1,
+    "Nk": 1,
+    "max_depth": 1
+  },
+  "results": [
+    {"phase":"Topological","J1":0.1,"J2":1.0,"D":0.0,"delta_ME":0.1910253633334485,"delta_HEOM":0.19215073578500386,"abs_diff":0.001125372451555362,"error_pct":0.5856716847623906,"status":"ok"},
+    {"phase":"Topological","J1":0.1,"J2":1.0,"D":0.5,"delta_ME":0.18817966733744035,"delta_HEOM":0.18923419120141055,"abs_diff":0.0010545238639702026,"error_pct":0.5572586313684851,"status":"ok"},
+    {"phase":"Topological","J1":0.1,"J2":1.0,"D":1.0,"delta_ME":0.1887003206288599,"delta_HEOM":0.1897554972950056,"abs_diff":0.0010551766661456852,"error_pct":0.5560717245020008,"status":"ok"},
+    {"phase":"Topological","J1":0.1,"J2":1.0,"D":2.0,"delta_ME":0.19108172873209586,"delta_HEOM":0.19216855805300906,"abs_diff":0.0010868293209131963,"error_pct":0.5655604287842958,"status":"ok"},
+    {"phase":"Trivial","J1":1.0,"J2":1.0,"D":0.0,"delta_ME":0.0,"delta_HEOM":0.0,"abs_diff":0.0,"error_pct":0.0,"status":"ok"},
+    {"phase":"Trivial","J1":1.0,"J2":1.0,"D":0.5,"delta_ME":0.0,"delta_HEOM":0.0,"abs_diff":0.0,"error_pct":0.0,"status":"ok"},
+    {"phase":"Trivial","J1":1.0,"J2":1.0,"D":1.0,"delta_ME":0.0,"delta_HEOM":0.0,"abs_diff":0.0,"error_pct":0.0,"status":"ok"},
+    {"phase":"Trivial","J1":1.0,"J2":1.0,"D":2.0,"delta_ME":0.0,"delta_HEOM":0.0,"abs_diff":0.0,"error_pct":0.0,"status":"ok"}
+  ],
+  "summary": {
+    "success": "8/8",
+    "mean_error_percent": 0.2831,
+    "max_error_percent": 0.5857,
+    "all_below_5_percent": true,
+    "scope": "N=3 source-script cross-check; not a validation of the archived N=6 traces"
+  }
+}
