@@ -10,9 +10,14 @@ Right panel: collective edge-mode Wigner function of the same state after the
 This visualizes the null result of the collective-mode analysis: the finite-time
 non-Gaussianity lives in the site basis and does not survive rotation into the
 edge-mode basis.
+
+The plotted states are read from data/collective_wigner_figure_state.json
+(written by run_collective_wigner.py --dump-figure-state); this script runs
+no dynamics and imports no producer module.
 """
 from __future__ import annotations
 
+import json
 from pathlib import Path
 
 import matplotlib
@@ -23,43 +28,42 @@ import numpy as np
 import qutip as qt
 from matplotlib import patheffects as path_effects
 
-from run_chiral_floquet_dynamics import (
-    CANDIDATES,
-    PERIOD,
-    build_ops,
-    driven_hamiltonian,
-    edge_mode_vector,
-    initial_state,
-    rate_vector,
-)
-from run_collective_wigner import complete_mode_rotation, many_body_rotation, rotate_state
-
 ROOT = Path(__file__).resolve().parents[1]
+STATE_PATH = ROOT / "data" / "collective_wigner_figure_state.json"
 OUT_PDF = ROOT / "figures" / "collective_vs_local_wigner.pdf"
 OUT_PNG = ROOT / "figures" / "collective_vs_local_wigner.png"
 
+EXPECTED_CONFIG = {
+    "n_cells": 2, "n_max": 2, "sector": "chiral_topological",
+    "loss_profile": "edge_low_loss", "disorder_level": 0.0,
+    "sample": 0, "draw_seed": 20260814,
+    "trajectory_seed": 20260914, "ntraj": 10,
+}
+
+
+def load_block(payload: dict, key: str) -> qt.Qobj:
+    """Rebuild a 3x3 density matrix from its archived real/imag parts.
+
+    Args:
+        payload (dict): The figure-state artifact.
+        key (str): Block entry name.
+
+    Returns:
+        qutip.Qobj: The reduced density matrix (dimensionless entries).
+    """
+    block = payload[key]
+    mat = np.array(block["real"]) + 1j * np.array(block["imag"])
+    return qt.Qobj(mat)
+
 
 def main():
-    n_cells, n_max, n_modes = 2, 2, 4
-    sector, profile, disorder = "chiral_topological", "edge_low_loss", 0.0
-    draw_seed = 20260814  # sample 0, matched with the pilot
-    ops = build_ops(n_modes, n_max)
-    psi0 = initial_state(n_cells, n_max, "edge_site")
-    rates = rate_vector(n_modes, profile, disorder, draw_seed, 1e-4, 0.2)
-    c_ops = [np.sqrt(x) * op for x, op in zip(rates, ops) if x > 0]
-    result = qt.mcsolve(
-        driven_hamiltonian(ops, CANDIDATES[sector], 0.5), psi0,
-        np.linspace(0.0, PERIOD, 9), c_ops, ntraj=10, seeds=draw_seed + 100,
-        options={"nsteps": 10000, "store_states": True, "progress_bar": False},
-    )
-    state = result.states[-1]
-
-    rho_local = state.ptrace(0)
-    c = edge_mode_vector(n_cells, CANDIDATES[sector])
-    u = complete_mode_rotation(c)
-    T = many_body_rotation(u, n_modes, n_max)
-    rho_rot = rotate_state(state, T, n_modes, n_max)
-    rho_edge = rho_rot.ptrace(0)
+    payload = json.loads(STATE_PATH.read_text())
+    config = payload["config"]
+    for field, want in EXPECTED_CONFIG.items():
+        got = config[field]
+        assert got == want, f"figure-state config drift: {field} {got} != {want}"
+    rho_local = load_block(payload, "rho_local_site0")
+    rho_edge = load_block(payload, "rho_collective_edge")
 
     grid = np.linspace(-4.0, 4.0, 161)
     w_local = qt.wigner(rho_local, grid, grid)

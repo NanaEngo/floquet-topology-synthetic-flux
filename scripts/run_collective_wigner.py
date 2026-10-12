@@ -292,6 +292,61 @@ def simulate_state(h, psi0, c_ops, ntraj, seed, t_stop, n_time):
     return result.states[-1]
 
 
+def dump_figure_state(out_path: Path) -> dict:
+    """Simulate and archive the fig:collective-wigner final state.
+
+    Exact configuration of the figure (two cells, N_max=2, topological
+    sector, edge_low_loss, d=0, sample 0, ntraj=10, kerr=0.5): the
+    trajectory-averaged final state is reduced to the site-0 marginal
+    and the sector-matched collective edge-mode marginal (3x3 blocks)
+    so the figure script plots from this artifact and runs no dynamics.
+
+    Args:
+        out_path (Path): Destination JSON artifact path.
+
+    Returns:
+        dict: The written payload (config, both blocks, identity check).
+    """
+    n_cells, n_max, n_modes = 2, 2, 4
+    sector, profile, disorder = "chiral_topological", "edge_low_loss", 0.0
+    draw_seed, ntraj, kerr = 20260814, 10, 0.5
+    ops = build_ops(n_modes, n_max)
+    psi0 = initial_state(n_cells, n_max, "edge_site")
+    rates = rate_vector(n_modes, profile, disorder, draw_seed, 1e-4, 0.2)
+    c_ops = [np.sqrt(x) * op for x, op in zip(rates, ops) if x > 0]
+    state = simulate_state(
+        driven_hamiltonian(ops, CANDIDATES[sector], kerr), psi0, c_ops,
+        ntraj, draw_seed + 100, PERIOD, 9)
+    rho_local = state.ptrace(0)
+    c = edge_mode_vector(n_cells, CANDIDATES[sector])
+    rho_edge = rotate_state(
+        state, many_body_rotation(complete_mode_rotation(c), n_modes, n_max),
+        n_modes, n_max).ptrace(0)
+
+    def block(rho: qt.Qobj) -> dict:
+        """Serialize a 3x3 block (units: density-matrix entries)."""
+        m = np.asarray(rho.full())
+        return {"real": m.real.tolist(), "imag": m.imag.tolist()}
+
+    payload = {
+        "status": "FIGURE_STATE_CACHED",
+        "config": {
+            "n_cells": n_cells, "n_max": n_max, "sector": sector,
+            "loss_profile": profile, "disorder_level": disorder,
+            "sample": 0, "draw_seed": draw_seed,
+            "trajectory_seed": draw_seed + 100, "ntraj": ntraj,
+            "kerr": kerr, "t_stop": PERIOD, "n_time": 9,
+            "gamma_edge": 1e-4, "gamma_bulk": 0.2,
+        },
+        "rho_local_site0": block(rho_local),
+        "rho_collective_edge": block(rho_edge),
+    }
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    out_path.write_text(json.dumps(payload, indent=2) + "\n")
+    print(f"saved figure state {out_path}")
+    return payload
+
+
 def run_dynamics(args):
     n_modes = 2 * args.n_cells
     n_max = args.n_max
@@ -444,6 +499,11 @@ def analyze(path: Path, grid_points: int, out_path: Path) -> dict:
 def main():
     p = argparse.ArgumentParser()
     p.add_argument("--validate-only", action="store_true")
+    p.add_argument("--dump-figure-state", type=Path, default=None,
+                   help="write the fig:collective-wigner final state "
+                        "(topological, edge_low_loss, d=0, sample 0) as a "
+                        "JSON artifact and exit; the figure script reads "
+                        "only this artifact and runs no dynamics")
     p.add_argument("--n-cells", type=int, default=2)
     p.add_argument("--n-max", type=int, default=2)
     p.add_argument("--n-mc", type=int, default=10)
@@ -471,6 +531,10 @@ def main():
         args.validation_output.parent.mkdir(parents=True, exist_ok=True)
         args.validation_output.write_text(json.dumps(val, indent=2) + "\n")
         print(f"saved validation {args.validation_output}")
+        return
+
+    if args.dump_figure_state is not None:
+        dump_figure_state(args.dump_figure_state)
         return
 
     if min(args.n_cells, args.n_max, args.n_mc, args.ntraj) < 1 or args.kerr < 0 or args.t_stop <= 0 or args.n_time < 2:

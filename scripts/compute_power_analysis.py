@@ -90,6 +90,24 @@ def main():
         "sizes": sizes,
         "software": {"numpy": np.__version__, "scipy": __import__("scipy").__version__},
     }
+    # --- detection margins (A-3): |measured| / MDE at attained n, gated
+    # against the manuscript-quoted 1.3x (six modes), 2.6x (eight modes),
+    # 1.05x (five-cell) so the Discussion numbers cannot drift silently. ---
+    by_modes = {s["modes"]: s for s in sizes}
+    margins = {}
+    for modes in (6, 8):
+        s = by_modes[modes]
+        margins[f"{modes}modes"] = abs(s["mean"]) / s["detectable_effect_at_attained_n"]
+    five = next(s for s in sizes if s["cells"] == 5)
+    margins["fivecell"] = abs(five["mean"]) / five["detectable_effect_at_attained_n"]
+    summary["detection_margins"] = margins
+    quoted = {"6modes": 1.3, "8modes": 2.6, "fivecell": 1.05}
+    margin_failures = [
+        f"{k} margin {v:.3f} != quoted {quoted[k]}"
+        for k, v in margins.items() if abs(v - quoted[k]) > 0.06
+    ]
+    if margin_failures:
+        raise SystemExit("FAIL: " + "; ".join(margin_failures))
     out = ROOT / "data" / "power_analysis.json"
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(summary, indent=2) + "\n")

@@ -52,6 +52,59 @@ def check_table(name: str, expected: list[str], got: list[str]) -> int:
     return 0
 
 
+FIGURE_CONFIG = {
+    "n_cells": 2, "n_max": 2, "sector": "chiral_topological",
+    "loss_profile": "edge_low_loss", "disorder_level": 0.0,
+    "sample": 0, "draw_seed": 20260814,
+    "trajectory_seed": 20260914, "ntraj": 10,
+}
+
+
+def check_figure_state() -> int:
+    """Figure-vs-data check for fig:collective-wigner (A-1).
+
+    The figure script plots only from data/collective_wigner_figure_state.json
+    and runs no dynamics: assert the artifact config matches, both PDFs exist,
+    and the semantic null holds (local marginal genuinely negative,
+    collective marginal non-negative) recomputed from the archived blocks.
+    """
+    import qutip as qt  # fail-closed: the qom gate env provides qutip
+    import numpy as np
+
+    art = ROOT / "data" / "collective_wigner_figure_state.json"
+    if not art.exists():
+        print("FAIL fig:collective-wigner: missing collective_wigner_figure_state.json")
+        return 1
+    payload = json.loads(art.read_text())
+    for field, want in FIGURE_CONFIG.items():
+        if payload["config"].get(field) != want:
+            print(f"FAIL fig:collective-wigner: config drift {field}: "
+                  f"{payload['config'].get(field)} != {want}")
+            return 1
+    for name in ("collective_vs_local_wigner.pdf", "collective_vs_local_wigner.png"):
+        if not (ROOT / "figures" / name).exists():
+            print(f"FAIL fig:collective-wigner: missing figures/{name}")
+            return 1
+    grid = np.linspace(-4.0, 4.0, 41)
+    minima = {}
+    for key, tag in (("rho_local_site0", "local"),
+                     ("rho_collective_edge", "edge")):
+        block = payload[key]
+        rho = qt.Qobj(np.array(block["real"]) + 1j * np.array(block["imag"]))
+        minima[tag] = float(qt.wigner(rho, grid, grid).min())
+    if not minima["local"] < -0.01:
+        print(f"FAIL fig:collective-wigner: local min W = {minima['local']:.4f} "
+              f"(expected genuinely negative)")
+        return 1
+    if not minima["edge"] > -1e-6:
+        print(f"FAIL fig:collective-wigner: edge min W = {minima['edge']:.2e} "
+              f"(expected non-negative null)")
+        return 1
+    print(f"OK   fig:collective-wigner: config matches, PDFs present, "
+          f"local min W = {minima['local']:.4f}, edge min W = {minima['edge']:.2e}")
+    return 0
+
+
 def main() -> int:
     """Run all three table checks."""
     tex = SI.read_text()
@@ -94,6 +147,9 @@ def main() -> int:
             expected += [fmt(s["mean_series"][k], 6),
                          fmt(s["se_series"][k], 6)]
     fails += check_table("tab:longtime", expected, nums(body))
+
+    # --- fig:collective-wigner: artifact config, PDFs, semantic null ---
+    fails += check_figure_state()
 
     if fails:
         print(f"FAILS: {fails}")
