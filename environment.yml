@@ -1,0 +1,19 @@
+name: qom
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy=1.26.4
+  - scipy=1.13.1
+  - matplotlib=3.11.1
+  - h5py=3.16.0
+  - sympy=1.14.0
+  - pip
+  - pip:
+      - qutip==5.3.1
+      - quimb==1.11.2
+
+# Verified on 2026-08-14 at /home/nanaengo/miniforge3/envs/qom.
+# FL_QOM was imported from /home/nanaengo/FL_QOM/src through PYTHONPATH.
+# PyQt5 is not required by the Track-A numerical scripts and was not installed.
+# This file is a provenance record; it is not an instruction to alter the HPC env.
